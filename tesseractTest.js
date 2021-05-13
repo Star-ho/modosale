@@ -6,10 +6,10 @@ const worker = createWorker({
 
 (async () => {
   await worker.load();
-  await worker.loadLanguage('kor');
-  await worker.initialize('kor');
+  await worker.loadLanguage('eng');
+  await worker.initialize('eng');
   const { data: { text } } = await worker.recognize(
-    'path/down.png'
+    'path/result.png'
     );
   console.log(text);
   await worker.terminate();
