@@ -2,8 +2,8 @@
 //https://www.daleseo.com/js-babel-node/
 
 import { createWorker } from 'tesseract.js';
-getDataArray()
-async function getDataArray(){
+
+export async function getDataArray(){
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
@@ -12,7 +12,7 @@ async function getDataArray(){
   let $=cheerio.load(response)
   //7 - 13 - 19 - 27
   let i=0
-  $('.tab-1')['0'].children.forEach((v)=>{
+  $('.tab-7')['0'].children.forEach((v)=>{
     if(v.type==='comment'){
       arr[i].push(Object.assign(v.data))
     }
@@ -51,12 +51,16 @@ async function getDataArray(){
   //arr[0][1]=await imgToCost(arr[0][1],i,worker)
 
   await worker.terminate();
-  arr=arr.map(v=>{
+  let res={}
+  arr.forEach(v=>{
     v[0]=String(v[0])
     v[1]=v[1].split('\n')[1].split(' ')[0].split(',').join('')
-    return v
+    Object.assign(res, { [v[0]] : v[1]} )
   })
-  console.log(arr)
+  //console.log(arr)
+
+
+  return res
   //console.log(String(arr[0][0]))
 }
 
