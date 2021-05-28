@@ -1,6 +1,5 @@
-//npx babel-node --presets @babel/env yogiyo.js
+//npx babel-node --presets @babel/env index.js
 
-//Load HTTP module
 import {getDataArray} from './yogiyo' 
 import {getData} from './baemin.js'
 
@@ -13,11 +12,10 @@ console.log(data)
 var http = require("http");
 
 
-//Create HTTP server and listen on port 8000 for requests
 http.createServer(function (request, response) {
 
    // Set the response HTTP header with HTTP status and Content type
-   response.writeHead(200, {'Content-Type': 'text/plain'});
+   response.writeHead(200, {'Content-Type':'text/plain; charset=utf-8'});
 
    // Send the response body "Hello World"
    response.end(JSON.stringify(data));
