@@ -20,20 +20,27 @@ let data={};
    
    for(let i of Object.entries(await getDataArray())){
       let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
-      if(SqlRes[0][0]){
-         Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1] ] } )
+      if(SqlRes[0][0]&&+i[1]){
+         if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+            Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1] ] } )
+         }else{
+            Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, "기타", +i[1] ] } )
+         }
       }else{
-         Object.assign(data,{ [i[0]] : [ "yogiyo", "없음", "없음", +i[1] ] } )
+         Object.assign(data,{ [i[0]] : [ "yogiyo", "없음", "기타", +i[1] ] } )
       }
       connect.release()
    }
    for(let i of Object.entries(await getData())){
       let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
-      console.log(`select * from menu where brandName="${i[0]}";`)
       if(SqlRes[0][0]){
-         Object.assign(data,{ [i[0]] : [ "baemin", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1] ] } )
+         if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+            Object.assign(data,{ [i[0]] : [ "baemin", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1] ] } )
+         }else{
+            Object.assign(data,{ [i[0]] : [ "baemin",SqlRes[0][0].imageName, "기타", +i[1] ] } )
+         }
       }else{
-         Object.assign(data,{ [i[0]] : [ "baemin", "noimage.png", "기타", +i[1] ] } )
+         Object.assign(data,{ [i[0]] : [ "baemin", "없음", "기타", +i[1] ] } )
       }
       connect.release()
    }
@@ -41,14 +48,20 @@ let data={};
    connect.destroy()
    //console.log(data)
 })()
-var http = require("http");
 
 
-http.createServer(function (request, response) {
+var express = require('express');
+var app = express();
+const bodyParser = require('body-parser');
 
-   // Set the response HTTP header with HTTP status and Content type
-   response.writeHead(200, {'Content-Type':'text/plain; charset=utf-8'});
+app.use(express.static('logo'));
+// respond with "hello world" when a GET request is made to the homepage
+app.get('/', function(req, res) {
+  res.send(JSON.stringify(data));
+});
 
-   // Send the response body "Hello World"
-   response.end(JSON.stringify(data));
-}).listen(3000);
+app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}));
+
+var server = app.listen(3000, function(){
+   console.log("Express server has started on port 3000")
+})

@@ -9,7 +9,7 @@ const worker = createWorker({
   await worker.loadLanguage('eng');
   await worker.initialize('eng');
   const { data: { text } } = await worker.recognize(
-    'path/result.png'
+    'path/result17.png'
     );
   console.log(text);
   await worker.terminate();
