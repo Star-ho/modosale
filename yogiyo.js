@@ -58,7 +58,7 @@ export async function getDataArray(){
     Object.assign(res, { [v[0]] : v[1]} )
   })
   //console.log(arr)
-
+  deleteFile()
 
   return res
   //console.log(String(arr[0][0]))
@@ -71,6 +71,7 @@ async function download(uri, filename){
   let buffer = await res.buffer()
   fs.writeFileSync(filename, buffer, ()=>null)
 };
+
 //npx babel-node --presets @babel/env yogiyo.js
 async function imgToCost(src,i,worker){
   let res
@@ -97,5 +98,40 @@ async function imgToCost(src,i,worker){
   }
   return res.data.text
 }
+
+function deleteFile(){
+  const fs = require('fs');
+  const path = require('path');
+  const removePath = (p, callback) => { // A 
+  fs.stat(p, (err, stats) => { 
+    if (err) return callback(err);
+
+    if (!stats.isDirectory()) { // B 
+      return fs.unlink(p, err => err ? callback(err) : callback(null, p));
+    }
+
+    fs.rmdir(p, (err) => {  
+      if (err) return callback(err);
+
+      return callback(null, p);
+    });
+  });
+  };
+  const printResult = (err, result) => {
+  if (err) return console.log(err);
+  // console.log(`${result} 를 정상적으로 삭제했습니다`);
+  };
+
+  const p = path.join(__dirname, 'path');
+
+  try { // D
+  const files = fs.readdirSync(p);  
+  if (files.length) 
+    files.forEach(f => removePath(path.join(p, f), printResult)); 
+  } catch (err) {
+  if (err) return console.log(err);
+  }
+}
+
 
 //imgToCost('http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_%E1%84%8B%E1%85%A9%E1%84%82%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B4%E1%84%92%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%B5%E1%86%AB_new_lineup_hosigi_5000.png')
