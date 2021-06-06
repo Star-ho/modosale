@@ -1,12 +1,5 @@
 
-//const  baemin=require('./baemin.js')
-import {getDataArray} from './yogiyo' 
-import {getData} from './baemin.js'
-
-let data;
-(async ()=>{
-data={yogiyo:await getDataArray()};
-Object.assign(data,{baemin:await getData()})
-console.log(data)
-})()
-
+let arr  = [1,2,3,4,5]
+for(let i of arr){
+    console.log(i)
+}
