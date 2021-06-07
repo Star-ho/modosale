@@ -1,5 +1,4 @@
-//npx babel-node --presets @babel/env index.js
-
+//npx babel-node --presets @babel/env index.js >log 2>&1
 import {getDataArray} from './yogiyo' 
 import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
@@ -50,12 +49,12 @@ async function setData(){
          let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[2] ] } )
+               Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1] ] } )
             }else{
-               Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[2] ] } )
+               Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[1] ] } )
             }
          }else{
-            Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[2] ] } )
+            Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[1] ] } )
          }
          //console.log(i)
       }
@@ -63,12 +62,12 @@ async function setData(){
          let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               Object.assign(data,{ [i[0]] : [ "coupang", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[2] ] } )
+               Object.assign(data,{ [i[0]] : [ "coupang", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1] ] } )
             }else{
-               Object.assign(data,{ [i[0]] : [ "coupang",SqlRes[0][0].imageName, "기타", +i[2] ] } )
+               Object.assign(data,{ [i[0]] : [ "coupang",SqlRes[0][0].imageName, "기타", +i[1] ] } )
             }
          }else{
-            Object.assign(data,{ [i[0]] : [ "coupang", "없음", "기타", +i[2] ] } )
+            Object.assign(data,{ [i[0]] : [ "coupang", "없음", "기타", +i[1] ] } )
          }
          //console.log(i)
       }

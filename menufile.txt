@@ -1,12 +1,13 @@
-3가지맛 디디치킨&&DDchicken.png&&치킨
+3가지맛 디디치킨//디디치킨&&DDchicken.png&&치킨
 3가지맛 투존치킨&&towZone.png&&치킨
 59쌀피자&&59risePizza.png&&피자
 60계치킨&&60chicken.png&&치킨
 7번가//7번가피자&&7streetPizza.png&&피자
 B&F족발보쌈&&B&Fjokbalbossam.png&&한식
 BBQ&&BBQ.png&&치킨
-BHC//bhc&&BHC.png&&치킨
+BHC&&BHC.png&&치킨
 BRD숯불바베큐치킨&&BRDsutbulChicken.png&&치킨
+CU&&CU.png&&기타
 ICG&&ICG.png&&치킨
 JC장충동왕족발&&JCjangchungdongjokbal.png&&한식
 KFC&&KFC.png&&치킨
@@ -18,19 +19,22 @@ VIPS&&VIPS.png&&커피
 강정이기가막혀&&gangjunggigamakhye.png&&치킨
 거성치킨&&geosungchicken.png&&치킨
 건강을담은리얼떡볶이&&gungangddukbboki.png&&분식
-걸작 //걸작떡볶이치킨&&guljakddubbokki.png&&분식
+걸작//걸작떡볶이치킨&&guljakddubbokki.png&&분식
+경아두마리치킨&&kungAtwochicken.png&&치킨
 계동치킨&&gyedongchicken.png&&치킨
 곱깨비곱창&닭발&&gobggaebi.png&&한식
 공차&&gongcha.png&&커피
 공수간//돈까스퐁당떡볶이공수간&&gongsugan.png&&한식
 교촌치킨&&kyochon.png&&치킨
 구워더존치킨&&guwarTheJohnchicken.png&&치킨
+구어조은닭&&goawerjoendak.png&&치킨
 국대떡볶이&&gukdaeDdukbookki.png&&분식
 국수나무&&guksunamu.png&&한식
 굽네치킨&&goobne.png&&치킨
 굽는치킨&&gooBneun.png&&치킨
 김가네&&MrKim.png&&분식
-김준현의피자헤븐&&pizzaHeaven.png&&피자
+김준현의피자헤븐//피자헤븐&&pizzaHeaven.png&&피자
+깻잎//깻잎두마리치킨&&gganipdomari.png&&치킨
 김충기꽃삼겹&&kimchungkipig.png&&한식
 깐부치킨&&gganbuchiken.png&&치킨
 나뚜루&&natuur.png&&커피
@@ -39,7 +43,7 @@ VIPS&&VIPS.png&&커피
 네네피자&&nenepizza.png&&피자
 네오피자&&neoPizza.png&&피자
 노랑통닭&&yellowChicken.png&&치킨
-놀부보쌈족발&&nulbojokbal.png&&한식
+놀부//놀부보쌈족발&&nulbojokbal.png&&한식
 놀부부대찌개&&nobubudae.png&&한식
 놀부옛날통닭&&nobuchicken.png&&치킨
 놀부화덕족발&&nolbufirechicken.png&&한식
@@ -53,9 +57,9 @@ VIPS&&VIPS.png&&커피
 덮덮밥&&dubdubbab.png&&한식
 도미노//도미노피자&&dominoPizza.png&&피자
 도야족발&&doyajokbal.png&&한식
-돈까스퐁당떡볶이공수간&&gongsugan.png&&양식
 돈도니 삼겹&직화불고기&&dondonibolgogi.png&&한식
 돈통마늘보쌈&&duntongbossam.png&&한식
+돈치킨&&donchicken.png&&치킨
 동궁찜닭&&donggung.png&&한식
 동근이숯불두마리치킨&&donggeonTwochiken.png&&치킨
 동대문엽기떡볶이&&dongdaemunyupdduk.png&&분식
@@ -69,15 +73,15 @@ VIPS&&VIPS.png&&커피
 땅땅치킨&&ttangttang.png&&치킨
 땅스부대찌개&&ttangsbudae.png&&한식
 땡큐맘치킨&&thankyoumom.png&&치킨
-떡참&&ddukcham.png&&분식
+떡참//떡볶이 참 잘하는집&&ddukcham.png&&분식
 떴다파닭&&ddutdapadak.png&&치킨
 또래오래&&ddoraeorae.png&&치킨
 또봉이통닭&&ddobongchiken.png&&치킨
 뚜레쥬르&&touslesjoures.png&&양식
 뚱뚱이할머니족발&&ddongddongi.png&&한식
 롯데리아&&lotteria.png&&양식
-리얼안심&찹쌀탕수육&&ralansimgtangsuyuk.png&&기타
-리얼하노이&&realhanoi.png&&기타
+리얼안심&찹쌀탕수육//리얼안심탕수육&&ralansimgtangsuyuk.png&&기타
+리얼하노이//리얼하노이베트남쌀국수&&realhanoi.png&&기타
 림스치킨&&limschicken.png&&치킨
 마리오피자&&marioPizza.png&&피자
 마시내&&masinae.png&&기타
@@ -113,12 +117,12 @@ VIPS&&VIPS.png&&커피
 바른치킨&&barenchicken.png&&치킨
 바비박스도시락&&bobbibox.png&&한식
 바비큐보스&&babiqueboss.png&&한식
-박가부대 박가부대&치즈닭갈비&&bakgabudae.png&&한식
+박가부대 박가부대&치즈닭갈비//박가부대&&bakgabudae.png&&한식
 반올림 반올림피자샵&&banalimpizza.png&&피자
 반찬 진이찬방&&jinichanbang.png&&한식
 반찬전문점 오레시피&&Orecipi.png&&한식
 배달돼지&&baedalpig.png&&한식
-배달삼겹돼지되지&&badalPigpig.png&&한식
+배달삼겹돼지되지//돼지되지&&badalPigpig.png&&한식
 배스킨//배스킨라빈스&&baskinRobbins.png&&기타
 백종원의 새마을식당&&bakjongonesamael.png&&한식
 백종원의 원조쌈밥집&&bakjongonessambab.png&&한식
@@ -170,8 +174,10 @@ VIPS&&VIPS.png&&커피
 아마스빈&&amasvin.png&&커피
 아웃백&&outBack.png&&양식
 아주커치킨&&ajuckerChicken.png&&치킨
+아티제&&artisee.png&&기타
 알통떡강정&&alttonggangjung.png&&치킨
 야미가//yummy가&&yumiga.png&&한식
+야꼬닭&&yaggodak.png&&치킨
 얌샘김밥&&yamsamgimbab.png&&분식
 에그드랍&&eggdrop.png&&양식
 엔제리너스&&angelinus.png&&커피
@@ -188,8 +194,8 @@ VIPS&&VIPS.png&&커피
 올떡&&allDdukbbokki.png&&분식
 요거프레소&&yogerpresso.png&&양식
 웅이네오돌뼈닭발도&&ungineOdulbbu.png&&치킨
-원할머니명품도시락//원할머니&&onehalmuniDosirak.png&&한식
-원할머니보쌈족발&&OnehalmuniBossam.png&&한식
+원할머니명품도시락&&onehalmuniDosirak.png&&한식
+원할머니보쌈족발//원할머니&&OnehalmuniBossam.png&&한식
 웰덤치킨&&weldumchiken.png&&치킨
 위드치킨&&withchiken.png&&치킨
 유가네닭갈비&&ygane.png&&한식
@@ -200,7 +206,7 @@ VIPS&&VIPS.png&&커피
 이디야&&ediya.png&&커피
 이바돔감자탕&&ibadomgamjatang.png&&한식
 이삭토스트&&issactoast.png&&양식
-이마트&&emart.png&&기타
+이마트//이마트24&&emart.png&&기타
 이웃집소녀떡볶이&&isoDdukbbokki.png&&분식
 이차돌&&ichadol.png&&한식
 이화수전통육개장&&ihawsuYukgaejang.png&&한식
@@ -221,6 +227,7 @@ VIPS&&VIPS.png&&커피
 죽이야기&&jukiyagi.png&&한식
 지정환임실치즈피자&&jijunghwanPizza.png&&피자
 지코바&&jicobar.png&&치킨
+직구삼&&gikgosam.png&&한식
 집으로돼지&갈비&&jiburoPig.png&&한식
 징기스칸치킨&&jinkiscanChicken.png&&치킨
 짱닭치킨&&jjangdakChicken.png&&치킨
@@ -247,7 +254,7 @@ VIPS&&VIPS.png&&커피
 치킨히어로&&chickenHero.png&&치킨
 커피베이&&cuffebay.png&&커피
 커피빈코리아&&coffeeBean.png&&커피
-컬투치킨&&cultochicken.png&&치킨
+컬투치킨//컬투&&cultochicken.png&&치킨
 케리홈치킨&&keriahomeCHicken.png&&치킨
 코리엔탈깻잎두마리치킨&&korientalChicken.png&&치킨
 코바코&&cobaco.png&&양식
@@ -262,7 +269,7 @@ VIPS&&VIPS.png&&커피
 투썸플레이스&&towsomePlace.png&&커피
 티바//티바두마리치킨&&tibadomariChicken.png&&치킨
 파닭에파무쳐&&padakpamuchu.png&&치킨
-파리바게뜨&&parisBaguette.png&&양식
+파리바게뜨//파리바게트&&parisBaguette.png&&양식
 파리크라상&&pariscroissant.png&&양식
 파스쿠찌&&pascuggi.png&&커피
 파파이스&&popeyes.png&&치킨
@@ -284,6 +291,7 @@ VIPS&&VIPS.png&&커피
 피자와치킨의러브레터&&pizzaAndChickenloveletter.png&&피자
 피자파는집&&pizzapaneonjib.png&&피자
 피자헛&&pizzaHut.png&&피자
+피제이피자&&pjpizza.png&&피자
 하남돼지집&&ganampig.png&&한식
 하늘보리피자&&hanlboriPizza.png&&피자
 하우스홀드&&householdPizza.png&&피자

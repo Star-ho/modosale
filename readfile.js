@@ -4,8 +4,9 @@ export async function wemefReadData(){
     let data=fs.readFileSync('wemefitemlist', 'utf8')
     data=data.split('\r\n').map(v=>v.split('||'))
         data.forEach(v=>{
-            res.push([v[0],v[1],v[2]])
+            res.push([v[0],v[1]])
     });
+    res.pop()
     return res
 }
 
@@ -15,7 +16,8 @@ export async function coupangReadData(){
     let data=fs.readFileSync('coupangitemlist', 'utf8')
     data=data.split('\r\n').map(v=>v.split('||'))
         data.forEach(v=>{
-            res.push([v[0],v[1],v[2]])
+            res.push([v[0],v[1]])
     });
+    res.pop()
     return res
 }

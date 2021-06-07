@@ -1,0 +1,11 @@
+Express server has started on port 3000
+Error opening data file ./chi_tra.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'chi_tra'
+refresh!
+Mon, 07 Jun 2021 16:42:34 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:297:11
+Error opening data file ./chi_tra.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'chi_tra'
+refresh!
+^C^C
