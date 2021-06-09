@@ -43,7 +43,20 @@
 // console.log( new Date().getMonth() )
 // console.log(date)
 
-let str='http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_포장_수정01.pngGS더프레시'
-str=str.match(/[ㄱ-ㅎ가-힣0-9a-zA-Z]/ig)
-str.ma
-console.log(str)
+// let str='http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_포장_수정01.pngGS더프레시'
+// str=str.match(/[ㄱ-ㅎ가-힣0-9a-zA-Z]/ig)
+// str.ma
+// console.log(str)
+
+var schedule = require('node-schedule');
+var rule = new schedule.RecurrenceRule();
+
+rule.second = 1; //매 시간 30분 마다 수행 
+var j = schedule.scheduleJob(rule, function(){
+    asdf()
+        });
+
+function asdf(){
+    console.log('...'); 
+
+}
