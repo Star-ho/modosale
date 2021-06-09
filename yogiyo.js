@@ -3,14 +3,29 @@
 
 import { createWorker } from 'tesseract.js';
 
-export async function getDataArray(){
+export async function getDataArray(date){
+  date.now=new Date().getTime()
+
+  while(date.now>date.end){
+    date.end=new Date(date.end+3600000*24*7).getTime()
+  }
+
+
+  let weeknumber=7-(new Date(date.end).getDate()-new Date(date.now).getDate()) 
+  let year= new Date(date.end-3600000*24*6).getFullYear() 
+  let startDay= ('000'+(new Date(date.end-3600000*24*6).getMonth()+1)).slice(-2) + ('000'+new Date(date.end-3600000*24*6).getDate()).slice(-2) 
+  let endDay= ('000'+(new Date(date.end).getMonth()+1)).slice(-2) + ('000'+new Date(date.end).getDate()).slice(-2) 
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
-  let response = await fetch('http://wp.yogiyo.co.kr/20210510-0516_ohal_app/?1')
+  let url=`http://wp.yogiyo.co.kr/${year}${startDay}-${endDay}_ohal_app/?${weeknumber}`
+  let response = await fetch(url)
   .then(res=>res.text())
   let $=cheerio.load(response)
   //7 - 13 - 19 - 27
+  // console.log(url)
+  //  let response = await fetch('http://wp.yogiyo.co.kr/20210607-0613_ohal_app/?2')//22년되면 바꿔야해 제발
+
   let i=0
   $('.tab-7')['0'].children.forEach((v)=>{
     if(v.type==='comment'){
@@ -22,6 +37,7 @@ export async function getDataArray(){
         i++
       }
     }
+
   })
 
   arr=arr.filter(v=>v.length>0)
@@ -35,7 +51,7 @@ export async function getDataArray(){
     while(v[1][v[1].length-1]!='g'){
       v[1]=v[1].slice(0,v[1].length-1)
     }
-    v[1]=encodeURI(v[1])
+    v[1]=''+v[1]
     return v
   })
 
@@ -44,14 +60,18 @@ export async function getDataArray(){
   await worker.loadLanguage('kor');
   await worker.initialize('kor');
   for(let i =0;i<arr.length;i++){
-    //console.log(i)
-    arr[i][1]=await imgToCost(arr[i][1],i,worker)
+    try{
+      arr[i][1]=await imgToCost(arr[i][1],i,worker)
+    }catch{
+      console.log(arr[i])
+      continue
+    }
     //console.log(arr[i][1])
   }
   //arr[0][1]=await imgToCost(arr[0][1],i,worker)
 
   let res={}
-  arr.forEach( (v,index) =>{
+  arr.forEach( (v,index) => {
     v[0]=String(v[0])
 
     while(v[1].indexOf('.')!=-1){
@@ -60,14 +80,36 @@ export async function getDataArray(){
       v[1].splice(index,1)
       v[1]=v[1].join('')
     }
-    let temp=+v[1].split('\n')[1].split(' ')[0].split(',').join('')
+    let temp
+    try{
+      temp=+v[1].split('\n')[1].split(' ')[0].split(',').join('')
+    }catch{
+      temp=+v[1].split('_')
+      temp=parseInt(temp[temp.length-1])
+
+    }
     if(!temp){
       temp=v[1].replace(/[^0-9]/g,'');
     }
 
     v[1]=temp
-
-
+    if(v[0]=='gsthefresh'){
+      v[0]='GS더프레시'
+    }
+    if(v[0]=='오늘의 포장 할인'){
+      return;
+    }
+    
+    if(v[0].indexOf('—')!=-1){
+      v[0]=v[0].replace('—','')
+    }
+    if(v[0].indexOf('-')!=-1){
+      v[0]=v[0].replace('-','')
+    }
+    if(v[0].indexOf('000')){
+      v[0]=v[0].replace(/[0-9]000/ig,'')
+    }
+    v[0]=v[0].match(/[ㄱ-ㅎ가-힣0-9a-zA-Z]/ig).join('')
 
     Object.assign(res, { [v[0]] : +v[1]} )
   })
@@ -75,11 +117,24 @@ export async function getDataArray(){
   await worker.terminate();
   deleteFile()
   return res
+  
 }
 
 async function download(uri, filename){
   var fs = require('fs'),
     fetch = require('node-fetch');
+  const Hangul = require('hangul-js');
+  let temp
+  let temp1
+  try{
+      temp=Hangul.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g).join('')
+      temp1=encodeURIComponent(uri.match(/[가-힣]/g).join(''))
+  }catch{
+      temp= Hangul.assemble(uri.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g))
+      temp1=encodeURIComponent(temp)
+  }
+  uri=uri.replace(temp,temp1)
+
   let res=await fetch(uri)
   let buffer = await res.buffer()
   fs.writeFileSync(filename, buffer, ()=>null)

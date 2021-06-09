@@ -15,11 +15,16 @@ const pool = mysql.createPool({
 
 let data={};
 
+let date={now:new Date().getTime(),end:new Date().getTime()}
+
+while(new Date(date.end).getDay()!=0){
+    date.end=date.end+3600000*24
+}
 
 async function setData(){
    let connect = await pool.getConnection(conn =>conn)
    try{
-      for(let i of Object.entries(await getDataArray())){
+      for(let i of Object.entries(await getDataArray(date))){
          let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]&&+i[1]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
