@@ -19,7 +19,7 @@ const pool = mysql.createPool({
 
     var fs = require('fs');
     fs.readFile('menufile.txt', 'utf8', async function(err, data){
-        data=data.split('\r\n').map(v=>v.split('&&'))
+        data=data.split(process.env.Linux_CRLF||'\r\n').map(v=>v.split('&&'))
         for(let i=0;i<data.length;i++){
             if(data[i][0].indexOf('//')!=-1){
                 let temp=data[i][0].split('//')

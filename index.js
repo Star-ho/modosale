@@ -17,6 +17,7 @@ const pool = mysql.createPool({
 
 let data={};
 
+
 let date={now:new Date().getTime(),end:new Date().getTime()}
 
 while(new Date(date.end).getDay()!=0){
