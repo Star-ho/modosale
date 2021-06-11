@@ -25,24 +25,25 @@ export async function getDataArray(date){
   //7 - 13 - 19 - 27
   // console.log(url)
   //  let response = await fetch('http://wp.yogiyo.co.kr/20210607-0613_ohal_app/?2')//22년되면 바꿔야해 제발
-
   let i=0
-  $('.tab-7')['0'].children.forEach((v)=>{
+  $(`.tab-${weeknumber}`)['0'].children.forEach((v)=>{
     if(v.type==='comment'){
-      arr[i].push(Object.assign(v.data))
-    }
-    if(v.children){
-      if(v.children[0]&&v.children[0].attribs){
-        arr[i].push(Object.assign(v.children[0].attribs.src))
-        i++
-      }
+      arr[i].push(v.data)
     }
 
+    if(v.children&&v.children[0]&&v.children[0].attribs){
+        arr[i].push(v.children[0].attribs.src)
+    }
+    if(v.attribs&&v.attribs.href){
+      arr[i].push(v.attribs.href)
+      i++
+    }
   })
-
+  // console.log(arr)
   arr=arr.filter(v=>v.length>0)
+  //url이 잘못날라올때
   arr=arr.map(v=>{
-    while(v.length>2){
+    while(v.length>3){
       v.shift()
     }
     while(v[1][0]!='h'){
@@ -51,7 +52,7 @@ export async function getDataArray(date){
     while(v[1][v[1].length-1]!='g'){
       v[1]=v[1].slice(0,v[1].length-1)
     }
-    v[1]=''+v[1]
+    v[1]=v[1]
     return v
   })
 
@@ -111,9 +112,8 @@ export async function getDataArray(date){
     }
     v[0]=v[0].match(/[ㄱ-ㅎ가-힣0-9a-zA-Z]/ig).join('')
 
-    Object.assign(res, { [v[0]] : +v[1]} )
+    Object.assign(res, { [v[0]] : [+v[1],v[2]]} )
   })
-  //console.log(arr)
   await worker.terminate();
   deleteFile()
   return res
@@ -135,7 +135,10 @@ async function download(uri, filename){
   }
   uri=uri.replace(temp,temp1)
 
-  let res=await fetch(uri)
+
+  let res=await fetch(uri,{
+    timeout: 30000
+  })
   let buffer = await res.buffer()
   fs.writeFileSync(filename, buffer, ()=>null)
 };
@@ -151,7 +154,9 @@ async function imgToCost(src,i,worker){
   try{
     await download(src, inputPath)
   }catch(error){
-    console.log("error!")
+    console.log("error!",src)
+    console.log(error)
+
     await download(src, inputPath)
   }
   let outputStream

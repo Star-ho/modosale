@@ -1,4 +1,4 @@
- //baemin://./frBrandDetail?frBrandDetail_brandHomeId=98&frBrandDetail_dongCode=000&frBrandDetail_title=%EC%9D%BC%EB%AF%B8%EB%A6%AC%EA%B8%88%EA%B3%84%EC%B0%9C%EB%8B%AD
+ //baemin://./frBrandDetail?frBrandDetail_brandHomeId=98
 
  //export { getData};
 
@@ -32,19 +32,20 @@
         id:res[i][`${j}`].id,
         logoUrl:res[i][`${j}`].logoUrl,
         maxDiscountCouponPrice:res[i][`${j}`].maxDiscountCouponPrice,
+        brandId:res[i][`${j}`].id
       }
     })
     }
   }
   //console.log(Object.keys(obj).length)
-  //console.log(obj)
+  // console.log(obj)
   res={}
   for(let i of Object.entries(obj)){
     if(i[1].maxDiscountCouponPrice){
-      Object.assign(res, { [i[0]] : i[1].maxDiscountCouponPrice} )
+      Object.assign(res, { [i[0]] : [i[1].maxDiscountCouponPrice,'baemin://./frBrandDetail?frBrandDetail_brandHomeId='+i[1].brandId]} )
     }
   }
-  //console.log(res)
+  // console.log(res)
   return res
 }
 
