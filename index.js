@@ -4,6 +4,7 @@ import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
+import { isVowel } from 'hangul-js'
 
 const mysql = require('mysql2/promise');
 const pool = mysql.createPool({
@@ -18,7 +19,7 @@ const pool = mysql.createPool({
 let data={};
 
 
-let date={now:new Date().getTime(),end:new Date().getTime()}
+let date={now:new Date( new Date().getTime()+60*60*9*1000).getTime() ,end:new Date( new Date().getTime()+60*60*9*1000).getTime() }
 
 while(new Date(date.end).getDay()!=0){
     date.end=date.end+3600000*24
@@ -29,7 +30,7 @@ async function setData(){
    let connect = await pool.getConnection(conn =>conn)
    try{
       for(let i of Object.entries(await getDataArray(date))){
-         let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
+         let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]&&+i[1]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1][0],i[1][1]  ] } )
@@ -42,7 +43,7 @@ async function setData(){
          connect.release()
       }
       for(let i of Object.entries(await getData())){
-         let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
+         let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                Object.assign(data,{ [i[0]] : [ "baemin", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1][0],i[1][1] ] } )
@@ -55,7 +56,7 @@ async function setData(){
          connect.release()
       }
       for(let i of ( await wemefReadData() ) ){
-         let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
+         let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
@@ -68,7 +69,7 @@ async function setData(){
          //console.log(i)
       }
       for(let i of ( await coupangReadData() ) ){
-         let SqlRes = await connect.query(`select * from menu where brandName="${i[0]}";`);
+         let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                Object.assign(data,{ [i[0]] : [ "coupang", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
@@ -85,7 +86,8 @@ async function setData(){
    }finally{
    }
    //console.log(data)
-   console.log('refresh!')
+
+   console.log('refresh!\n time is '+new Date( new Date().getTime()+60*60*9*1000))
 }
 
 (async()=>{

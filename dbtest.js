@@ -13,7 +13,8 @@ const pool = mysql.createPool({
 (async ()=>{
     // let data = await connect.query('select * from menu where brandName="멕시카나";');
     // console.log(data[0][0])
-    
+    require('dotenv').config();
+
     // connect.release()
     let dataArray=[]
 
@@ -53,13 +54,12 @@ const pool = mysql.createPool({
 
 ///기초
 
-// connection.query('insert into Test(brandName,imageName,category) values(1,1,1)', (error, rows, fields) => {
+// connection.query('insert into Menu(brandName,imageName,category) values(1,1,1)', (error, rows, fields) => {
 //   if (error) throw error;
 // });
 
-// connection.query('create table Test(brandName varchar(100), imageName varchar(100),category varchar(100));', (error, rows, fields) => {
+// connection.query('create table Menu(brandName varchar(100), imageName varchar(100),category varchar(100));', (error, rows, fields) => {
 //     if (error) throw error;
 //   });
-    connect.destroy()
 
 })()

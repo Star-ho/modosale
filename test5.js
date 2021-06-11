@@ -1,4 +1,3 @@
-require('dotenv').config();
+const nDate =new Date( new Date().getTime()+60*60*9*1000)
 
-let aa=process.env.Linux_CRLF
-console.log('11'+aa||11)
+console.log(nDate+'11');

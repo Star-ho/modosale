@@ -4,7 +4,7 @@
 import { createWorker } from 'tesseract.js';
 
 export async function getDataArray(date){
-  date.now=new Date().getTime()
+  date.now=new Date( new Date().getTime()+60*60*9*1000).getTime()
 
   while(date.now>date.end){
     date.end=new Date(date.end+3600000*24*7).getTime()
