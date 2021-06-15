@@ -95,6 +95,11 @@ export async function getDataArray(date){
       temp=v[1].replace(/[^0-9]/g,'');
     }
     if(+temp<500||+temp>25000){
+      const Discord = require('discord.js');
+      const hook = new Discord.WebhookClient('854238179876143145', 'WXUdBpaEtEp1ymLE14QikTU3AuiXRVYou63a98sdUqmv6yx5COYoWMu2MgsB3eWXFD9y');
+      hook.send(`${v[0]}, ${v[1]}`);
+      hook.destroy()
+
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
 

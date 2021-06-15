@@ -1,12 +1,4 @@
-
-const moment = require('moment');
-const today = moment().add(1,'day')
-while(today.weekday()!=0){
-    today.add(1,'day')
-}
-let start=today.clone()
-
-console.log(start.subtract(7,'day').format("YYYYMMDD"));
-console.log(today.format("YYYYMMDD"));
-
-console.log(today.isSameOrAfter(moment()));
+const Discord = require('discord.js');
+const hook = new Discord.WebhookClient('854238179876143145', 'WXUdBpaEtEp1ymLE14QikTU3AuiXRVYou63a98sdUqmv6yx5COYoWMu2MgsB3eWXFD9y');
+hook.send('I am now alive!');
+hook.destroy()
