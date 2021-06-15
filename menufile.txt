@@ -148,7 +148,7 @@ VIPS&&VIPS.png&&커피
 빽다방&&bbakdabang.png&&기타
 뽕뜨락피자&&bbongddrak.png&&피자
 사바사바치킨&&sabasaba.png&&치킨
-삼첩분식&&samcheopBunsik.png&&한식
+삼첩분식//삼첩&&samcheopBunsik.png&&한식
 생생돈까스&&sangsangdonccas.png&&양식
 생활치킨&생활맥주&&sanghwalchicken.png&&치킨
 서가앤쿡&&seogaandcook.png&&양식
@@ -233,7 +233,7 @@ VIPS&&VIPS.png&&커피
 짱닭치킨&&jjangdakChicken.png&&치킨
 쫄면주는삼겹본능&&jjolmeonjunonsamgub.png&&한식
 쭈노치킨&&jjunochicken.png&&치킨
-처갓집양념치킨&&cheogajipchicken.png&&치킨
+처갓집양념치킨//처갓집&&cheogajipchicken.png&&치킨
 청년다방&&chungnundabang.png&&커피
 청년피자&&chungnunpizza.png&&피자
 충만치킨&&chungmanChicken.png&&치킨

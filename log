@@ -2,7 +2,26 @@ Express server has started on port 3000
 Error opening data file ./chi_tra.traineddata
 Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
 Failed loading language 'chi_tra'
+error! http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_á„‘á…©á„Œá…¡á†¼_á„‰á…®á„Œá…¥á†¼01.png
+TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
+    at new ClientRequest (_http_client.js:148:13)
+    at request (http.js:46:10)
+    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
+    at new Promise (<anonymous>)
+    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
+    at _callee2$ (C:\Users\Starho\modusale\/yogiyo.js:141:17)
+    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
+    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
+    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
+    at asyncGeneratorStep (C:\Users\Starho\modusale\yogiyo.js:12:103) {
+  code: 'ERR_UNESCAPED_CHARACTERS'
+}
+[
+  'ì˜¤ëŠ˜ì˜ í¬ì¥ í• ì¸',
+  'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_á„‘á…©á„Œá…¡á†¼_á„‰á…®á„Œá…¥á†¼01.png',
+  'yogiyoapp://res/l?cat=111&s=5&f=0'
+]
 refresh!
-Tue, 08 Jun 2021 05:44:14 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:297:11
-^CÀÏ°ı ÀÛ¾÷À» ³¡³»½Ã°Ú½À´Ï±î (Y/N)? 
+ time is Mon Jun 14 2021 05:35:22 GMT+0900 (GMT+09:00)
+^CÀÏ°ı ÀÛ¾÷À» ³¡³»½Ã°Ú½À´Ï±î (Y/N)? ÀÏ°ı ÀÛ¾÷À» ³¡³»½Ã°Ú½À´Ï±î (Y/N)? ÀÏ°ı ÀÛ¾÷À» ³¡³»½Ã°Ú½À´Ï±î (Y/N)? 
 ^C

@@ -1,30 +1,30 @@
 //npx babel-node --presets @babel/env yogiyo.js
 //https://www.daleseo.com/js-babel-node/
 
-import { createWorker } from 'tesseract.js';
 
 export async function getDataArray(date){
-  date.now=new Date( new Date().getTime()+60*60*9*1000).getTime()
+  const moment = require('moment');
+  date.now=moment()
 
-  while(date.now>date.end){
-    date.end=new Date(date.end+3600000*24*7).getTime()
+  while(date.now.isSameOrAfter(date.end)){
+    date.end.add(1,'day')
   }
 
-
-  let weeknumber=7-(new Date(date.end).getDate()-new Date(date.now).getDate()) 
-  let year= new Date(date.end-3600000*24*6).getFullYear() 
-  let startDay= ('000'+(new Date(date.end-3600000*24*6).getMonth()+1)).slice(-2) + ('000'+new Date(date.end-3600000*24*6).getDate()).slice(-2) 
-  let endDay= ('000'+(new Date(date.end).getMonth()+1)).slice(-2) + ('000'+new Date(date.end).getDate()).slice(-2) 
+  let endDay= date.end.format('MMDD')
+  let startDay= date.end.clone().subtract(6,'day').format('MMDD')
+  let year= date.end.subtract(6,'day').format('yyyy')
+  let weeknumber=date.now.weekday()||7
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
   let url=`http://wp.yogiyo.co.kr/${year}${startDay}-${endDay}_ohal_app/?${weeknumber}`
+  console.log(url)
   let response = await fetch(url)
   .then(res=>res.text())
   let $=cheerio.load(response)
   //7 - 13 - 19 - 27
   // console.log(url)
-  //  let response = await fetch('http://wp.yogiyo.co.kr/20210607-0613_ohal_app/?2')//22년되면 바꿔야해 제발
+
   let i=0
   $(`.tab-${weeknumber}`)['0'].children.forEach((v)=>{
     if(v.type==='comment'){
@@ -56,23 +56,26 @@ export async function getDataArray(date){
     return v
   })
 
-  const worker = createWorker();
-  await worker.load();
-  await worker.loadLanguage('kor');
-  await worker.initialize('kor');
+
   for(let i =0;i<arr.length;i++){
-    try{
-      arr[i][1]=await imgToCost(arr[i][1],i,worker)
-    }catch{
-      console.log(arr[i])
+    if(arr[i][0].indexOf('포장')!=-1){
       continue
     }
-    //console.log(arr[i][1])
+    try{
+      arr[i][1]=await imgToCost(arr[i][1],i,2)
+    }catch(e){
+      // console.log(e)
+      continue
+    }
   }
-  //arr[0][1]=await imgToCost(arr[0][1],i,worker)
+  //arr[0][1]=await imgToCost(arr[0][1],i)
 
   let res={}
-  arr.forEach( (v,index) => {
+  for(let i=0;i<arr.length;i++){
+    if(arr[i][0].indexOf('포장')!=-1){
+      continue
+    }
+    let v=arr[i].slice()
     v[0]=String(v[0])
 
     while(v[1].indexOf('.')!=-1){
@@ -83,22 +86,53 @@ export async function getDataArray(date){
     }
     let temp
     try{
-      temp=+v[1].split('\n')[1].split(' ')[0].split(',').join('')
+      temp=+v[1].split('\n')[1].split(' ')[2].split(',').join('')
     }catch{
       temp=+v[1].split('_')
       temp=parseInt(temp[temp.length-1])
-
     }
     if(!temp){
       temp=v[1].replace(/[^0-9]/g,'');
     }
+    if(+temp<500||+temp>25000){
+      // console.log(v[1],i,`path\\result${i}.png`)
+      const spawn = require('await-spawn')
+
+      let spawnRet = await spawn('python', ['imgToVal.py',`path\\result${i}.png`,1]); 
+      v[1]= spawnRet.toString()
+      // console.log(v[0])
+
+
+      while(v[1].indexOf('.')!=-1){
+        let index=v[1].indexOf('.')
+        v[1]=v[1].split('')
+        v[1].splice(index,1)
+        v[1]=v[1].join('')
+      }
+      try{
+        temp=v[1].split('\n')[2].split(' ')[0].split(',').join('')
+        // console.log(temp)
+        temp= +temp.slice(0,-1)
+      }catch{
+        temp=+v[1].split('_')
+        temp=parseInt(temp[temp.length-1])
+      }
+      if(!temp){
+        temp=v[1].replace(/[^0-9]/g,'');
+      }
+
+      // console.log(temp,11)
+    }
 
     v[1]=temp
+
+
     if(v[0]=='gsthefresh'){
       v[0]='GS더프레시'
+      v[1]=+(""+v[1]).slice(2)
     }
     if(v[0]=='오늘의 포장 할인'){
-      return;
+      continue;
     }
     
     if(v[0].indexOf('—')!=-1){
@@ -113,8 +147,7 @@ export async function getDataArray(date){
     v[0]=v[0].match(/[ㄱ-ㅎ가-힣0-9a-zA-Z]/ig).join('')
 
     Object.assign(res, { [v[0]] : [+v[1],v[2]]} )
-  })
-  await worker.terminate();
+  }
   deleteFile()
   return res
   
@@ -127,15 +160,18 @@ async function download(uri, filename){
   let temp
   let temp1
   try{
-      temp=Hangul.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g).join('')
+    try{
+      temp=uri.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g).join('')
       temp1=encodeURIComponent(uri.match(/[가-힣]/g).join(''))
+    }catch{
+        temp= Hangul.assemble(uri.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g))
+        temp1=encodeURIComponent(temp)
+    }
+    uri=uri.replace(temp,temp1)
   }catch{
-      temp= Hangul.assemble(uri.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g))
-      temp1=encodeURIComponent(temp)
+    uri=uri
   }
-  uri=uri.replace(temp,temp1)
-
-
+  
   let res=await fetch(uri,{
     timeout: 30000
   })
@@ -144,13 +180,13 @@ async function download(uri, filename){
 };
 
 //npx babel-node --presets @babel/env yogiyo.js
-async function imgToCost(src,i,worker){
+async function imgToCost(src,i,blurSize){
   let res
   let flag=1
   var fs = require('fs');
   var sharp = require('sharp');
   let inputPath=`path/down${i}.png`
-  const outputPath=`path/result${i}.png`
+  const outputPath=`path\\result${i}.png`
   try{
     await download(src, inputPath)
   }catch(error){
@@ -168,13 +204,15 @@ async function imgToCost(src,i,worker){
     fs.writeFileSync(outputPath,outputStream)
   }
   flag=0
-  res = await worker.recognize(
-    outputPath,
-  )
+  
+  const spawn = require('await-spawn')
+
+  res = await spawn('python', ['imgToVal.py',outputPath,blurSize]); 
+  res=res.toString()  
   if(flag==1){
     return -1
   }
-  return res.data.text
+  return res
 }
 
 function deleteFile(){

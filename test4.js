@@ -1,19 +1,22 @@
-// import {getDataArray} from './yogiyo' 
+import {getDataArray} from './yogiyo' 
 // import {wemefReadData} from './readfile.js'
 import {getWemefData} from './imgWemef.js'
 (async ()=>{
-  getWemefData()
-  // console.log(wemefReadData())
-  // let date={now:new Date().getTime(),end:new Date().getTime()}
-
-  // while(new Date(date.end).getDay()!=0){
-  //     date.end=date.end+3600000*24
-  // }
   
-  //   getDataArray(date)
-    // let inputPath=`wemefO/down0.png`
+  // getWemefData()
+  // console.log(wemefReadData())
+  const moment = require('moment');
 
-    // download("https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210506/91bb74ef2243a4ec2e278ef3034d3bed.png",inputPath)
+  let date={now:moment() ,end:moment()}
+  
+  
+  while(date.end.weekday()!=0){
+     date.end.add(1,'day')
+  }
+  console.log(await getDataArray(date))
+  // let inputPath=`wemefO/down0.png`
+
+  // download("https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210506/91bb74ef2243a4ec2e278ef3034d3bed.png",inputPath)
 })()
 
 // async function download(uri, filename){

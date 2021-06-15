@@ -4,34 +4,38 @@ import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
-import { isVowel } from 'hangul-js'
 
-const mysql = require('mysql2/promise');
-const pool = mysql.createPool({
-   host     : 'localhost',
-   port     :  3306,
-   user     : 'root',
-   password : 'root',
-   database : 'menu',
-   connectionLimit:10
-});
+
 
 let data={};
 
+const moment = require('moment');
 
-let date={now:new Date( new Date().getTime()+60*60*9*1000).getTime() ,end:new Date( new Date().getTime()+60*60*9*1000).getTime() }
+let date={now:moment() ,end:moment()}
 
-while(new Date(date.end).getDay()!=0){
-    date.end=date.end+3600000*24
+
+while(date.end.weekday()!=0){
+   date.end.add(1,'day')
 }
 
 async function setData(){
+   const mysql = require('mysql2/promise');
+   const pool = mysql.createPool({
+      host     : 'localhost',
+      port     :  3306,
+      user     : 'root',
+      password : 'root',
+      database : 'menu',
+      connectionLimit:10
+   });
    data={}
    let connect = await pool.getConnection(conn =>conn)
+   await connect.query('delete from data');
+
    try{
       for(let i of Object.entries(await getDataArray(date))){
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
-         if(SqlRes[0][0]&&+i[1]){
+         if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1][0],i[1][1]  ] } )
             }else{
@@ -85,9 +89,45 @@ async function setData(){
       console.log(e)
    }finally{
    }
-   //console.log(data)
 
+   //db에 넣기
+   for(let i of Object.entries(data)){
+      // console.log(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]},'${i[1][4]}')`)
+      let temp = await connect.query(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]}','${i[1][4]}')`);    
+      //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
+   }
+   connect.destroy()
    console.log('refresh!\n time is '+new Date( new Date().getTime()+60*60*9*1000))
+}
+
+
+async function readDB(){
+   data={}
+   const mysql = require('mysql2/promise');
+   const pool = mysql.createPool({
+      host     : 'localhost',
+      port     :  3306,
+      user     : 'root',
+      password : 'root',
+      database : 'menu',
+      connectionLimit:10
+   });
+   let connect = await pool.getConnection(conn =>conn)
+   let SqlRes = await connect.query(`select * from data;`);
+
+   for(let i of SqlRes[0]){
+      Object.assign(data,{ [i.brand] : [ i.app,i.img, i.category, +i.price,i.uri ] } )
+   }
+   // Object.assign(data,{ [i[0]] : [ "coupang",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+   // app: 'coupang',
+   // brand: '아티제',
+   // price: '4000',
+   // img: 'artisee.png',
+   // category: '기타',
+   // uri: 'undefined'
+   connect.destroy()
+   console.log('readDatabase!!\n time is '+new Date( new Date().getTime()+60*60*9*1000))
+
 }
 
 (async()=>{
@@ -113,6 +153,13 @@ app.get('/refresh', function(req, res) {
       await setData()
    })()
    res.send("refresh!");
+});
+
+app.get('/readdb', function(req, res) {
+   (async()=>{
+      await readDB()
+   })()
+   res.send("readDB!!");
 });
 
 app.get('/showimg', async function(req, res) {

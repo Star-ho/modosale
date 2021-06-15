@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "main": "tesseract.js",
   "dependencies": {
+    "await-spawn": "^4.0.2",
     "axios": "^0.21.1",
     "canvas": "^2.7.0",
     "cheerio": "^1.0.0-rc.9",
+    "discord.js": "^12.5.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "hangul-js": "^0.2.6",
