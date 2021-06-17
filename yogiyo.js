@@ -3,7 +3,10 @@
 
 
 export async function getDataArray(date){
-  const moment = require('moment');
+  let  moment = require('moment');
+  require('moment-timezone'); 
+  moment.tz.setDefault("Asia/Seoul"); 
+
   date.now=moment()
 
   while(date.now.isSameOrAfter(date.end)){

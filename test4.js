@@ -1,7 +1,7 @@
 (async ()=>{
   const spawn = require('await-spawn')
 
-  let spawnRet = await spawn('python', ['imgToVal.py',`path\\result0.png`,1]); 
+  let spawnRet = await spawn('python', ['imgToVal.py',`path/result0.png`,1]); 
   let aa= spawnRet.toString()
   console.log(aa)
 

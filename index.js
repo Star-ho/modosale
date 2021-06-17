@@ -1,4 +1,4 @@
-//npx babel-node --presets @babel/env index.js >log 2>&1
+//npx babel-node --presets @babel/env index.js >log 2>&1 &
 import {getDataArray} from './yogiyo' 
 import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
@@ -7,7 +7,9 @@ import {getCoupangData} from './imgCoupangeats.js'
 
 let data={};
 
-const moment = require('moment');
+let  moment = require('moment');
+require('moment-timezone'); 
+moment.tz.setDefault("Asia/Seoul"); 
 
 let date={now:moment() ,end:moment()}
 
@@ -17,6 +19,8 @@ while(date.end.weekday()!=0){
 }
 
 async function setData(){
+   console.log('refresh start! \n time is '+new Date( new Date().getTime()+60*60*9*1000))
+
    const mysql = require('mysql2/promise');
    const pool = mysql.createPool({
       host     : 'localhost',
@@ -95,7 +99,8 @@ async function setData(){
       //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
    }
    connect.destroy()
-   console.log('refresh!\n time is '+new Date( new Date().getTime()+60*60*9*1000))
+   console.log('refresh end! \n time is '+new Date( new Date().getTime()+60*60*9*1000))
+   readDB()
 }
 
 
