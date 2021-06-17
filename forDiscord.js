@@ -11,8 +11,8 @@ client.on("message", async function(message) {
     const pool = mysql.createPool({
        host     : 'localhost',
        port     :  3306,
-       user     : 'root',
-       password : 'root',
+       user     : process.env.DB_USER||'root',
+       password : process.env.DB_PW||'root',
        database : 'menu',
        connectionLimit:10
     });

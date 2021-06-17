@@ -58,7 +58,7 @@ const pool = mysql.createPool({
 //   if (error) throw error;
 // });
 //테이블 생성 구문
-//create table data(app varchar(100),brand varchar(100), price varchar(20),img varchar(200), category varchar(20),uri	 varchar(200) )
+//create table data(app varchar(100),brand varchar(100), price varchar(20),img varchar(200), category varchar(20),uri varchar(200) )
 
 
 // connection.query('create table Menu(brandName varchar(100), imageName varchar(100),category varchar(100));', (error, rows, fields) => {

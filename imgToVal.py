@@ -20,3 +20,7 @@ cv2.imwrite(filename, dst)
 # Simple image to string 
 text = pytesseract.image_to_string(Image.open(filename), lang="kor") 
 print(text)
+
+
+#pip install opencv-python
+#pip install pytesseract

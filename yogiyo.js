@@ -95,15 +95,10 @@ export async function getDataArray(date){
       temp=v[1].replace(/[^0-9]/g,'');
     }
     if(+temp<500||+temp>25000){
-      const Discord = require('discord.js');
-      const hook = new Discord.WebhookClient('854238179876143145', 'WXUdBpaEtEp1ymLE14QikTU3AuiXRVYou63a98sdUqmv6yx5COYoWMu2MgsB3eWXFD9y');
-      hook.send(`${v[0]}, ${v[1]}`);
-      hook.destroy()
-
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
 
-      let spawnRet = await spawn('python', ['imgToVal.py',`path\\result${i}.png`,1]); 
+      let spawnRet = await spawn('python', ['imgToVal.py',`path/result${i}.png`,1]); 
       v[1]= spawnRet.toString()
       // console.log(v[0])
 
@@ -125,7 +120,10 @@ export async function getDataArray(date){
       if(!temp){
         temp=v[1].replace(/[^0-9]/g,'');
       }
-
+      const Discord = require('discord.js');
+      const hook = new Discord.WebhookClient('854238179876143145', 'WXUdBpaEtEp1ymLE14QikTU3AuiXRVYou63a98sdUqmv6yx5COYoWMu2MgsB3eWXFD9y');
+      hook.send(`${v[0]}, ${v[1]}`);
+      hook.destroy()
       // console.log(temp,11)
     }
 
@@ -191,7 +189,7 @@ async function imgToCost(src,i,blurSize){
   var fs = require('fs');
   var sharp = require('sharp');
   let inputPath=`path/down${i}.png`
-  const outputPath=`path\\result${i}.png`
+  const outputPath=`path/result${i}.png`
   try{
     await download(src, inputPath)
   }catch(error){

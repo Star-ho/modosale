@@ -1,22 +1,10 @@
-import {getDataArray} from './yogiyo' 
-// import {wemefReadData} from './readfile.js'
-import {getWemefData} from './imgWemef.js'
 (async ()=>{
-  
-  // getWemefData()
-  // console.log(wemefReadData())
-  const moment = require('moment');
+  const spawn = require('await-spawn')
 
-  let date={now:moment() ,end:moment()}
-  
-  
-  while(date.end.weekday()!=0){
-     date.end.add(1,'day')
-  }
-  console.log(await getDataArray(date))
-  // let inputPath=`wemefO/down0.png`
+  let spawnRet = await spawn('python', ['imgToVal.py',`path\\result0.png`,1]); 
+  let aa= spawnRet.toString()
+  console.log(aa)
 
-  // download("https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210506/91bb74ef2243a4ec2e278ef3034d3bed.png",inputPath)
 })()
 
 // async function download(uri, filename){

@@ -5,8 +5,6 @@ import {wemefReadData, coupangReadData} from './readfile.js'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 
-
-
 let data={};
 
 const moment = require('moment');
@@ -23,8 +21,8 @@ async function setData(){
    const pool = mysql.createPool({
       host     : 'localhost',
       port     :  3306,
-      user     : 'root',
-      password : 'root',
+      user     : process.env.DB_USER||'root',
+      password : process.env.DB_PW||'root',
       database : 'menu',
       connectionLimit:10
    });
@@ -107,8 +105,8 @@ async function readDB(){
    const pool = mysql.createPool({
       host     : 'localhost',
       port     :  3306,
-      user     : 'root',
-      password : 'root',
+      user     : process.env.DB_USER||'root',
+      password : process.env.DB_PW||'root',
       database : 'menu',
       connectionLimit:10
    });
