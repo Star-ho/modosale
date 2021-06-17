@@ -24,6 +24,7 @@ client.on("message", async function(message) {
     const command = message.content.split('\n')
     let res=''
     let data=''
+    let SQLRes
     switch(command[0]){
         case 'h':
         case 'help':
@@ -42,7 +43,7 @@ client.on("message", async function(message) {
             data=command[1].split(' ')
             try{
                 for(let i=0;i<data.length;i++){
-                    let SQLRes = (await connect.query(`select * from data where brand="${data[i]}";`))[0];
+                    SQLRes = (await connect.query(`select * from data where brand="${data[i]}";`))[0];
                     for(let i of SQLRes){
                         res+=i.app+' '+i.brand+' '+i.price+'\n'
                     }
@@ -54,7 +55,7 @@ client.on("message", async function(message) {
             break;
         case 'selectall':
             try{
-                let SQLRes = (await connect.query(`select * from data;`))[0];
+                SQLRes = (await connect.query(`select * from data;`))[0];
             }catch(e){
                 message.reply('error!');
             }
@@ -75,7 +76,8 @@ client.on("message", async function(message) {
             break;
     }
     
-    
+    const fetch = require('node-fetch');
+    await fetch('http://127.0.0.1:3000/readDB')
 
 
 });

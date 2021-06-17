@@ -7,19 +7,19 @@ import {getCoupangData} from './imgCoupangeats.js'
 
 let data={};
 
-let  moment = require('moment');
-require('moment-timezone'); 
-moment.tz.setDefault("Asia/Seoul"); 
-
-let date={now:moment() ,end:moment()}
-
-
-while(date.end.weekday()!=0){
-   date.end.add(1,'day')
-}
 
 async function setData(){
-   console.log('refresh start! \n time is '+new Date( new Date().getTime()+60*60*9*1000))
+   let  moment = require('moment');
+   require('moment-timezone'); 
+   moment.tz.setDefault("Asia/Seoul"); 
+
+   let date={now:moment() ,end:moment()}
+
+   while(date.end.weekday()!=0){
+      date.end.add(1,'day')
+   }
+
+   console.log('refresh start! \n time is '+date.now.format())
 
    const mysql = require('mysql2/promise');
    const pool = mysql.createPool({
@@ -99,10 +99,63 @@ async function setData(){
       //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
    }
    connect.destroy()
-   console.log('refresh end! \n time is '+new Date( new Date().getTime()+60*60*9*1000))
+   console.log('refresh end! \n time is '+date.now.format())
    readDB()
 }
 
+async function changeCoupangWemef(){
+   const mysql = require('mysql2/promise');
+   const pool = mysql.createPool({
+      host     : 'localhost',
+      port     :  3306,
+      user     : process.env.DB_USER||'root',
+      password : process.env.DB_PW||'root',
+      database : 'menu',
+      connectionLimit:10
+   });
+   let data={}
+
+   let connect = await pool.getConnection(conn =>conn)
+   await connect.query('delete from data where app="coupang"');
+   await connect.query('delete from data where app="wemef"');
+
+   for(let i of ( await wemefReadData() ) ){
+      let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
+      if(SqlRes[0][0]){
+         if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+            Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
+         }else{
+            Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+         }
+      }else{
+         Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[1],i[2] ] } )
+      }
+      //console.log(i)
+   }
+   for(let i of ( await coupangReadData() ) ){
+      let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
+      if(SqlRes[0][0]){
+         if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+            Object.assign(data,{ [i[0]] : [ "coupang", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
+         }else{
+            Object.assign(data,{ [i[0]] : [ "coupang",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+         }
+      }else{
+         Object.assign(data,{ [i[0]] : [ "coupang", "없음", "기타", +i[1],i[2] ] } )
+      }
+      //console.log(i)
+   }
+
+
+   for(let i of Object.entries(data)){
+      // console.log(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]},'${i[1][4]}')`)
+      let temp = await connect.query(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]}','${i[1][4]}')`);    
+      //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
+   }
+   connect.destroy()
+   console.log('refresh end! \n time is '+date.now.format())
+   readDB()
+}
 
 async function readDB(){
    data={}
@@ -157,6 +210,14 @@ app.get('/refresh', function(req, res) {
    })()
    res.send("refresh!");
 });
+
+app.get('/chageCW', function(req, res) {
+   (async()=>{
+      await changeCoupangWemef()
+   })()
+   res.send("chageCW");
+});
+
 
 app.get('/readdb', function(req, res) {
    (async()=>{
