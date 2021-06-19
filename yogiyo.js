@@ -123,10 +123,12 @@ export async function getDataArray(date){
       if(!temp){
         temp=v[1].replace(/[^0-9]/g,'');
       }
-      const Discord = require('discord.js');
-      const hook = new Discord.WebhookClient('854238179876143145', 'WXUdBpaEtEp1ymLE14QikTU3AuiXRVYou63a98sdUqmv6yx5COYoWMu2MgsB3eWXFD9y');
-      hook.send(`${v[0]}, ${v[1]}`);
-      hook.destroy()
+
+      const TelegramBot = require('node-telegram-bot-api')
+      const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
+      const telebot = new TelegramBot(token, {polling: true})
+
+      telebot.sendMessage(1052011050, `${v[0]}, ${v[1]}`);
       // console.log(temp,11)
     }
 

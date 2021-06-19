@@ -6,7 +6,9 @@ import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 
 let data={};
-
+const TelegramBot = require('node-telegram-bot-api')
+const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
+const telebot = new TelegramBot(token, {polling: true})
 
 async function setData(){
    let  moment = require('moment');
@@ -18,6 +20,8 @@ async function setData(){
    while(date.end.weekday()!=0){
       date.end.add(1,'day')
    }
+
+   telebot.sendMessage(1052011050, 'refresh start! \n time is '+date.now.format());
 
    console.log('refresh start! \n time is '+date.now.format())
 
@@ -99,6 +103,8 @@ async function setData(){
       //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
    }
    connect.destroy()
+   telebot.sendMessage(1052011050, 'refresh end! \n time is '+date.now.format());
+
    console.log('refresh end! \n time is '+date.now.format())
    readDB()
 }
@@ -153,7 +159,14 @@ async function changeCoupangWemef(){
       //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
    }
    connect.destroy()
-   console.log('refresh end! \n time is '+date.now.format())
+   let  moment = require('moment');
+   require('moment-timezone');
+   moment.tz.setDefault("Asia/Seoul");
+
+   console.log('Wemef, coupang data reload! \n time is '+moment().format())
+   
+   telebot.sendMessage(1052011050, 'Wemef, coupang data reload! \n time is '+moment().format());
+
    readDB()
 }
 
@@ -182,7 +195,13 @@ async function readDB(){
    // category: '기타',
    // uri: 'undefined'
    connect.destroy()
-   console.log('readDatabase!!\n time is '+new Date( new Date().getTime()+60*60*9*1000))
+   let  moment = require('moment');
+   require('moment-timezone');
+   moment.tz.setDefault("Asia/Seoul");
+
+   telebot.sendMessage(1052011050, 'Wemef, coupang data reload! \n time is '+moment().format());
+
+   console.log('Read Database! \n time is '+moment().format())
 
 }
 
