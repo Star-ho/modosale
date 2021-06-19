@@ -8,12 +8,33 @@ telebot.onText(/(help)|(h)/, (msg) => {
     데이터양식
     select
     select * from data where brand=[ data[i] ];
+    ex)
+    select
+    아티제
+
     selectall
     select * from data;
+    ex)
+    selectall
+
     insert
+    "insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${data[2]}','없음','${data[3]}','${data[4]}')"
+    ex)
+    insert
+    yogiyo 아티제 4000 치킨 uri
 
     update
     update data SET [ data[0] ]=[ data[1] ] where brand=[ data[2] ] and app=[ data[3] ]
+    ex)
+    update
+    price 4000 아티제 yogiyo
+
+    delete
+    'Delete from data where brand="${data[0]}" and app="${data[1]}"'
+    ex)
+    delete
+    아티제 yogiyo
+
     ---------------------------
      `);
 });
