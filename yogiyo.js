@@ -1,7 +1,6 @@
 //npx babel-node --presets @babel/env yogiyo.js
 //https://www.daleseo.com/js-babel-node/
 
-
 export async function getDataArray(date){
   let  moment = require('moment');
   require('moment-timezone'); 
@@ -9,7 +8,7 @@ export async function getDataArray(date){
 
   date.now=moment()
 
-  while(date.now.isSameOrAfter(date.end)){
+  while(date.now.isSameOrAfter(date.end)&&date.now.weekday()){
     date.end.add(1,'day')
   }
 
@@ -17,6 +16,7 @@ export async function getDataArray(date){
   let startDay= date.end.clone().subtract(6,'day').format('MMDD')
   let year= date.end.subtract(6,'day').format('yyyy')
   let weeknumber=date.now.weekday()||7
+  console.log('--------------------'+weeknumber)
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
@@ -125,8 +125,8 @@ export async function getDataArray(date){
       }
 
       const TelegramBot = require('node-telegram-bot-api')
-      const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
-      const telebot = new TelegramBot(token, {polling: true})
+      const token = '1763287615:AAHXTIliTgnhp8Aa7VArEif4bFLhwluW5Mw'
+      const telebot = new TelegramBot(token, {polling: false})
 
       telebot.sendMessage(1052011050, `${v[0]}, ${v[1]}`);
       // console.log(temp,11)

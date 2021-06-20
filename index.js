@@ -7,8 +7,8 @@ import {getCoupangData} from './imgCoupangeats.js'
 
 let data={};
 const TelegramBot = require('node-telegram-bot-api')
-const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
-const telebot = new TelegramBot(token, {polling: true})
+const token = '1763287615:AAHXTIliTgnhp8Aa7VArEif4bFLhwluW5Mw'
+const telebot = new TelegramBot(token, {polling: false})
 
 async function setData(){
    let  moment = require('moment');

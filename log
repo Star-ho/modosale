@@ -1,27 +1,56 @@
+Sun, 20 Jun 2021 05:43:13 GMT node-telegram-bot-api deprecated Automatic enabling of cancellation of promises is deprecated.
+In the future, you will have to enable it yourself.
+See https://github.com/yagop/node-telegram-bot-api/issues/319. at internal\modules\cjs\loader.js:1156:30
+refresh start! 
+ time is 2021-06-20T14:43:13+09:00
 Express server has started on port 3000
-Error opening data file ./chi_tra.traineddata
-Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
-Failed loading language 'chi_tra'
-error! http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_·Ñë·Ö©·Ñå·Ö°·Üº_·Ñâ·ÖÆ·Ñå·Ö•·Üº01.png
-TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
-    at new ClientRequest (_http_client.js:148:13)
-    at request (http.js:46:10)
-    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
-    at new Promise (<anonymous>)
-    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
-    at _callee2$ (C:\Users\Starho\modusale\/yogiyo.js:141:17)
-    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
-    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
-    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
-    at asyncGeneratorStep (C:\Users\Starho\modusale\yogiyo.js:12:103) {
-  code: 'ERR_UNESCAPED_CHARACTERS'
-}
-[
-  'Ïò§ÎäòÏùò Ìè¨Ïû• Ìï†Ïù∏',
-  'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_·Ñë·Ö©·Ñå·Ö°·Üº_·Ñâ·ÖÆ·Ñå·Ö•·Üº01.png',
-  'yogiyoapp://res/l?cat=111&s=5&f=0'
-]
-refresh!
- time is Mon Jun 14 2021 05:35:22 GMT+0900 (GMT+09:00)
-^C¿œ∞˝ ¿€æ˜¿ª ≥°≥ªΩ√∞⁄Ω¿¥œ±Ó (Y/N)? ¿œ∞˝ ¿€æ˜¿ª ≥°≥ªΩ√∞⁄Ω¿¥œ±Ó (Y/N)? ¿œ∞˝ ¿€æ˜¿ª ≥°≥ªΩ√∞⁄Ω¿¥œ±Ó (Y/N)? 
+--------------------7
+http://wp.yogiyo.co.kr/20210614-0620_ohal_app/?7
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+refresh end! 
+ time is 2021-06-20T14:43:13+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-06-20T14:43:56+09:00
+Warning: got packets out of order. Expected 93 but received 0
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 409 Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}
+^C¿œ∞˝ ¿€æ˜¿ª ≥°≥ªΩ√∞⁄Ω¿¥œ±Ó (Y/N)? 
 ^C
