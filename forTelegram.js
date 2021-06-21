@@ -9,7 +9,7 @@ let telebot = new TelegramBot(token, {polling: true})
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
 telebot.onText(/(help)|(h)/, (msg) => {
-    const chatId = 1052011050
+    const chatId = msg.chat.id;
     telebot.sendMessage(chatId, `---------------------------
     데이터양식
     select
@@ -61,7 +61,7 @@ telebot.onText(/^allselect/, async (msg) => {
     connectionLimit:10
     });
     let connect = await pool.getConnection(conn =>conn)
-    const chatId = 1052011050
+    const chatId = msg.chat.id;
     let res=''
     let SQLRes
     try{
@@ -87,7 +87,7 @@ telebot.onText(/^select/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = 1052011050
+    const chatId = msg.chat.id;
     let connect = await pool.getConnection(conn =>conn)
     let res=''
     try{
@@ -121,7 +121,7 @@ telebot.onText(/^update/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = 1052011050
+    const chatId = msg.chat.id;
     let connect = await pool.getConnection(conn =>conn)
     let res
     try{
@@ -149,7 +149,7 @@ telebot.onText(/^insert/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = 1052011050
+    const chatId = msg.chat.id;
     let res
     try{
         let connect = await pool.getConnection(conn =>conn)
@@ -175,7 +175,7 @@ telebot.onText(/^delete/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = 1052011050
+    const chatId = msg.chat.id;
     let connect = await pool.getConnection(conn =>conn)
     let res
     try{
