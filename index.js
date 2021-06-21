@@ -1,4 +1,6 @@
 //npx babel-node --presets @babel/env index.js >log 2>&1 &
+//disown -a
+require('dotenv').config({ path: require('find-config')('.env') })
 import {getDataArray} from './yogiyo' 
 import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
@@ -41,38 +43,41 @@ async function setData(){
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1][0],i[1][1]  ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('yogiyo','${i[0]}','${+i[1][0]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[1][1]}')`);    
             }else{
-               Object.assign(data,{ [i[0]] : [ "yogiyo",SqlRes[0][0].imageName, "기타", +i[1][0],i[1][1]  ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('yogiyo','${i[0]}','${+i[1][0]}','${SqlRes[0][0].imageName}','기타','${i[1][1]}')`);    
             }
          }else{
-            Object.assign(data,{ [i[0]] : [ "yogiyo", "없음", "기타", +i[1][0],i[1][1]  ] } )
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('yogiyo','${i[0]}','${+i[1][0]}','없음','기타','${i[1][1]}')`);    
          }
+         
          connect.release()
       }
+      data={}
       for(let i of Object.entries(await getData())){
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               Object.assign(data,{ [i[0]] : [ "baemin", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1][0],i[1][1] ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('baemin','${i[0]}','${+i[1][0]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[1][1]}')`);    
             }else{
-               Object.assign(data,{ [i[0]] : [ "baemin",SqlRes[0][0].imageName, "기타", +i[1][0],i[1][1] ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('baemin','${i[0]}','${+i[1][0]}','${SqlRes[0][0].imageName}','기타','${i[1][1]}')`);    
             }
          }else{
-            Object.assign(data,{ [i[0]] : [ "baemin", "없음", "기타", +i[1][0],i[1][1] ] } )
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('baemin','${i[0]}','${+i[1][0]}','없음','기타','${i[1][1]}')`);
          }
          connect.release()
       }
+      data={}
       for(let i of ( await wemefReadData() ) ){
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('wemef','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[2]}')`);    
             }else{
-               Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('wemef','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','기타','${i[2]}')`);    
             }
          }else{
-            Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[1],i[2] ] } )
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('wemef','${i[0]}','${+i[1]}','없음','기타','${i[2]}')`);    
          }
          //console.log(i)
       }
@@ -80,12 +85,12 @@ async function setData(){
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               Object.assign(data,{ [i[0]] : [ "coupang", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[2]}')`);    
             }else{
-               Object.assign(data,{ [i[0]] : [ "coupang",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','기타','${i[2]}')`);    
             }
          }else{
-            Object.assign(data,{ [i[0]] : [ "coupang", "없음", "기타", +i[1],i[2] ] } )
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','없음','기타','${i[2]}')`);    
          }
          //console.log(i)
       }
@@ -94,12 +99,6 @@ async function setData(){
    }finally{
    }
 
-   //db에 넣기
-   for(let i of Object.entries(data)){
-      // console.log(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]},'${i[1][4]}')`)
-      let temp = await connect.query(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]}','${i[1][4]}')`);    
-      //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
-   }
    connect.destroy()
    telegramSendMessage('refresh end! \n time is '+date.now.format())
    
@@ -150,12 +149,6 @@ async function changeCoupangWemef(){
       //console.log(i)
    }
 
-
-   for(let i of Object.entries(data)){
-      // console.log(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]},'${i[1][4]}')`)
-      let temp = await connect.query(`insert into data(app,brand,price,img,category,uri) values('${i[1][0]}','${i[0]}','${i[1][3]}','${i[1][1]}','${i[1][2]}','${i[1][4]}')`);    
-      //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
-   }
    connect.destroy()
    let  moment = require('moment');
    require('moment-timezone');

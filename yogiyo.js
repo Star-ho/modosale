@@ -77,6 +77,7 @@ export async function getDataArray(date){
       continue
     }
   }
+  
   //arr[0][1]=await imgToCost(arr[0][1],i)
   let res={}
   for(let i=0;i<arr.length;i++){
@@ -142,7 +143,6 @@ export async function getDataArray(date){
     }
 
     v[1]=temp
-
 
     if(v[0]=='gsthefresh'){
       v[0]='GS더프레시'

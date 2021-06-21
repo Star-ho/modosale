@@ -1,5 +1,5 @@
 //npx babel-node --presets @babel/env watchCW.js  > watchlog 2>&1 &
-
+//disown -a
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {telegramSendMessage} from './teleWebhook.js'

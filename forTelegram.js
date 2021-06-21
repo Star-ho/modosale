@@ -1,5 +1,6 @@
 //node forTelegram.js >teleLog 2>&1 &    
-
+//disown -a
+require('dotenv').config({ path: require('find-config')('.env') })
 const TelegramBot = require('node-telegram-bot-api')
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
 let telebot = new TelegramBot(token, {polling: true})
@@ -132,8 +133,8 @@ telebot.onText(/^update/, async (msg) => {
 
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
-    const fetch = require('node-fetch');
-    fetch('127.0.0.1:3000/readDB')
+    const request = require('request');
+    request('http://127.0.0.1:3000/readDB')
 });
 
 telebot.onText(/^insert/, async (msg) => {
@@ -157,8 +158,8 @@ telebot.onText(/^insert/, async (msg) => {
         telebot.sendMessage(chatId,e)
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
-    const fetch = require('node-fetch');
-    fetch('127.0.0.1:3000/readDB')
+    const request = require('request');
+    request('http://127.0.0.1:3000/readDB')
 });
 
 telebot.onText(/^delete/, async (msg) => {
@@ -182,6 +183,6 @@ telebot.onText(/^delete/, async (msg) => {
         telebot.sendMessage(chatId,e)
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
-    const fetch = require('node-fetch');
-    fetch('127.0.0.1:3000/readDB')
+    const request = require('request');
+    request('http://127.0.0.1:3000/readDB')
 });
