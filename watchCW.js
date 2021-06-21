@@ -1,4 +1,4 @@
-//npx babel-node --presets @babel/env watchCW.js
+//npx babel-node --presets @babel/env watchCW.js  > watchlog 2>&1 &
 
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
@@ -13,7 +13,7 @@ import {telegramSendMessage} from './teleWebhook.js'
     data.coupang.push(JSON.stringify(i))
   }
   
-  setInterval(async()=>await watchData(data),1000*2);
+  setInterval(async()=>await watchData(data),1000*60*60);
 })()
 
 
