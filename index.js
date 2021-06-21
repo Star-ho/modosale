@@ -4,11 +4,9 @@ import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
+import {telegramSendMessage} from './teleWebhook.js'
 
 let data={};
-const TelegramBot = require('node-telegram-bot-api')
-const token = '1763287615:AAHXTIliTgnhp8Aa7VArEif4bFLhwluW5Mw'
-const telebot = new TelegramBot(token, {polling: false})
 
 async function setData(){
    let  moment = require('moment');
@@ -21,7 +19,7 @@ async function setData(){
       date.end.add(1,'day')
    }
 
-   telebot.sendMessage(1052011050, 'refresh start! \n time is '+date.now.format());
+   telegramSendMessage('refresh start! \n time is '+date.now.format())
 
    console.log('refresh start! \n time is '+date.now.format())
 
@@ -103,8 +101,8 @@ async function setData(){
       //create table data(app varchar(100),brand varchar(100), price int,img varchar(200), category varchar(20),uri  varchar(200) )
    }
    connect.destroy()
-   telebot.sendMessage(1052011050, 'refresh end! \n time is '+date.now.format());
-
+   telegramSendMessage('refresh end! \n time is '+date.now.format())
+   
    console.log('refresh end! \n time is '+date.now.format())
    readDB()
 }
@@ -165,7 +163,7 @@ async function changeCoupangWemef(){
 
    console.log('Wemef, coupang data reload! \n time is '+moment().format())
    
-   telebot.sendMessage(1052011050, 'Wemef, coupang data reload! \n time is '+moment().format());
+   telegramSendMessage('Wemef, coupang data reload! \n time is '+moment().format())
 
    readDB()
 }
@@ -199,7 +197,7 @@ async function readDB(){
    require('moment-timezone');
    moment.tz.setDefault("Asia/Seoul");
 
-   telebot.sendMessage(1052011050, 'Wemef, coupang data reload! \n time is '+moment().format());
+   telegramSendMessage('Wemef, coupang data reload! \n time is '+moment().format())
 
    console.log('Read Database! \n time is '+moment().format())
 

@@ -1,6 +1,4 @@
-import {forTelegram} from './forTelegram'
+import {telegramSendMessage} from './teleWebhook.js'
 
-const TelegramBot = require('node-telegram-bot-api')
-const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
-const telebot = new TelegramBot(token, {polling: true})
-forTelegram(telebot)
+let text='http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_오늘의할인_new_lineup_burgerking_4000-1.png'
+telegramSendMessage(text)

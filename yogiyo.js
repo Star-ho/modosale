@@ -1,6 +1,8 @@
 //npx babel-node --presets @babel/env yogiyo.js
 //https://www.daleseo.com/js-babel-node/
 
+import {telegramSendMessage} from './teleWebhook.js'
+
 export async function getDataArray(date){
   let  moment = require('moment');
   require('moment-timezone'); 
@@ -11,6 +13,7 @@ export async function getDataArray(date){
   while(date.now.isSameOrAfter(date.end)&&date.now.weekday()){
     date.end.add(1,'day')
   }
+
 
   let endDay= date.end.format('MMDD')
   let startDay= date.end.clone().subtract(6,'day').format('MMDD')
@@ -59,20 +62,22 @@ export async function getDataArray(date){
     return v
   })
 
+  let img=Array.from({length:arr.length},()=>'')
 
   for(let i =0;i<arr.length;i++){
     if(arr[i][0].indexOf('포장')!=-1){
       continue
     }
     try{
+      img[i]=arr[i][1]+''
       arr[i][1]=await imgToCost(arr[i][1],i,2)
+      
     }catch(e){
       // console.log(e)
       continue
     }
   }
   //arr[0][1]=await imgToCost(arr[0][1],i)
-
   let res={}
   for(let i=0;i<arr.length;i++){
     if(arr[i][0].indexOf('포장')!=-1){
@@ -101,7 +106,7 @@ export async function getDataArray(date){
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
 
-      let spawnRet = await spawn('python', ['imgToVal.py',`path/result${i}.png`,1]); 
+      let spawnRet = await spawn(process.env.PYPATH||'python', ['imgToVal.py',`path/result${i}.png`,1]); 
       v[1]= spawnRet.toString()
       // console.log(v[0])
 
@@ -124,12 +129,16 @@ export async function getDataArray(date){
         temp=v[1].replace(/[^0-9]/g,'');
       }
 
-      const TelegramBot = require('node-telegram-bot-api')
-      const token = '1763287615:AAHXTIliTgnhp8Aa7VArEif4bFLhwluW5Mw'
-      const telebot = new TelegramBot(token, {polling: false})
+      if(v[0]=='gsthefresh'){
+        await telegramSendMessage(`${v[0]}\n ${v[1]}\n 결과:${+(""+temp).slice(2)}`)
+      }else{
+        await telegramSendMessage(`${v[0]}\n ${v[1]}\n 결과:${temp}`)
+      }
+      
+      await telegramSendMessage(img[i])
 
-      telebot.sendMessage(1052011050, `${v[0]}, ${v[1]}`);
       // console.log(temp,11)
+
     }
 
     v[1]=temp
@@ -215,7 +224,7 @@ async function imgToCost(src,i,blurSize){
   
   const spawn = require('await-spawn')
 
-  res = await spawn('python', ['imgToVal.py',outputPath,blurSize]); 
+  res = await spawn(process.env.PYPATH||'python', ['imgToVal.py',outputPath,blurSize]); 
   res=res.toString()  
   if(flag==1){
     return -1

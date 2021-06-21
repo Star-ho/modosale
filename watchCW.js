@@ -2,6 +2,7 @@
 
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
+import {telegramSendMessage} from './teleWebhook.js'
 
 (async ()=>{
   let data={wemef:[],coupang:[]}
@@ -14,6 +15,8 @@ import {getCoupangData} from './imgCoupangeats.js'
   
   setInterval(async()=>await watchData(data),1000*2);
 })()
+
+
 async function watchData(data){
   let wemef=[]
   let coupang=[]
@@ -53,11 +56,8 @@ async function watchData(data){
     data.coupang=coupang.slice()
     data.wemef=wemef.slice()
     console.log(extra)
-    const TelegramBot = require('node-telegram-bot-api')
-    const token = '1763287615:AAHXTIliTgnhp8Aa7VArEif4bFLhwluW5Mw'
-    const telebot = new TelegramBot(token, {polling: false})
+    telegramSendMessage(extra.toString())
 
-    telebot.sendMessage(1052011050, extra.toString());
   }
 }
 
