@@ -27,8 +27,8 @@ async function setData(){
    const pool = mysql.createPool({
       host     : 'localhost',
       port     :  3306,
-      user     : process.env.DB_USER||'root',
-      password : process.env.DB_PW||'root',
+      user     : process.env.DB_USER||'starho',
+      password : process.env.DB_PW||'starho',
       database : 'menu',
       connectionLimit:10
    });
@@ -112,8 +112,8 @@ async function changeCoupangWemef(){
    const pool = mysql.createPool({
       host     : 'localhost',
       port     :  3306,
-      user     : process.env.DB_USER||'root',
-      password : process.env.DB_PW||'root',
+      user     : process.env.DB_USER||'starho',
+      password : process.env.DB_PW||'starho',
       database : 'menu',
       connectionLimit:10
    });
@@ -174,8 +174,8 @@ async function readDB(){
    const pool = mysql.createPool({
       host     : 'localhost',
       port     :  3306,
-      user     : process.env.DB_USER||'root',
-      password : process.env.DB_PW||'root',
+      user     : process.env.DB_USER||'starho',
+      password : process.env.DB_PW||'starho',
       database : 'menu',
       connectionLimit:10
    });

@@ -106,7 +106,7 @@ export async function getDataArray(date){
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
 
-      let spawnRet = await spawn(process.env.PYPATH||'python', ['imgToVal.py',`path/result${i}.png`,1]); 
+      let spawnRet = await spawn(process.env.PYPATH||'python3', ['imgToVal.py',`path/result${i}.png`,1]); 
       v[1]= spawnRet.toString()
       // console.log(v[0])
 
@@ -224,7 +224,7 @@ async function imgToCost(src,i,blurSize){
   
   const spawn = require('await-spawn')
 
-  res = await spawn(process.env.PYPATH||'python', ['imgToVal.py',outputPath,blurSize]); 
+  res = await spawn(process.env.PYPATH||'python3', ['imgToVal.py',outputPath,blurSize]); 
   res=res.toString()  
   if(flag==1){
     return -1

@@ -51,8 +51,8 @@ telebot.onText(/^allselect/, async (msg) => {
     const pool = mysql.createPool({
     host     : 'localhost',
     port     :  3306,
-    user     : process.env.DB_USER||'root',
-    password : process.env.DB_PW||'root',
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
     database : 'menu',
     connectionLimit:10
     });
@@ -78,8 +78,8 @@ telebot.onText(/^select/, async (msg) => {
     const pool = mysql.createPool({
     host     : 'localhost',
     port     :  3306,
-    user     : process.env.DB_USER||'root',
-    password : process.env.DB_PW||'root',
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
     database : 'menu',
     connectionLimit:10
     });
@@ -111,8 +111,8 @@ telebot.onText(/^update/, async (msg) => {
     const pool = mysql.createPool({
     host     : 'localhost',
     port     :  3306,
-    user     : process.env.DB_USER||'root',
-    password : process.env.DB_PW||'root',
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
     database : 'menu',
     connectionLimit:10
     });
@@ -136,8 +136,8 @@ telebot.onText(/^insert/, async (msg) => {
     const pool = mysql.createPool({
     host     : 'localhost',
     port     :  3306,
-    user     : process.env.DB_USER||'root',
-    password : process.env.DB_PW||'root',
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
     database : 'menu',
     connectionLimit:10
     });
@@ -159,8 +159,8 @@ telebot.onText(/^delete/, async (msg) => {
     const pool = mysql.createPool({
     host     : 'localhost',
     port     :  3306,
-    user     : process.env.DB_USER||'root',
-    password : process.env.DB_PW||'root',
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
     database : 'menu',
     connectionLimit:10
     });
