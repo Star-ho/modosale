@@ -102,7 +102,7 @@ export async function getDataArray(date){
     if(!temp){
       temp=v[1].replace(/[^0-9]/g,'');
     }
-    if(+temp<500||+temp>25000){
+    if(+temp<1000||+temp>20000){
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
 
