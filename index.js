@@ -176,7 +176,7 @@ async function readDB(){
    let SqlRes = await connect.query(`select * from data;`);
 
    for(let i of SqlRes[0]){
-      Object.assign(data,{ [i.brand] : [ i.app,i.img, i.category, +i.price,i.uri ] } )
+      Object.assign(data,{ [i.id] : [i.brand, i.app,i.img, i.category, +i.price,i.uri ] } )
    }
    // Object.assign(data,{ [i[0]] : [ "coupang",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
    // app: 'coupang',
