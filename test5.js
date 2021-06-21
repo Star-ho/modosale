@@ -21,6 +21,7 @@
             res+=i.app+' '+i.brand+' '+i.price+'\n'
         }
     }
+    res = (await connect.query(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `));
     console.log(res)
     connect.destroy()
 })()

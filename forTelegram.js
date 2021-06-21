@@ -34,7 +34,7 @@ telebot.onText(/(help)|(h)/, (msg) => {
     cupping://doCommand
     
     update
-    update data SET [ data[0] ]=[ data[1] ] where brand=[ data[2] ] and app=[ data[3] ]
+    update data SET price=[ data[0] ] where brand=[ data[1] ] and app=[ data[2] ]
     ex)
     update
     price 4000 아티제 yogiyo
@@ -128,8 +128,8 @@ telebot.onText(/^update/, async (msg) => {
         const command = msg.text.split('\n')
         let data=command[1].split(' ')
     
-        res = (await connect.query(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `));
-        console.log(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `)
+        res = (await connect.query(`update data SET price=${+data[0]} where brand="${data[1]}" and app="${data[2]}" `));
+        console.log(`update data SET price=${+data[0]} where brand="${data[1]}" and app="${data[2]}" `)
     }catch(e){
         telebot.sendMessage(chatId,e)
 
