@@ -13,7 +13,7 @@ import {telegramSendMessage} from './teleWebhook.js'
     data.coupang.push(JSON.stringify(i))
   }
   
-  setInterval(async()=>await watchData(data),1000*60*60);
+  setInterval(async()=>await watchData(data),1000*60*10);
 })()
 
 
