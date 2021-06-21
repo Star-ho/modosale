@@ -3,8 +3,7 @@
 const TelegramBot = require('node-telegram-bot-api')
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
 let telebot = new TelegramBot(token, {polling: true})
-telebot.stopPolling()
-telebot.sendMessage(1052011050, `11111`);
+
 
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
@@ -28,7 +27,11 @@ telebot.onText(/(help)|(h)/, (msg) => {
     ex)
     insert
     yogiyo 아티제 4000 치킨 uri
-
+    baemin://
+    yogiyoapp://open
+    coupangeats://
+    cupping://doCommand
+    
     update
     update data SET [ data[0] ]=[ data[1] ] where brand=[ data[2] ] and app=[ data[3] ]
     ex)
@@ -129,6 +132,8 @@ telebot.onText(/^update/, async (msg) => {
 
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
+    const fetch = require('node-fetch');
+    fetch('127.0.0.1:3000/readDB')
 });
 
 telebot.onText(/^insert/, async (msg) => {
@@ -152,6 +157,8 @@ telebot.onText(/^insert/, async (msg) => {
         telebot.sendMessage(chatId,e)
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
+    const fetch = require('node-fetch');
+    fetch('127.0.0.1:3000/readDB')
 });
 
 telebot.onText(/^delete/, async (msg) => {
@@ -175,4 +182,6 @@ telebot.onText(/^delete/, async (msg) => {
         telebot.sendMessage(chatId,e)
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
+    const fetch = require('node-fetch');
+    fetch('127.0.0.1:3000/readDB')
 });
