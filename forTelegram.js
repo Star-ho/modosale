@@ -89,10 +89,11 @@ telebot.onText(/^select/, async (msg) => {
     });
     const chatId = 1052011050
     let connect = await pool.getConnection(conn =>conn)
-    const command = msg.text.split('\n')
-    let res=''
-    let data=command[1].split(' ')
     try{
+        const command = msg.text.split('\n')
+        let res=''
+        let data=command[1].split(' ')
+    
         for(let i=0;i<data.length;i++){
             let SQLRes = (await connect.query(`select * from data where brand="${data[i]}";`))[0];
             for(let i of SQLRes){
@@ -122,10 +123,11 @@ telebot.onText(/^update/, async (msg) => {
     });
     const chatId = 1052011050
     let connect = await pool.getConnection(conn =>conn)
-    const command = msg.text.split('\n')
-    let res
-    let data=command[1].split(' ')
     try{
+        const command = msg.text.split('\n')
+        let res
+        let data=command[1].split(' ')
+    
         res = (await connect.query(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `));
         console.log(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `)
     }catch(e){
@@ -148,11 +150,12 @@ telebot.onText(/^insert/, async (msg) => {
     connectionLimit:10
     });
     const chatId = 1052011050
-    let connect = await pool.getConnection(conn =>conn)
-    const command = msg.text.split('\n')
-    let res
-    let data=command[1].split(' ')
     try{
+        let connect = await pool.getConnection(conn =>conn)
+        const command = msg.text.split('\n')
+        let res
+        let data=command[1].split(' ')
+        
         res = await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${data[2]}','없음','${data[3]}','${data[4]}')`);
     }catch(e){
         telebot.sendMessage(chatId,e)
@@ -174,10 +177,11 @@ telebot.onText(/^delete/, async (msg) => {
     });
     const chatId = 1052011050
     let connect = await pool.getConnection(conn =>conn)
-    const command = msg.text.split('\n')
-    let res
-    let data=command[1].split(' ')
     try{
+        const command = msg.text.split('\n')
+        let res
+        let data=command[1].split(' ')
+    
         res = await connect.query(`Delete from data where brand="${data[0]}" and app="${data[1]}"`);
     }catch(e){
         telebot.sendMessage(chatId,e)
