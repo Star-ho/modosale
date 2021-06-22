@@ -198,12 +198,12 @@ telebot.onText(/^insert/, async (msg) => {
         let SqlRes = await connect.query(`select * from Menu where brandName="${data[1]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-               await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[2]}')`);    
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${data[3]}')`);    
             }else{
-               await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','${SqlRes[0][0].imageName}','기타','${i[2]}')`);    
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','${SqlRes[0][0].imageName}','기타','${data[3]}')`);    
             }
          }else{
-            await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','없음','기타','${i[2]}')`);    
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','없음','기타','${data[3]}')`);    
          }
         
         
