@@ -12,7 +12,7 @@ import {telegramSendMessage} from './teleWebhook.js'
   for(let i of await getCoupangData()){
     data.coupang.push(JSON.stringify(i))
   }
-  
+  console.log(data)
   setInterval(async()=>await watchData(data),1000*60*10);
 })()
 
@@ -20,7 +20,7 @@ import {telegramSendMessage} from './teleWebhook.js'
 async function watchData(data){
   let wemef=[]
   let coupang=[]
-  let extra=[]
+  let extra=''
 
   for(let i of await getWemefData()){
     wemef.push(JSON.stringify(i))
@@ -31,25 +31,25 @@ async function watchData(data){
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      extra.push("delete"+i)
+      extra+="wemef delete"+i+'\n'
     }
   }
 
   for(let i of data.coupang){
     if(!coupang.includes(i)){
-      extra.push("delete"+i)
+      extra+="coupang delete"+i+'\n'
     }
   }
 
   for(let i of coupang){
     if(!data.coupang.includes(i)){
-      extra.push('add'+i)
+      extra+="coupang add"+i+'\n'
     }
   }
 
   for(let i of data.wemef){
     if(!wemef.includes(i)){
-      extra.push('add'+i)
+      extra+="wemef add"+i+'\n'
     }
   }
   if(extra.length>0){
