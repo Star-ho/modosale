@@ -9,7 +9,7 @@ let telebot = new TelegramBot(token, {polling: true})
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
 telebot.onText(/(help)|(h)/, (msg) => {
-    const chatId = msg.chat.id;
+    const chatId = 1052011050;
     telebot.sendMessage(chatId, `---------------------------
     데이터양식
     select
@@ -66,7 +66,7 @@ telebot.onText(/^allselect/, async (msg) => {
     connectionLimit:10
     });
     let connect = await pool.getConnection(conn =>conn)
-    const chatId = msg.chat.id;
+    const chatId = 1052011050;
     let res=''
     let SQLRes
     try{
@@ -92,7 +92,7 @@ telebot.onText(/^select/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = msg.chat.id;
+    const chatId = 1052011050;
     let connect = await pool.getConnection(conn =>conn)
     let res=''
     try{
@@ -101,6 +101,40 @@ telebot.onText(/^select/, async (msg) => {
     
         for(let i=0;i<data.length;i++){
             let SQLRes = (await connect.query(`select * from data where brand="${data[i]}";`))[0];
+            for(let i of SQLRes){
+                res+=i.app+' '+i.brand+' '+i.price+'\n'
+            }
+        }
+    }catch(e){
+        telebot.sendMessage(chatId,e)
+    }
+    if(res){
+        telebot.sendMessage(chatId,res)
+    }else{
+        telebot.sendMessage(chatId,'error')
+    }
+});
+
+
+telebot.onText(/^appselect/, async (msg) => {
+    const mysql = require('mysql2/promise');
+    const pool = mysql.createPool({
+    host     : 'localhost',
+    port     :  3306,
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
+    database : 'menu',
+    connectionLimit:10
+    });
+    const chatId = 1052011050;
+    let connect = await pool.getConnection(conn =>conn)
+    let res=''
+    try{
+        const command = msg.text.split('\n')
+        let data=command[1].split(' ')
+    
+        for(let i=0;i<data.length;i++){
+            let SQLRes = (await connect.query(`select * from data where app="${data[i]}";`))[0];
             for(let i of SQLRes){
                 res+=i.app+' '+i.brand+' '+i.price+'\n'
             }
@@ -126,7 +160,7 @@ telebot.onText(/^update/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = msg.chat.id;
+    const chatId = 1052011050;
     let connect = await pool.getConnection(conn =>conn)
     let res
     try{
@@ -154,7 +188,7 @@ telebot.onText(/^insert/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = msg.chat.id;
+    const chatId = 1052011050;
     let res
     try{
         let connect = await pool.getConnection(conn =>conn)
@@ -191,7 +225,7 @@ telebot.onText(/^delete/, async (msg) => {
     database : 'menu',
     connectionLimit:10
     });
-    const chatId = msg.chat.id;
+    const chatId = 1052011050;
     let connect = await pool.getConnection(conn =>conn)
     let res
     try{
