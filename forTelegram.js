@@ -24,7 +24,7 @@ telebot.onText(/(help)|(h)/, (msg) => {
     selectall
 
     insert
-    "insert into data(app,brand,price,img,category,uri) values('[data[0]]','[data[1]]','[data[2]]','DB에서 할당','DB에서 할당','DB에서 할당')"
+    "insert into data(app,brand,price,img,category,uri) values('[data[0]]','[data[1]]','[data[2]]','DB에서 할당','DB에서 할당','[data[3]]')"
     ex)
     insert
     yogiyo 아티제 4000
