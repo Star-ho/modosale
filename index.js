@@ -36,7 +36,8 @@ async function setData(){
    });
    data={}
    let connect = await pool.getConnection(conn =>conn)
-   await connect.query('delete from data');
+   await connect.query('delete from data where app="yogiyo"');
+   await connect.query('delete from data where app="baemin"');
 
    try{
       for(let i of Object.entries(await getDataArray(date))){
