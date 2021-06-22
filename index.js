@@ -106,7 +106,7 @@ async function setData(){
    readDB()
 }
 
-async function changeCoupangWemef(){
+async function changeWemef(){
    const mysql = require('mysql2/promise');
    const pool = mysql.createPool({
       host     : 'localhost',
@@ -120,21 +120,7 @@ async function changeCoupangWemef(){
 
    let connect = await pool.getConnection(conn =>conn)
    await connect.query('delete from data where app="coupang"');
-   await connect.query('delete from data where app="wemef"');
 
-   for(let i of ( await wemefReadData() ) ){
-      let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
-      if(SqlRes[0][0]){
-         if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-            Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
-         }else{
-            Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
-         }
-      }else{
-         Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[1],i[2] ] } )
-      }
-      //console.log(i)
-   }
    for(let i of ( await coupangReadData() ) ){
       let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
       if(SqlRes[0][0]){
@@ -154,12 +140,54 @@ async function changeCoupangWemef(){
    require('moment-timezone');
    moment.tz.setDefault("Asia/Seoul");
 
-   console.log('Wemef, coupang data reload! \n time is '+moment().format())
+   console.log('coupang data reload! \n time is '+moment().format())
    
-   telegramSendMessage('Wemef, coupang data reload! \n time is '+moment().format())
+   telegramSendMessage('coupang data reload! \n time is '+moment().format())
 
    readDB()
 }
+
+async function changeCoupang(){
+   const mysql = require('mysql2/promise');
+   const pool = mysql.createPool({
+      host     : 'localhost',
+      port     :  3306,
+      user     : process.env.DB_USER||'starho',
+      password : process.env.DB_PW||'starho',
+      database : 'menu',
+      connectionLimit:10
+   });
+   let data={}
+
+   let connect = await pool.getConnection(conn =>conn)
+   await connect.query('delete from data where app="wemef"');
+
+   for(let i of ( await wemefReadData() ) ){
+      let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
+      if(SqlRes[0][0]){
+         if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+            Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
+         }else{
+            Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+         }
+      }else{
+         Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[1],i[2] ] } )
+      }
+      //console.log(i)
+   }
+
+   connect.destroy()
+   let  moment = require('moment');
+   require('moment-timezone');
+   moment.tz.setDefault("Asia/Seoul");
+
+   console.log('Wemef data reload! \n time is '+moment().format())
+   
+   telegramSendMessage('Wemef data reload! \n time is '+moment().format())
+
+   readDB()
+}
+
 
 async function readDB(){
    data={}
@@ -221,9 +249,16 @@ app.get('/refresh', function(req, res) {
    res.send("refresh!");
 });
 
-app.get('/chageCW', function(req, res) {
+app.get('/chageCoupang', function(req, res) {
    (async()=>{
-      await changeCoupangWemef()
+      await changeCoupang()
+   })()
+   res.send("chageCW");
+});
+
+app.get('/chageWemef', function(req, res) {
+   (async()=>{
+      await changeWemef()
    })()
    res.send("chageCW");
 });

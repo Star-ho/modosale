@@ -24,10 +24,10 @@ telebot.onText(/(help)|(h)/, (msg) => {
     selectall
 
     insert
-    "insert into data(app,brand,price,img,category,uri) values('[data[0]]','[data[1]]','[data[2]]','없음','[data[3]]','[data[4]]')"
+    "insert into data(app,brand,price,img,category,uri) values('[data[0]]','[data[1]]','[data[2]]','DB에서 할당','DB에서 할당','DB에서 할당')"
     ex)
     insert
-    yogiyo 아티제 4000 치킨 uri
+    yogiyo 아티제 4000
     baemin://
     yogiyoapp://open
     coupangeats://
@@ -45,6 +45,11 @@ telebot.onText(/(help)|(h)/, (msg) => {
     delete
     아티제 yogiyo
 
+    /refresh
+    /chageCoupang
+    /chageWemef
+    /readdb
+    http://sailmoa.com/showimg
     ---------------------------
     `);
 });
@@ -156,7 +161,18 @@ telebot.onText(/^insert/, async (msg) => {
         const command = msg.text.split('\n')
         let data=command[1].split(' ')
         
-        res = await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${data[2]}','없음','${data[3]}','${data[4]}')`);
+        let SqlRes = await connect.query(`select * from Menu where brandName="${data[1]}";`);
+         if(SqlRes[0][0]){
+            if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[2]}')`);    
+            }else{
+               await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','${SqlRes[0][0].imageName}','기타','${i[2]}')`);    
+            }
+         }else{
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('${data[0]}','${data[1]}','${+data[2]}','없음','기타','${i[2]}')`);    
+         }
+        
+        
     }catch(e){
         telebot.sendMessage(chatId,e)
     }
