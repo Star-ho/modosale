@@ -31,25 +31,25 @@ async function watchData(data){
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      extra.push("add"+i)
+      extra.push("delete"+i)
     }
   }
 
   for(let i of data.coupang){
     if(!coupang.includes(i)){
-      extra.push("add"+i)
+      extra.push("delete"+i)
     }
   }
 
   for(let i of coupang){
     if(!data.coupang.includes(i)){
-      extra.push('delete'+i)
+      extra.push('add'+i)
     }
   }
 
   for(let i of data.wemef){
     if(!wemef.includes(i)){
-      extra.push('delete'+i)
+      extra.push('add'+i)
     }
   }
   if(extra.length>0){
