@@ -56,6 +56,7 @@ async function watchData(data){
     data.coupang=coupang.slice()
     data.wemef=wemef.slice()
     console.log(extra)
+    extra.replaceAll('&','||')
     telegramSendMessage(extra.toString())
 
   }
