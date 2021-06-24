@@ -240,6 +240,7 @@ setyogiyoBaemin()
 
 async function setyogiyoBaemin(){
    setYogiyo()
+   setBaemin()
    let data={baemin:[]}
    for(let i of Object.entries(await getData())){
       data.baemin.push(JSON.stringify(i))
