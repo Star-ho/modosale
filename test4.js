@@ -1,8 +1,13 @@
-(async()=>{
+
+watchBaeminData()
+
+setInterval(()=>watchBaeminData(),1000*120);
+
+async function watchBaeminData(){
+    let str=''
     let arr=Array.from({length:100},()=>[]);
     const fetch = require('node-fetch');
     let obj={};
-
     let res =await (async()=>{
     let i
     let count=0;
@@ -15,12 +20,14 @@
         size+=response.size
         arr.push(Object.assign({},response.data))
         for(let i of response.data){
-            console.log(i.brandName)
+            str+=i.brandName
         }
         
         count++
     }while(i>=10) 
     return [arr,size]
     })()
+    console.log(str)
+    console.log('*****'+res[1]+'*****')
     // console.log(res)
-})()
+}

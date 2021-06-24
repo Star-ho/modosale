@@ -1,4 +1,9 @@
-(async ()=>{
+
+watchBaeminData()
+
+setInterval(()=>watchBaeminData(),1000*60*20);
+
+async function watchBaeminData(){
     let msg=`select\n네네치킨`
     const mysql = require('mysql2/promise');
     const pool = mysql.createPool({
@@ -24,4 +29,4 @@
     res = (await connect.query(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `));
     console.log(res)
     connect.destroy()
-})()
+}
