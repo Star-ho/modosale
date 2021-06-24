@@ -1,30 +1,26 @@
-import {getData} from './baemin.js'
-
-let intervalId
-
-async function watchBaeminData(data){
-    let baemin=[]
- 
-    for(let i of Object.entries(await getData())){
-       baemin.push(JSON.stringify(i))
-    }
-    for(let i of baemin){
-       if(!data.baemin.includes(i)){
-          data.baemin=baemin.slice()
-          //setBaemin()
-       }else{
-          clearInterval(intervalId)
-       }
-    }
- }
-
 (async()=>{
-   let data={baemin:[]}
-   for(let i of Object.entries(await getData())){
-      data.baemin.push(JSON.stringify(i))
-   }
-   console.log(111)
-   console.log(watchBaeminData)
-   intervalId=setInterval( () => watchBaeminData(data),1000*60*20);
-})()
+    let arr=Array.from({length:100},()=>[]);
+    const fetch = require('node-fetch');
+    let obj={};
 
+    let res =await (async()=>{
+    let i
+    let count=0;
+    let arr=[]
+    let size=0
+    do{
+        let response = await fetch(`https://lounge.baemin.com/api/lounge/brands/cards/TODAY_BENEFITS?pageNumber=${count}&pageSize=100`)
+        .then(response=>response.json())
+        i=response.size
+        size+=response.size
+        arr.push(Object.assign({},response.data))
+        for(let i of response.data){
+            console.log(i.brandName)
+        }
+        
+        count++
+    }while(i>=10) 
+    return [arr,size]
+    })()
+    // console.log(res)
+})()

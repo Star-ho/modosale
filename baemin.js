@@ -3,7 +3,6 @@
  //export { getData};
 
   export async function getData(){
-    let arr=Array.from({length:100},()=>[]);
     const fetch = require('node-fetch');
     let obj={};
 
