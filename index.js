@@ -10,7 +10,7 @@ import {telegramSendMessage} from './teleWebhook.js'
 
 let data={};
 
-async function setData(){
+async function setYogiyo(){
    let  moment = require('moment');
    require('moment-timezone'); 
    moment.tz.setDefault("Asia/Seoul"); 
@@ -21,9 +21,9 @@ async function setData(){
       date.end.add(1,'day')
    }
 
-   telegramSendMessage('refresh start! \n time is '+date.now.format())
+   telegramSendMessage('yogiyo refresh start! \n time is '+date.now.format())
 
-   console.log('refresh start! \n time is '+date.now.format())
+   console.log('yogiyo refresh start! \n time is '+date.now.format())
 
    const mysql = require('mysql2/promise');
    const pool = mysql.createPool({
@@ -37,7 +37,6 @@ async function setData(){
    data={}
    let connect = await pool.getConnection(conn =>conn)
    await connect.query('delete from data where app="yogiyo"');
-   await connect.query('delete from data where app="baemin"');
 
    try{
       for(let i of Object.entries(await getDataArray(date))){
@@ -54,7 +53,44 @@ async function setData(){
          
          connect.release()
       }
-      data={}
+   }catch(e){
+      console.log(e)
+   }finally{
+   }
+
+   connect.destroy()
+   telegramSendMessage('yogiyo refresh end! \n time is '+date.now.format())
+   
+   console.log('yogiyo refresh end! \n time is '+date.now.format())
+   readDB()
+}
+
+
+async function setBaemin(){
+   let  moment = require('moment');
+   require('moment-timezone'); 
+   moment.tz.setDefault("Asia/Seoul"); 
+
+   let date={now:moment()}
+
+   telegramSendMessage('baemin refresh start! \n time is '+date.now.format())
+
+   console.log('baemin refresh start! \n time is '+date.now.format())
+
+   const mysql = require('mysql2/promise');
+   const pool = mysql.createPool({
+      host     : 'localhost',
+      port     :  3306,
+      user     : process.env.DB_USER||'starho',
+      password : process.env.DB_PW||'starho',
+      database : 'menu',
+      connectionLimit:10
+   });
+   data={}
+   let connect = await pool.getConnection(conn =>conn)
+   await connect.query('delete from data where app="baemin"');
+
+   try{
       for(let i of Object.entries(await getData())){
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
@@ -75,9 +111,9 @@ async function setData(){
    }
 
    connect.destroy()
-   telegramSendMessage('refresh end! \n time is '+date.now.format())
+   telegramSendMessage('baemin refresh end! \n time is '+date.now.format())
    
-   console.log('refresh end! \n time is '+date.now.format())
+   console.log('baemin refresh end! \n time is '+date.now.format())
    readDB()
 }
 
@@ -132,7 +168,6 @@ async function changeCoupang(){
       database : 'menu',
       connectionLimit:10
    });
-   let data={}
 
    let connect = await pool.getConnection(conn =>conn)
    await connect.query('delete from data where app="wemef"');
@@ -157,7 +192,6 @@ async function changeCoupang(){
    moment.tz.setDefault("Asia/Seoul");
 
    console.log('Wemef data reload! \n time is '+moment().format())
-   
    telegramSendMessage('Wemef data reload! \n time is '+moment().format())
 
    readDB()
@@ -199,9 +233,35 @@ async function readDB(){
 
 }
 
-(async()=>{
-   setData()
-})()
+//시작 하는곳
+let intervalId
+
+setyogiyoBaemin()
+
+async function setyogiyoBaemin(){
+   setYogiyo()
+   let data={baemin:[]}
+   for(let i of Object.entries(await getData())){
+      data.baemin.push(JSON.stringify(i))
+   }
+   intervalId=setInterval(async()=>await watchBaeminData(data),1000*60*20);
+}
+
+async function watchBaeminData(data){
+   let baemin=[]
+
+   for(let i of Object.entries(await getData())){
+      baemin.push(JSON.stringify(i))
+   }
+   for(let i of baemin){
+      if(!data.baemin.includes(i)){
+         data.baemin=baemin.slice()
+         setBaemin()
+      }else{
+         clearInterval(intervalId)
+      }
+   }
+}
 
 var express = require('express');
 var app = express();
@@ -218,9 +278,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/refresh', function(req, res) {
-   (async()=>{
-      await setData()
-   })()
+   setyogiyoBaemin()
    res.send("refresh!");
 });
 

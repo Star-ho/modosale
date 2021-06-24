@@ -1,4 +1,30 @@
-import {telegramSendMessage} from './teleWebhook.js'
+import {getData} from './baemin.js'
 
-let text='http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_오늘의할인_new_lineup_burgerking_4000-1.png'
-telegramSendMessage(text)
+let intervalId
+
+async function watchBaeminData(data){
+    let baemin=[]
+ 
+    for(let i of Object.entries(await getData())){
+       baemin.push(JSON.stringify(i))
+    }
+    for(let i of baemin){
+       if(!data.baemin.includes(i)){
+          data.baemin=baemin.slice()
+          //setBaemin()
+       }else{
+          clearInterval(intervalId)
+       }
+    }
+ }
+
+(async()=>{
+   let data={baemin:[]}
+   for(let i of Object.entries(await getData())){
+      data.baemin.push(JSON.stringify(i))
+   }
+   console.log(111)
+   console.log(watchBaeminData)
+   intervalId=setInterval( () => watchBaeminData(data),1000*60*20);
+})()
+
