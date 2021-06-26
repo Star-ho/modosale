@@ -31,7 +31,7 @@ async function watchData(data){
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      extra+="wemef delete"+i+'\n'
+      extra+="wemef add"+i+'\n'
     }
   }
 
@@ -49,7 +49,7 @@ async function watchData(data){
 
   for(let i of data.wemef){
     if(!wemef.includes(i)){
-      extra+="wemef add"+i+'\n'
+      extra+="wemef delete"+i+'\n'
     }
   }
   if(extra.length>0){
