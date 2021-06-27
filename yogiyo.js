@@ -1,6 +1,7 @@
 //npx babel-node --presets @babel/env yogiyo.js
 //https://www.daleseo.com/js-babel-node/
 
+import { data } from 'cheerio/lib/api/attributes';
 import {telegramSendMessage} from './teleWebhook.js'
 
 export async function getDataArray(date){
@@ -13,11 +14,17 @@ export async function getDataArray(date){
   while(date.now.isSameOrAfter(date.end)&&date.now.weekday()){
     date.end.add(1,'day')
   }
-
+  while(date.now.format('MM')!=date.end.format('MM')){
+    date.end.subtract(1,'day')
+  }
 
   let endDay= date.end.format('MMDD')
-  let startDay= date.end.clone().subtract(6,'day').format('MMDD')
-  let year= date.end.subtract(6,'day').format('yyyy')
+  let year= date.now.format('yyyy')
+  let temp=date.end.clone()
+  while(temp.weekday()!=1){
+    temp.subtract(1,'day')
+  }
+  let startDay= temp.format('MMDD')
   let weeknumber=date.now.weekday()||7
   console.log('--------------------'+weeknumber)
   const cheerio = require("cheerio");
