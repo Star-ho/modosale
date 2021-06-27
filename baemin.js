@@ -3,23 +3,26 @@
  //export { getData};
 
   export async function getData(){
+    let cateArr=['PIZZA','FASTFOOD','KOREAN','CAFE','JOKBAL','SNACK','CHICKEN','STEAMED_MIDNIGHT','CHINA_ASIAN']
     const fetch = require('node-fetch');
     let obj={};
-
     let res =await (async()=>{
-      let i
-      let count=0;
-      let arr=[]
-      let size=0
-      do{
-        let response = await fetch(`https://lounge.baemin.com/api/lounge/brands/cards/TODAY_BENEFITS?pageNumber=${count}&pageSize=100`)
-        .then(response=>response.json())
-        i=response.size
-        size+=response.size
-        arr.push(Object.assign({},response.data))
-        count++
-      }while(i>=10) 
-      return [arr,size]
+        let i
+        let count=0;
+        let arr=[]
+        let size=0
+        for(let j=0;j<cateArr.length;j++){
+            do{
+                let response = await fetch(`https://lounge.baemin.com/api/lounge/brands/cards/${cateArr[j]}?pageNumber=${count}&pageSize=10`)
+                .then(response=>response.json())
+                i=response.data.length
+                size+=response.size
+                arr.push(Object.assign({},response.data))
+                count++
+            }while(i>=10) 
+            count=0
+        }
+        return [arr,size]
     })()
   //console.log(res)  
   let k=0;
@@ -44,7 +47,7 @@
       Object.assign(res, { [i[0]] : [i[1].maxDiscountCouponPrice,'baemin://./frBrandDetail?frBrandDetail_brandHomeId='+i[1].brandId]} )
     }
   }
-  // console.log(res)
+   //console.log(res)
   return res
 }
 
