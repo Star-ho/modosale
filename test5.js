@@ -1,32 +1,15 @@
 
-watchBaeminData()
+import {telegramSendMessage} from './teleWebhook.js'
 
-setInterval(()=>watchBaeminData(),1000*60*20);
+let a=`wemef add{"title":"두찜_6월_화요일","link":"cupping://doCommand?type=5&value1=https://www.wmpo.co.kr/events/433569","img":"https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210503/f0748985aed6ff7c0e528816280eb24c.png"}
+wemef add{"title":"오태식해바라기치킨_6월_화요일","link":"cupping://doCommand?type=5&value1=https://www.wmpo.co.kr/events/598597","img":"https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210503/2031dac2ed2785814d402736a8dff65f.png"}
+wemef add{"title":"떡참_6월_화요일","link":"cupping://doCommand?type=5&value1=https://www.wmpo.co.kr/events/1195026","img":"https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210503/f11dbb35ee64d90d915b064129dd4e24.gif"}
+coupang delete{"img":"https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/ed1e/260e777e62ef72cbb8ce0bd788b8c14e35785f21840f44c810926c8db353.png"}
+coupang delete{"img":"https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/c277/ad15187de047a9e2f40ba630cc8efa361dff9c71254836ff92da40652e6f.png"}
+wemef delete{"title":"두찜_6월","link":"cupping://doCommand?type=5&value1=https://www.wmpo.co.kr/events/433569","img":"https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210527/d43cb97022a25eb0fa9cddeb58c1095f.png"}
+wemef delete{"title":"떡참_6월","link":"cupping://doCommand?type=5&value1=https://www.wmpo.co.kr/events/1195026","img":"https://d1lr36zkig3axf.cloudfront.net/storage/banner/20210527/a1c3d66a4992c1b621a3ef6227aac73b.gif"}`
 
-async function watchBaeminData(){
-    let msg=`select\n네네치킨`
-    const mysql = require('mysql2/promise');
-    const pool = mysql.createPool({
-    host     : 'localhost',
-    port     :  3306,
-    user     : process.env.DB_USER||'root',
-    password : process.env.DB_PW||'root',
-    database : 'menu',
-    connectionLimit:10
-    });
-    const chatId = 1052011050
-    let connect = await pool.getConnection(conn =>conn)
-    const command = msg.split('\n')
-    let res=''
-    let data=command[1].split(' ')
-    for(let i=0;i<data.length;i++){
-        let SQLRes = (await connect.query(`select * from data where brand="${data[i]}";`))[0];
-        console.log(SQLRes)
-        for(let i of SQLRes){
-            res+=i.app+' '+i.brand+' '+i.price+'\n'
-        }
-    }
-    res = (await connect.query(`update data SET ${data[0]}=${+data[1]} where brand="${data[2]}" and app="${data[3]}" `));
-    console.log(res)
-    connect.destroy()
+while(a.includes('&')){
+    a=a.replace('&',"||")
 }
+telegramSendMessage(a.toString())
