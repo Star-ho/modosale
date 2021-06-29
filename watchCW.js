@@ -20,6 +20,13 @@ import {telegramSendMessage} from './teleWebhook.js'
 
 
 async function watchData(data){
+  let  moment = require('moment');
+  require('moment-timezone'); 
+  moment.tz.setDefault("Asia/Seoul"); 
+
+  let date={now:moment()}
+  console.log('watch start! \n time is '+date.now.format())
+
   let wemef=[]
   let coupang=[]
   let extra=''
