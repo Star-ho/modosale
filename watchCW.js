@@ -6,10 +6,12 @@ import {telegramSendMessage} from './teleWebhook.js'
 
 (async ()=>{
   let data={wemef:[],coupang:[]}
-  for(let i of await getWemefData()){
+  let wemefData=await getWemefData()
+  let coupnagData=await getCoupangData()
+  for(let i of await wemefData){
     data.wemef.push(JSON.stringify(i))
   }
-  for(let i of await getCoupangData()){
+  for(let i of await coupnagData){
     data.coupang.push(JSON.stringify(i))
   }
   console.log(data)
@@ -21,47 +23,43 @@ async function watchData(data){
   let wemef=[]
   let coupang=[]
   let extra=''
-
-  for(let i of await getWemefData()){
+  let wemefData=await getWemefData()
+  let coupnagData=await getCoupangData()
+  for(let i of wemefData){
     wemef.push(JSON.stringify(i))
   }
-  for(let i of await getCoupangData()){
+  for(let i of coupnagData){
     coupang.push(JSON.stringify(i))
   }
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      extra+="wemef add"+i+'\n'
+      telegramSendMessage("wemef add"+i)
+    }
+  }
+
+  for(let i of data.wemef){
+    if(!wemef.includes(i)){
+      telegramSendMessage("wemef delete"+i)
     }
   }
 
   for(let i of data.coupang){
     if(!coupang.includes(i)){
+      telegramSendMessage("coupang delete"+i)
       extra+="coupang delete"+i+'\n'
     }
   }
 
   for(let i of coupang){
     if(!data.coupang.includes(i)){
-      extra+="coupang add"+i+'\n'
+      telegramSendMessage("coupang add"+i)
     }
   }
 
-  for(let i of data.wemef){
-    if(!wemef.includes(i)){
-      extra+="wemef delete"+i+'\n'
-    }
-  }
-  if(extra.length>0){
-    data.coupang=coupang.slice()
-    data.wemef=wemef.slice()
-    console.log(extra)
-    while(extra.includes('&')){
-      extra=extra.replace('&','||')
-    }
-    telegramSendMessage(extra.toString())
+  data.coupang=coupang.slice()
+  data.wemef=wemef.slice()
 
-  }
 }
 
 
