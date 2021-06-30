@@ -24,6 +24,12 @@ export async function getDataArray(date){
   while(temp.weekday()!=1){
     temp.subtract(1,'day')
   }
+
+  // 7월됬을때 추가할 코드
+  while(temp.format('MM')!=date.end.format('MM')){
+    temp.add(1,'day')
+  }
+
   let startDay= temp.format('MMDD')
   let weeknumber=date.now.weekday()||7
   console.log('--------------------'+weeknumber)
