@@ -36,13 +36,19 @@ telebot.onText(/^(help)|^(h)/, (msg) => {
     update data SET price=[ data[0] ] where brand=[ data[1] ] and app=[ data[2] ]
     ex)
     update
-    price 4000 아티제 yogiyo
+    4000 아티제 yogiyo
 
     delete
     'Delete from data where brand="[data[0]]" and app="[data[1]]"'
     ex)
     delete
     아티제 yogiyo
+
+    loadCoupang
+    쿠팡로드
+    
+    unloadCoupang
+    쿠핑언로드
 
     /refresh
     /chageCoupang
@@ -275,7 +281,7 @@ telebot.onText(/^loadCoupang/, async (msg) => {
 })
 
 
-telebot.onText(/^uploadCoupang/, async (msg) => {
+telebot.onText(/^unloadCoupang/, async (msg) => {
     const mysql = require('mysql2/promise');
     const pool = mysql.createPool({
     host     : 'localhost',
