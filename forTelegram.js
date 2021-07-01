@@ -4,6 +4,7 @@ require('dotenv').config({ path: require('find-config')('.env') })
 const TelegramBot = require('node-telegram-bot-api')
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
 let telebot = new TelegramBot(token, {polling: true})
+import { coupangReadData} from './readfile.js'
 
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
@@ -46,7 +47,7 @@ telebot.onText(/^(help)|^(h)/, (msg) => {
 
     loadCoupang
     쿠팡로드
-    
+
     unloadCoupang
     쿠핑언로드
 
