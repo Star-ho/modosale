@@ -250,8 +250,6 @@ telebot.onText(/^loadCoupang/, async (msg) => {
     });
  
     let connect = await pool.getConnection(conn =>conn)
-    await connect.query('delete from data where app="coupang"');
- 
     for(let i of ( await coupangReadData() ) ){
        let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
        if(SqlRes[0][0]){

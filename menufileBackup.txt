@@ -117,7 +117,7 @@ VIPS&&VIPS.png&&커피
 바른치킨&&barenchicken.png&&치킨
 바비박스도시락&&bobbibox.png&&한식
 바비큐보스&&babiqueboss.png&&한식
-박가부대 박가부대&치즈닭갈비//박가부대&&bakgabudae.png&&한식
+박가부대&치즈닭갈비//박가부대&&bakgabudae.png&&한식
 반올림 반올림피자샵&&banalimpizza.png&&피자
 반찬 진이찬방&&jinichanbang.png&&한식
 반찬전문점 오레시피&&Orecipi.png&&한식
