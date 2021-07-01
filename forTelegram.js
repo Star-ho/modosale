@@ -277,9 +277,8 @@ telebot.onText(/^loadCoupang/, async (msg) => {
     moment.tz.setDefault("Asia/Seoul");
  
     telebot.sendMessage(chatId,"coupang DataLoad!!")
-    let url="127.0.0.1:3000/readdb"
-    const fetch=require('node-fetch')
-    fetch(url)
+    const request = require('request');
+    request('http://127.0.0.1:3000/readDB')
 })
 
 
