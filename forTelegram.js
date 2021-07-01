@@ -1,4 +1,4 @@
-//node forTelegram.js >teleLog 2>&1 &    
+//npx babel-node --presets @babel/env  forTelegram.js >teleLog 2>&1 &    
 //disown -a
 require('dotenv').config({ path: require('find-config')('.env') })
 const TelegramBot = require('node-telegram-bot-api')
@@ -255,7 +255,7 @@ telebot.onText(/^loadCoupang/, async (msg) => {
        database : 'menu',
        connectionLimit:10
     });
- 
+    const chatId = 1052011050;
     let connect = await pool.getConnection(conn =>conn)
     for(let i of ( await coupangReadData() ) ){
        let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
@@ -276,8 +276,7 @@ telebot.onText(/^loadCoupang/, async (msg) => {
     require('moment-timezone');
     moment.tz.setDefault("Asia/Seoul");
  
-    console.log('Wemef data reload! \n time is '+moment().format())
-    telegramSendMessage('Wemef data reload! \n time is '+moment().format())
+    telebot.sendMessage(chatId,"coupang DataLoad!!")
     readDB()
 })
 
