@@ -5,10 +5,9 @@ const TelegramBot = require('node-telegram-bot-api')
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
 let telebot = new TelegramBot(token, {polling: true})
 
-
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
-telebot.onText(/(help)|(h)/, (msg) => {
+telebot.onText(/^(help)|^(h)/, (msg) => {
     const chatId = 1052011050;
     telebot.sendMessage(chatId, `---------------------------
     데이터양식
@@ -166,12 +165,10 @@ telebot.onText(/^update/, async (msg) => {
     try{
         const command = msg.text.split('\n')
         let data=command[1].split(' ')
-    
         res = (await connect.query(`update data SET price=${+data[0]} where brand="${data[1]}" and app="${data[2]}" `));
         console.log(`update data SET price=${+data[0]} where brand="${data[1]}" and app="${data[2]}" `)
     }catch(e){
         telebot.sendMessage(chatId,e)
-
     }
     telebot.sendMessage(chatId,JSON.stringify(res))
     const request = require('request');
@@ -233,6 +230,68 @@ telebot.onText(/^delete/, async (msg) => {
         let data=command[1].split(' ')
     
         res = await connect.query(`Delete from data where brand="${data[0]}" and app="${data[1]}"`);
+    }catch(e){
+        telebot.sendMessage(chatId,e)
+    }
+    telebot.sendMessage(chatId,JSON.stringify(res))
+    const request = require('request');
+    request('http://127.0.0.1:3000/readDB')
+});
+
+telebot.onText(/^loadCoupang/, async (msg) => {
+    const mysql = require('mysql2/promise');
+    const pool = mysql.createPool({
+       host     : 'localhost',
+       port     :  3306,
+       user     : process.env.DB_USER||'starho',
+       password : process.env.DB_PW||'starho',
+       database : 'menu',
+       connectionLimit:10
+    });
+ 
+    let connect = await pool.getConnection(conn =>conn)
+    await connect.query('delete from data where app="coupang"');
+ 
+    for(let i of ( await coupangReadData() ) ){
+       let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
+       if(SqlRes[0][0]){
+          if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
+             await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[2]}')`);   
+          }else{
+             await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','기타','${i[2]}')`);    
+          }
+       }else{
+          await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','없음','기타','${i[2]}')`);
+       }
+       //console.log(i)
+    }
+ 
+    connect.destroy()
+    let  moment = require('moment');
+    require('moment-timezone');
+    moment.tz.setDefault("Asia/Seoul");
+ 
+    console.log('Wemef data reload! \n time is '+moment().format())
+    telegramSendMessage('Wemef data reload! \n time is '+moment().format())
+    readDB()
+})
+
+
+telebot.onText(/^uploadCoupang/, async (msg) => {
+    const mysql = require('mysql2/promise');
+    const pool = mysql.createPool({
+    host     : 'localhost',
+    port     :  3306,
+    user     : process.env.DB_USER||'starho',
+    password : process.env.DB_PW||'starho',
+    database : 'menu',
+    connectionLimit:10
+    });
+    const chatId = 1052011050;
+    let connect = await pool.getConnection(conn =>conn)
+    let res
+    try{
+        res = await connect.query(`Delete from data where app="coupang"`);
     }catch(e){
         telebot.sendMessage(chatId,e)
     }

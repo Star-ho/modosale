@@ -148,7 +148,7 @@ VIPS&&VIPS.png&&커피
 빽다방&&bbakdabang.png&&기타
 뽕뜨락피자&&bbongddrak.png&&피자
 사바사바치킨&&sabasaba.png&&치킨
-삼첩분식&&samcheopBunsik.png&&한식
+삼첩분식//삼첩&&samcheopBunsik.png&&한식
 생생돈까스&&sangsangdonccas.png&&양식
 생활치킨&생활맥주&&sanghwalchicken.png&&치킨
 서가앤쿡&&seogaandcook.png&&양식
@@ -194,8 +194,8 @@ VIPS&&VIPS.png&&커피
 올떡&&allDdukbbokki.png&&분식
 요거프레소&&yogerpresso.png&&양식
 웅이네오돌뼈닭발도&&ungineOdulbbu.png&&치킨
-원할머니명품도시락//원할머니&&onehalmuniDosirak.png&&한식
-원할머니보쌈족발&&OnehalmuniBossam.png&&한식
+원할머니명품도시락&&onehalmuniDosirak.png&&한식
+원할머니보쌈족발//원할머니&&OnehalmuniBossam.png&&한식
 웰덤치킨&&weldumchiken.png&&치킨
 위드치킨&&withchiken.png&&치킨
 유가네닭갈비&&ygane.png&&한식
@@ -233,7 +233,7 @@ VIPS&&VIPS.png&&커피
 짱닭치킨&&jjangdakChicken.png&&치킨
 쫄면주는삼겹본능&&jjolmeonjunonsamgub.png&&한식
 쭈노치킨&&jjunochicken.png&&치킨
-처갓집양념치킨&&cheogajipchicken.png&&치킨
+처갓집양념치킨//처갓집&&cheogajipchicken.png&&치킨
 청년다방&&chungnundabang.png&&커피
 청년피자&&chungnunpizza.png&&피자
 충만치킨&&chungmanChicken.png&&치킨
@@ -291,6 +291,7 @@ VIPS&&VIPS.png&&커피
 피자와치킨의러브레터&&pizzaAndChickenloveletter.png&&피자
 피자파는집&&pizzapaneonjib.png&&피자
 피자헛&&pizzaHut.png&&피자
+피제이피자&&pjpizza.png&&피자
 하남돼지집&&ganampig.png&&한식
 하늘보리피자&&hanlboriPizza.png&&피자
 하우스홀드&&householdPizza.png&&피자

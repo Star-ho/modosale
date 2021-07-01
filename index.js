@@ -192,7 +192,6 @@ async function changeCoupang(){
 
    console.log('Wemef data reload! \n time is '+moment().format())
    telegramSendMessage('Wemef data reload! \n time is '+moment().format())
-
    readDB()
 }
 

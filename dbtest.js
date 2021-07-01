@@ -46,12 +46,6 @@ const pool = mysql.createPool({
 
     })
 
-
-
-
-
-
-
 ///기초
 
 // connection.query('insert into Menu(brandName,imageName,category) values(1,1,1)', (error, rows, fields) => {
