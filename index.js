@@ -169,18 +169,18 @@ async function changeCoupang(){
    });
 
    let connect = await pool.getConnection(conn =>conn)
-   await connect.query('delete from data where app="wemef"');
+   await connect.query('delete from data where app="coupang"');
 
-   for(let i of ( await wemefReadData() ) ){
+   for(let i of ( await coupangReadData() ) ){
       let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
       if(SqlRes[0][0]){
          if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
-            Object.assign(data,{ [i[0]] : [ "wemef", SqlRes[0][0].imageName, SqlRes[0][0].category, +i[1],i[2] ] } )
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[2]}')`);   
          }else{
-            Object.assign(data,{ [i[0]] : [ "wemef",SqlRes[0][0].imageName, "기타", +i[1],i[2] ] } )
+            await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','${SqlRes[0][0].imageName}','기타','${i[2]}')`);    
          }
       }else{
-         Object.assign(data,{ [i[0]] : [ "wemef", "없음", "기타", +i[1],i[2] ] } )
+         await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${i[0]}','${+i[1]}','없음','기타','${i[2]}')`);
       }
       //console.log(i)
    }
