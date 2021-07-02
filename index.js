@@ -252,12 +252,12 @@ async function watchBaeminData(data){
    for(let i of Object.entries(await getData())){
       baemin.push(JSON.stringify(i))
    }
-   let flag=flase
+   let flag=true
    for(let i of baemin){
       if(!data.baemin.includes(i)){
          data.baemin=baemin.slice()
          setBaemin()
-         flag=true
+         flag=false
       }
    }
    if(flag){
