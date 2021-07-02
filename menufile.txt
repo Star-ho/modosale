@@ -2,7 +2,7 @@
 투썸&&towsomePlace.png&&기타
 투존&&towZone.png&&치킨
 두뽂스&&dubbuks.png&&기타
-gsthefresh&&gsthefresh.PNG&&기타
+gsthefresh//GS더프레시&&gsthefresh.PNG&&기타
 곱떡치떡&&gobddukchidduk.png&&한식
 더플레이스&&theplace.png&&기타
 롱스부대찌개&&longsbudajjigae.png&&한식
