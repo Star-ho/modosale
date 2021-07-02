@@ -243,7 +243,7 @@ async function setyogiyoBaemin(){
    for(let i of Object.entries(await getData())){
       data.baemin.push(JSON.stringify(i))
    }
-   intervalId=setInterval(async()=>await watchBaeminData(data),1000*60*20);
+   intervalId=setInterval(async()=>await watchBaeminData(data),1000*60*10);
 }
 
 async function watchBaeminData(data){
@@ -252,13 +252,16 @@ async function watchBaeminData(data){
    for(let i of Object.entries(await getData())){
       baemin.push(JSON.stringify(i))
    }
+   let flag=flase
    for(let i of baemin){
       if(!data.baemin.includes(i)){
          data.baemin=baemin.slice()
          setBaemin()
-      }else{
-         clearInterval(intervalId)
+         flag=true
       }
+   }
+   if(flag){
+      clearInterval(intervalId)
    }
 }
 
