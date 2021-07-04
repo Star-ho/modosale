@@ -147,7 +147,7 @@ export async function getDataArray(date){
         v[0]='GS더프레시'
         v[1]=+(""+v[1]).slice(2)  
       }
-
+      temp=''+ +temp
       while(temp.length>4){
         temp=temp.slice(1)
       }
