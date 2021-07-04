@@ -142,8 +142,13 @@ export async function getDataArray(date){
       if(!temp){
         temp=v[1].replace(/[^0-9]/g,'');
       }
-
-      if(v[0]=='gsthefresh'){
+      while(temp.length>4){
+        temp=temp.slice(1)
+      }
+      while(temp.length<4){
+        temp=temp+'0'
+      }
+      if(v[0].toLowerCase()=='gsthefresh'){
         await telegramSendMessage(`${v[0]}\n ${v[1]}\n 결과:${+(""+temp).slice(2)}`)
       }else{
         await telegramSendMessage(`${v[0]}\n ${v[1]}\n 결과:${temp}`)
