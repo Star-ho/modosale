@@ -248,7 +248,6 @@ async function setyogiyoBaemin(){
 
 async function watchBaeminData(data){
    let baemin=[]
-
    for(let i of Object.entries(await getData())){
       baemin.push(JSON.stringify(i))
    }
@@ -258,6 +257,7 @@ async function watchBaeminData(data){
          data.baemin=baemin.slice()
          setBaemin()
          flag=false
+         break
       }
    }
    if(flag){
