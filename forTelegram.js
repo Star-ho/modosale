@@ -202,6 +202,7 @@ telebot.onText(/^insert/, async (msg) => {
             var qs = require('querystring');
             data.push('coupangeats://SearchResult?keyword='+qs.escape(data[1])+'&sourceType=Promotion')
         }
+        console.log(data)
         let SqlRes = await connect.query(`select * from Menu where brandName="${data[1]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
