@@ -60,7 +60,13 @@ async function watchData(data){
 
   for(let i of coupang){
     if(!data.coupang.includes(i)){
-      telegramSendMessage("coupang add"+i)
+      if(i.img=='https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b22/d0524aeb467f0d1371628d517795d8061c620df5414178bf4b62589b7564.png'){
+        const request = require('request');
+        request('http://127.0.0.1:3000/changeCoupang')
+        telegramSendMessage("coupang add 7월 브랜드 할인")
+      }else{
+        telegramSendMessage("coupang add"+i)
+      }
     }
   }
 
