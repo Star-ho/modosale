@@ -251,9 +251,9 @@ async function deleteCoupang(){
    require('moment-timezone');
    moment.tz.setDefault("Asia/Seoul");
 
-   console.log('coupang data reload! \n time is '+moment().format())
+   console.log('coupang data delete! \n time is '+moment().format())
    
-   telegramSendMessage('coupang data reload! \n time is '+moment().format())
+   telegramSendMessage('coupang data delete! \n time is '+moment().format())
 
    readDB()
 }
