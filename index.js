@@ -231,6 +231,33 @@ async function readDB(){
 
 }
 
+
+async function deleteCoupang(){
+   const mysql = require('mysql2/promise');
+   const pool = mysql.createPool({
+      host     : 'localhost',
+      port     :  3306,
+      user     : process.env.DB_USER||'starho',
+      password : process.env.DB_PW||'starho',
+      database : 'menu',
+      connectionLimit:10
+   });
+
+   let connect = await pool.getConnection(conn =>conn)
+   await connect.query('delete from data where app="wemef"');
+
+   connect.destroy()
+   let  moment = require('moment');
+   require('moment-timezone');
+   moment.tz.setDefault("Asia/Seoul");
+
+   console.log('coupang data reload! \n time is '+moment().format())
+   
+   telegramSendMessage('coupang data reload! \n time is '+moment().format())
+
+   readDB()
+}
+
 //시작 하는곳
 let intervalId
 
@@ -296,6 +323,15 @@ app.get('/chageWemef', function(req, res) {
       await changeWemef()
    })()
    res.send("chageCW");
+});
+
+
+
+app.get('/deleteCoupang', function(req, res) {
+   (async()=>{
+      await deleteCoupang()
+   })()
+   res.send("deleteCoupang");
 });
 
 
