@@ -244,7 +244,7 @@ async function deleteCoupang(){
    });
 
    let connect = await pool.getConnection(conn =>conn)
-   await connect.query('delete from data where app="wemef"');
+   await connect.query('delete from data where app="coupang"');
 
    connect.destroy()
    let  moment = require('moment');
