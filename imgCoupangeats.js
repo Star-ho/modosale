@@ -1,4 +1,4 @@
-  //npx babel-node --presets @babel/env wemef.js
+  //npx babel-node --presets @babel/env imgCoupangeats.js
 
 export async function getCoupangData(){
   
@@ -21,3 +21,9 @@ export async function getCoupangData(){
   // console.log(res)
   return res
 }
+
+(async()=>{
+  let data=await getCoupangData()
+  data=data.filter(v=>v.img=='https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b22/d0524aeb467f0d1371628d517795d8061c620df5414178bf4b62589b7564.png')
+  console.log(data)
+})()
