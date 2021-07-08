@@ -20,3 +20,7 @@
     })
     return res
   }
+
+  // (async ()=>{
+  //   console.log(await getYogiyoData())
+  // })()

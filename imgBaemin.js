@@ -17,8 +17,11 @@
     .then(res=>res.json())
     .then(res=>res.data.mainBanners)
     .then(res=>
-        res.map(v=>{return {title:v.title,imageUrl:v.imageUrl}})
+        res.map(v=>{return {title:v.title,imageUrl:v.imageUrl,uri:v.link}})
     )
 
     return res
   }
+// (async ()=>{
+//   console.log(await getBaeminData())
+// })()
