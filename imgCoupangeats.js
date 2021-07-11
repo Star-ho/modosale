@@ -15,7 +15,7 @@ export async function getCoupangData(){
       }
   })
   res=(await res.json()).data.entityList[0].entity.data.list.map(v=>{
-    return {img:v.imagePath}
+    return {img:v.imagePath,scheme:'coupang'+v.scheme}
   })
   //{이미지경로, URIscheme, id, eocumentKey(?), expireationDateText}
   // console.log(res)
@@ -24,6 +24,6 @@ export async function getCoupangData(){
 
 (async()=>{
   let data=await getCoupangData()
-  data=data.filter(v=>v.img=='https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b22/d0524aeb467f0d1371628d517795d8061c620df5414178bf4b62589b7564.png')
+  
   console.log(data)
 })()
