@@ -14,8 +14,17 @@
     })
     .then(res=>res.json())
     .then(res=>{
-        return res.event_list.filter(v=>v.sns_image_url).map(v=>{
-            return {title:v.title,img:v.url}
+        
+        let  moment = require('moment');
+        require('moment-timezone'); 
+        moment.tz.setDefault("Asia/Seoul"); 
+
+        let date=moment()
+        if(+date.format('YYYYMMDD')> +'20190430'){
+            console.log(date.format('YYYYMMDD'))
+        }
+        return res.event_list.filter(v=>( v.type=='EVENT' )).map(v=>{
+            return {title:v.title,img:v.url,scheme:'yogiyoapp://event?event_id='+v.id}
         })
     })
     return res
