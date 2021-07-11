@@ -15,15 +15,15 @@ export async function getCoupangData(){
       }
   })
   res=(await res.json()).data.entityList[0].entity.data.list.map(v=>{
-    return {img:v.imagePath,scheme:'coupang'+v.scheme}
+    return {img:v.imagePath,scheme:'coupang'+v.scheme,id:v.id,expireDate:v.expireationDateText}
   })
   //{이미지경로, URIscheme, id, eocumentKey(?), expireationDateText}
   // console.log(res)
   return res
 }
 
-(async()=>{
-  let data=await getCoupangData()
+// (async()=>{
+//   let data=await getCoupangData()
   
-  console.log(data)
-})()
+//   console.log(data)
+// })()

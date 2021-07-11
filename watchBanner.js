@@ -98,13 +98,6 @@ async function watchData(data){
     }
   }
 
-  for(let i of data.coupang){
-    if(!coupang.includes(i)){
-      telegramSendMessage("coupang delete"+i)
-      extra+="coupang delete"+i+'\n'
-    }
-  }
-
   for(let i of coupang){
     if(!data.coupang.includes(i)){
       if(i.img=='https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b22/d0524aeb467f0d1371628d517795d8061c620df5414178bf4b62589b7564.png'){
@@ -115,6 +108,13 @@ async function watchData(data){
       }else{
         telegramSendMessage("coupang add"+i)
       }
+    }
+  }
+
+  for(let i of data.coupang){
+    if(!coupang.includes(i)){
+      telegramSendMessage("coupang delete"+i)
+      extra+="coupang delete"+i+'\n'
     }
   }
 
