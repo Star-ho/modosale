@@ -315,14 +315,14 @@ app.get('/chageCoupang', function(req, res) {
    (async()=>{
       await changeCoupang()
    })()
-   res.send("chageCW");
+   res.send("chageCoupang");
 });
 
 app.get('/chageWemef', function(req, res) {
    (async()=>{
       await changeWemef()
    })()
-   res.send("chageCW");
+   res.send("chageWemef");
 });
 
 
