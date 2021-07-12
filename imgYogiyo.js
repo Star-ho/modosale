@@ -30,6 +30,6 @@
     return res
   }
 
-  // (async ()=>{
-  //   console.log(await getYogiyoData())
-  // })()
+//   (async ()=>{
+//     console.log(await getYogiyoData())
+//   })()
