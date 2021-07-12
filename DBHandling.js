@@ -1,7 +1,9 @@
 import {getDataArray} from './yogiyo' 
 import {getData} from './baemin.js'
 import {wemefReadData, coupangReadData} from './readfile.js'
+import {telegramSendMessage} from './teleWebhook.js'
 
+require('dotenv').config();
 
 export async function insertFunc(appname,date){
    
@@ -22,7 +24,6 @@ export async function insertFunc(appname,date){
       connectionLimit:10
    });
 
-   data={}
    let connect = await pool.getConnection(conn =>conn)
    await connect.query(`delete from data where app="${appname}"`);
    let obj
@@ -62,7 +63,7 @@ export async function insertFunc(appname,date){
 }
 
 
-export function deleteFunc(appname){
+export async function deleteFunc(appname){
    const mysql = require('mysql2/promise');
    const pool = mysql.createPool({
       host     : 'localhost',

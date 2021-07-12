@@ -19,6 +19,7 @@
 import {insertFunc,deleteFunc,readDBFunc} from './DBHandling'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
+import {getData} from './baemin.js'
 
 let data={};
 
@@ -30,18 +31,18 @@ async function setYogiyo(){
    while(date.end.weekday()!=0){
       date.end.add(1,'day')
    }
-   insertFunc('yogiyo',date)
+   await insertFunc('yogiyo',date)
    readDB()
 }
 
 
 async function setBaemin(){
-   insertFunc('baemin')
+   await insertFunc('baemin')
    readDB()
 }
 
 async function changeWemef(){
-   insertFunc('wemef')
+   await insertFunc('wemef')
    readDB()
 }
 
@@ -53,7 +54,8 @@ async function changeCoupang(){
 
 
 async function readDB(){
-   data = readDBFunc()
+   data = await readDBFunc()
+   console.log(data)
 }
 
 

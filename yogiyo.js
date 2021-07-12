@@ -1,7 +1,6 @@
 //npx babel-node --presets @babel/env yogiyo.js
 //https://www.daleseo.com/js-babel-node/
 
-import { data } from 'cheerio/lib/api/attributes';
 import {telegramSendMessage} from './teleWebhook.js'
 
 export async function getDataArray(date){
