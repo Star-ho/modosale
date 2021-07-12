@@ -8,7 +8,6 @@ export function coupangDataHandling(obj){
     let data=fs.readFileSync('itemlistCoupang', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL).map(v=>v.split('||'))
-    console.log(data)
     data.forEach(v=>{
         if(v[2]){
             res.push([v[0],v[1],v[2]])    
@@ -25,9 +24,11 @@ export function coupangDataHandling(obj){
         return
     }
     console.log(res)
-    if(data.add){
+    if(obj.add){
         console.log(obj.id)
     }else{
 
     }
 }
+
+
