@@ -1,4 +1,5 @@
 import {telegramSendMessage} from './teleWebhook.js'
+import {coupangHandlingFunc} from './DBHandling.js'
 
 const importMsg='****************************************'
 export function coupangDataHandling(obj){
@@ -24,11 +25,11 @@ export function coupangDataHandling(obj){
         return
     }
     console.log(res)
-    if(obj.add){
-        console.log(obj.id)
-    }else{
 
+    for(let i of res){
+        coupangHandlingFunc([i[0],i[1],obj.scheme,obj.add])
     }
+    
 }
 
 

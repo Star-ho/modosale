@@ -26,9 +26,8 @@ import { coupangDataHandling} from './CoupangDataHandling.js'
   for(let i of baeminData){
     data.baemin.push(JSON.stringify(i))
   }
-  data.coupang.forEach(v=>coupangDataHandling(Object.assign({}, JSON.parse(v),{add:true})))
   //coupangDataHandling({add:JSON.parse(data.coupang[0])})
-  //setInterval(async()=>await watchData(data),1000*60*10);
+  setInterval(async()=>await watchData(data),1000*60*10);
 })()
 
 
@@ -101,15 +100,15 @@ async function watchData(data){
   
   for(let i of coupang){
     if(!data.coupang.includes(i)){
-
+      coupangDataHandling(Object.assign({}, JSON.parse(i),{add:true}))
       telegramSendMessage("coupang add"+i)
     }
   }
 
   for(let i of data.coupang){
     if(!coupang.includes(i)){
+      coupangDataHandling(Object.assign({}, JSON.parse(i),{add:false}))
       telegramSendMessage("coupang delete"+i)
-      extra+="coupang delete"+i+'\n'
     }
   }
 
