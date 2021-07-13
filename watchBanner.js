@@ -5,7 +5,7 @@ import {getCoupangData} from './imgCoupangeats.js'
 import {telegramSendMessage} from './teleWebhook.js'
 import {getBaeminData} from './imgBaemin.js'
 import {getYogiyoData} from './imgYogiyo.js'
-import { coupangDataHandling} from './CoupangDataHandling.js'
+import { coupangDataHandling} from './CoupangDatahandling.js'
 
 (async ()=>{
   let data={wemef:[],coupang:[],baemin:[],yogiyo:[]}
