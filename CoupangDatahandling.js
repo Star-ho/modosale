@@ -81,10 +81,9 @@ async function monthlyMenu({isAdd,urlParam}){
 
                 if(itemData.length==0){
                     telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
-                    return
                 }
                 // console.log([itemData[0][0],itemData[0][1],i.scheme,isAdd])
-                // coupangHandlingFunc([itemData[0],itemData[1],obj.scheme,obj.add])
+                coupangHandlingFunc([itemData[0],itemData[1],obj.scheme,obj.add])
 
             }else{
                 telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
