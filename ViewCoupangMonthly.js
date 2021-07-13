@@ -34,15 +34,16 @@ async function monthlyMenu(){
 
 function ViewImage(res){
     let retval=[]
+    console.log(res)
     for(let i of res){
-        retval.push({img:imgPath+i.imageUrl,id:i.id})
+        retval.push({img:imgPath+i.imageUrl,id:i.id,scheme:i.scheme})
     }
     let html=`
     <html><head></head><body>
     `
     retval.forEach(v=>{
        html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left" src="${v.img}" width="200" height="100" />`
-       html+=`<p>${v.id}</p>`
+       html+=`<p>${v.id},coupang${v.scheme}</p>`
        html+='</div>\n'
     })
     for(let i of res){
