@@ -26,7 +26,7 @@ import { coupangDataHandling} from './CoupangDataHandling.js'
   for(let i of baeminData){
     data.baemin.push(JSON.stringify(i))
   }
-  //coupangDataHandling({add:JSON.parse(data.coupang[0])})
+  
   setInterval(async()=>await watchData(data),1000*60*10);
 })()
 

@@ -45,17 +45,12 @@ telebot.onText(/^(help)|^(h)/, (msg) => {
     delete
     아티제 yogiyo
 
-    loadCoupang
-    쿠팡로드
-
-    unloadCoupang
-    쿠핑언로드
-
     /refresh
     /chageCoupang
     /chageWemef
     /readdb
-    http://sailmoa.com/showimg
+    /showimg
+
     ---------------------------
     `);
 });
