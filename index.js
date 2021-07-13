@@ -162,14 +162,15 @@ app.get('/showimg', async function(req, res) {
          if(v.title.indexOf('_')){
             v.title=v.title.split('_')[0]
          }
-         html+=`<p>${v.title}||${v.link||v.scheme}</p>
+         html+=`<p>${v.title}||${v.link}</p>
          `
+      }else{
+         html+=`<p>${v.scheme}</p>`
       }
       html+='</div>\n'
    })
    html+=`</body></html>`
    res.send(html);
-   
 });
 
 app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit:50000}));
