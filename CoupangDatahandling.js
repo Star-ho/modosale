@@ -37,12 +37,29 @@ export function coupangDataHandling(obj){
 }
 
 async function monthlyMenu({isAdd,urlParam}){
+    //삭제시에는 URL접속 시 에러가 리턴됨
+    //그래서 삭제시에는 파일에 기록되어 있는것 삭제
+    let fs = require('fs');
     const fetch = require('node-fetch');
     const urlencode = require('urlencode'); 
+
+    if(!isAdd){
+        let itemData=fs.readFileSync('itemlistCoupangMonthly', 'utf8')
+        const {EOL} = require('os');
+        itemData=itemData.split(EOL).map(v=>v.split('||'))
+        
+        if(itemData[itemData.length-1][0]==''){
+            itemData.pop()
+        }
+        for(let item of itemData){
+            coupangHandlingFunc([item[0][0],item[0][1],i.scheme,isAdd])
+        }
+    }
+    
     urlParam=urlencode.decode(urlParam).split('=')[2]
     
     let url=`https://web.coupangeats.com/customer/landingPage?key=`+urlParam
-
+    
     let response = await fetch(url,{
         headers:{
             "X-EATS-APP-VERSION": "1.2.21",
@@ -55,7 +72,6 @@ async function monthlyMenu({isAdd,urlParam}){
 
     // console.log(response)
     const imgPath='https://img1a.coupangcdn.com/'
-    let fs = require('fs');
     let data=fs.readFileSync('itemlistCoupangImage', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL)
@@ -83,7 +99,7 @@ async function monthlyMenu({isAdd,urlParam}){
                     telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
                 }
                 // console.log([itemData[0][0],itemData[0][1],i.scheme,isAdd])
-                coupangHandlingFunc([itemData[0],itemData[1],obj.scheme,obj.add])
+                coupangHandlingFunc([itemData[0][0],itemData[0][1],i.scheme,isAdd])
 
             }else{
                 telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
