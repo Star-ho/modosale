@@ -151,13 +151,19 @@ app.get('/readdb', function(req, res) {
 app.get('/showimg', async function(req, res) {
    let retval=[]
    retval.push(...await getWemefData())
+   retval.push('line')
    retval.push(...await getCoupangData())
    let html=`
    <html><head></head><body>
    `
    retval.forEach(v=>{
-      html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left" src="${v.img}" width="200" height="100" />
-      `
+      if(v=='line'){
+         html+=`<div style="float: left;margin: 10;width: 100%;" >`   
+         html+=`<p></p><p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p><p></p>`
+         html+=`</div>`
+         return
+      }
+      html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left" src="${v.img}" width="200" height="100" />`
       if(v.title){
          if(v.title.indexOf('_')){
             v.title=v.title.split('_')[0]
@@ -165,7 +171,7 @@ app.get('/showimg', async function(req, res) {
          html+=`<p>${v.title}||${v.link}</p>
          `
       }else{
-         html+=`<p>${v.scheme}</p>`
+         html+=`<p>${v.scheme}||${v.id}</p>`
       }
       html+='</div>\n'
    })
