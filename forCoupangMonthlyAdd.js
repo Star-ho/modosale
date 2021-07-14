@@ -1,4 +1,5 @@
-import coupangHandlingFunc from "./CoupangDatahandling.js"
+import {coupangHandlingFunc} from './DBHandling.js'
+
 
 (async () =>{
 	let fs = require('fs');
