@@ -1,7 +1,10 @@
 import {coupangHandlingFunc} from './DBHandling.js'
+import {telegramSendMessage} from './teleWebhook.js'
 
 
 (async () =>{
+    const importMsg='****************************************'
+
 	let fs = require('fs');
 const fetch = require('node-fetch');
 const urlencode = require('urlencode'); 
