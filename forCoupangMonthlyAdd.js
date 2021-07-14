@@ -1,9 +1,10 @@
+import coupangHandlingFunc from "./CoupangDatahandling.js"
+
 (async () =>{
 	let fs = require('fs');
 const fetch = require('node-fetch');
 const urlencode = require('urlencode'); 
 
-urlParam=urlencode.decode(urlParam).split('=')[2]
 
 let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0714_IN`
 
@@ -27,8 +28,11 @@ if(data[data.length-1][0]==''){
 }
 const cheerio = require("cheerio");
 let $=cheerio.load(response)
-response=JSON.parse($(`#landing_page`)['0'].attribs.['data-landingpage']).images
-// console.log(response)
+let a='data-landingpage'
+response=JSON.parse($(`#landing_page`)['0'].attribs[a]).images
+
+console.log(response)
+
 // console.log(data)
 for(let i of response){
     if(i.scheme){
@@ -52,4 +56,5 @@ for(let i of response){
             telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
         }
     }
-})}()
+}
+})()
