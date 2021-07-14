@@ -64,51 +64,51 @@ async function watchData(data){
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      telegramSendMessage("wemef add"+i)
+      await telegramSendMessage("wemef add"+i)
     }
   }
 
   for(let i of data.wemef){
     if(!wemef.includes(i)){
-      telegramSendMessage("wemef delete"+i)
+      await telegramSendMessage("wemef delete"+i)
     }
   }
 
   for(let i of baemin){
     if(!data.baemin.includes(i)){
-      telegramSendMessage("baemin add"+i)
+      await telegramSendMessage("baemin add"+i)
     }
   }
 
   for(let i of data.baemin){
     if(!baemin.includes(i)){
-      telegramSendMessage("baemin delete"+i)
+      await telegramSendMessage("baemin delete"+i)
     }
   }
 
   for(let i of yogiyo){
     if(!data.yogiyo.includes(i)){
-      telegramSendMessage("yogiyo add"+i)
+      await telegramSendMessage("yogiyo add"+i)
     }
   }
 
   for(let i of data.yogiyo){
     if(!yogiyo.includes(i)){
-      telegramSendMessage("yogiyo delete"+i)
+      await telegramSendMessage("yogiyo delete"+i)
     }
   }
   
   for(let i of coupang){
     if(!data.coupang.includes(i)){
       coupangDataHandling(Object.assign({}, JSON.parse(i),{add:true}))
-      telegramSendMessage("coupang add"+i)
+      await telegramSendMessage("coupang add"+i)
     }
   }
 
   for(let i of data.coupang){
     if(!coupang.includes(i)){
       coupangDataHandling(Object.assign({}, JSON.parse(i),{add:false}))
-      telegramSendMessage("coupang delete"+i)
+      await telegramSendMessage("coupang delete"+i)
     }
   }
 
