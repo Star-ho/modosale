@@ -2,7 +2,7 @@ const imgPath='https://img1a.coupangcdn.com/'
 
 async function monthlyMenu(){
     const fetch = require('node-fetch');
-    let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0712_IN`
+    let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0714_IN`
 
     let response = await fetch(url,{
         headers:{

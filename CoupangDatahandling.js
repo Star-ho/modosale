@@ -27,7 +27,7 @@ export function coupangDataHandling(obj){
     }
     // console.log(obj)
     
-    if(obj.id==6228){
+    if(obj.id==6229){
         monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
     }else{
         for(let i of res){
@@ -36,7 +36,7 @@ export function coupangDataHandling(obj){
     }
 }
 
-async function monthlyMenu({isAdd,urlParam}){
+export async function monthlyMenu({isAdd,urlParam}){
     //삭제시에는 URL접속 시 에러가 리턴됨
     //그래서 삭제시에는 파일에 기록되어 있는것 삭제
     let fs = require('fs');
