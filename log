@@ -1,74 +1,99 @@
-refresh start! 
- time is 2021-06-21T18:16:46+09:00
+yogiyo refresh start! 
+ time is 2021-07-13T18:28:57+09:00
+baemin refresh start! 
+ time is 2021-07-13T18:28:57+09:00
 Express server has started on port 3000
---------------------1
-http://wp.yogiyo.co.kr/20210621-0627_ohal_app/?1
-(node:23392) UnhandledPromiseRejectionWarning: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
-    at new ClientRequest (_http_client.js:148:13)
-    at request (https.js:314:10)
-    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
-    at new Promise (<anonymous>)
-    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
-    at telelgramSendMessage (C:\Users\Starho\modusale\/yogiyo.js:8:3)
-    at _callee$ (C:\Users\Starho\modusale\/yogiyo.js:135:7)
-    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
-    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
-    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
-(node:23392) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
-(node:23392) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-(node:23392) UnhandledPromiseRejectionWarning: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
-    at new ClientRequest (_http_client.js:148:13)
-    at request (https.js:314:10)
-    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
-    at new Promise (<anonymous>)
-    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
-    at telelgramSendMessage (C:\Users\Starho\modusale\/yogiyo.js:8:3)
-    at _callee$ (C:\Users\Starho\modusale\/yogiyo.js:135:7)
-    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
-    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
-    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
-(node:23392) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 4)
-(node:23392) UnhandledPromiseRejectionWarning: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
-    at new ClientRequest (_http_client.js:148:13)
-    at request (https.js:314:10)
-    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
-    at new Promise (<anonymous>)
-    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
-    at telelgramSendMessage (C:\Users\Starho\modusale\/yogiyo.js:8:3)
-    at _callee$ (C:\Users\Starho\modusale\/yogiyo.js:135:7)
-    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
-    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
-    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
-(node:23392) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 6)
-(node:23392) UnhandledPromiseRejectionWarning: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
-    at new ClientRequest (_http_client.js:148:13)
-    at request (https.js:314:10)
-    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
-    at new Promise (<anonymous>)
-    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
-    at telelgramSendMessage (C:\Users\Starho\modusale\/yogiyo.js:8:3)
-    at _callee$ (C:\Users\Starho\modusale\/yogiyo.js:135:7)
-    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
-    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
-    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
-(node:23392) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 8)
-(node:23392) UnhandledPromiseRejectionWarning: TypeError [ERR_UNESCAPED_CHARACTERS]: Request path contains unescaped characters
-    at new ClientRequest (_http_client.js:148:13)
-    at request (https.js:314:10)
-    at C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1438:15
-    at new Promise (<anonymous>)
-    at fetch (C:\Users\Starho\modusale\node_modules\node-fetch\lib\index.js:1407:9)
-    at telelgramSendMessage (C:\Users\Starho\modusale\/yogiyo.js:8:3)
-    at _callee$ (C:\Users\Starho\modusale\/yogiyo.js:135:7)
-    at tryCatch (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:63:40)
-    at Generator.invoke [as _invoke] (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:293:22)
-    at Generator.next (C:\Users\Starho\modusale\node_modules\regenerator-runtime\runtime.js:118:21)
-(node:23392) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 10)
-refresh end! 
- time is 2021-06-21T18:16:46+09:00
+--------------------2
+http://wp.yogiyo.co.kr/20210712-0718_ohal_app/?2
+baemin refresh end! 
+ time is 2021-07-13T18:29:00+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Read Database! 
- time is 2021-06-21T18:17:29+09:00
-Warning: got packets out of order. Expected 86 but received 0
-^C일괄 작업을 끝내시겠습니까 (Y/N)? 일괄 작업을 끝내시겠습니까 (Y/N)? 일괄 작업을 끝내시겠습니까 (Y/N)? 
-^C
+ time is 2021-07-13T18:29:00+09:00
+Warning: got packets out of order. Expected 61 but received 0
+Tue, 13 Jul 2021 09:29:22 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:360:11
+yogiyo refresh end! 
+ time is 2021-07-13T18:30:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-13T18:30:04+09:00
+Warning: got packets out of order. Expected 118 but received 0
+Read Database! 
+ time is 2021-07-13T18:44:55+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-07-13T20:51:44+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-07-13T23:09:08+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-07-13T23:09:08+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-07-13T23:39:08+09:00
+Warning: got packets out of order. Expected 132 but received 0
+yogiyo refresh start! 
+ time is 2021-07-14T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-07-14T00:01:01+09:00
+--------------------3
+http://wp.yogiyo.co.kr/20210712-0718_ohal_app/?3
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-14T00:01:01+09:00
+Warning: got packets out of order. Expected 29 but received 0
+baemin refresh end! 
+ time is 2021-07-14T00:01:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-14T00:01:03+09:00
+Warning: got packets out of order. Expected 62 but received 0
+yogiyo refresh end! 
+ time is 2021-07-14T00:02:06+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-14T00:02:06+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-07-14T00:09:09+09:00
+Warning: got packets out of order. Expected 116 but received 0
+baemin refresh start! 
+ time is 2021-07-14T00:11:05+09:00
+baemin refresh end! 
+ time is 2021-07-14T00:11:08+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-14T00:11:08+09:00
+Warning: got packets out of order. Expected 122 but received 0
+baemin refresh start! 
+ time is 2021-07-14T00:21:05+09:00
+baemin refresh end! 
+ time is 2021-07-14T00:21:08+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-14T00:21:08+09:00
+Warning: got packets out of order. Expected 120 but received 0
+baemin refresh start! 
+ time is 2021-07-14T00:31:05+09:00
+baemin refresh end! 
+ time is 2021-07-14T00:31:07+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-07-14T00:31:07+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-07-14T01:35:33+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-07-14T09:05:36+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-07-14T10:05:36+09:00
+Read Database! 
+ time is 2021-07-14T10:05:36+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-07-14T11:05:37+09:00
+Warning: got packets out of order. Expected 132 but received 0

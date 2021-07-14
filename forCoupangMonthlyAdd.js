@@ -1,4 +1,5 @@
-let fs = require('fs');
+(async () =>{
+	let fs = require('fs');
 const fetch = require('node-fetch');
 const urlencode = require('urlencode'); 
 
@@ -51,4 +52,4 @@ for(let i of response){
             telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
         }
     }
-}
+})}()
