@@ -23,7 +23,13 @@ async function monthlyMenu(){
     }
     const cheerio = require("cheerio");
     let $=cheerio.load(response)
-    let res=JSON.parse($(`#landing_page`)['0'].attribs['data-landingpage']).images
+    let response1=JSON.parse($(`#landing_page`)['0'].attribs['data-landingpage']).images
+    let res=[]
+    for(let i of response1){
+        if(i.scheme){
+            res.push(i)
+        }
+    }
     console.log(res)
     res = ViewImage(res)
     fs.writeFile('view.html', res, 'utf8', function(error){
