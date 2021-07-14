@@ -12,9 +12,10 @@ export function coupangDataHandling(obj){
     data.forEach(v=>{
         if(v[2]){
             res.push([v[0],v[1],v[2]])    
-            return
+        }else{
+            res.push([v[0],v[1]])
         }
-        res.push([v[0],v[1]])
+        
     });
     if(res[res.length-1][0]==''){
         res.pop()
