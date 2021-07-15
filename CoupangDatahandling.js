@@ -38,7 +38,6 @@ export function coupangDataHandling(obj){
     }
     // console.log(obj)
     
-    
     for(let i of res){
         coupangHandlingFunc([i[0],i[1],obj.scheme,obj.add])
     }
