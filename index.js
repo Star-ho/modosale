@@ -105,7 +105,7 @@ const bodyParser = require('body-parser');
 app.use(express.static('logo'));
 
 app.get('/', function(req, res) {
-   if(req.param('ver')=='0.91'||req.param('ver')=='0.91'){
+   if(req.param('ver')=='0.91'||req.param('ver')=='0.90'){
       res.send(JSON.stringify(data));
    }else{
       res.send(JSON.stringify({error:"error"}));
