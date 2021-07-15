@@ -4,6 +4,7 @@ import {coupangHandlingFunc} from './DBHandling.js'
 const importMsg='****************************************'
 export function coupangDataHandling(obj){
     require('dotenv').config();
+    const urlencode = require('urlencode'); 
     let fs = require('fs');
     let res=[]
     let data=fs.readFileSync('itemlistCoupang', 'utf8')
@@ -20,20 +21,26 @@ export function coupangDataHandling(obj){
     if(res[res.length-1][0]==''){
         res.pop()
     }
+    // console.log(obj)
+
+    let isMounthlyMenu=urlencode.decode(obj.scheme).split('=')[2]
+
+    // console.log(isMounthlyMenu)
+    // console.log(isMounthlyMenu.startsWith('JUL_'))
+    if(isMounthlyMenu.startsWith('JUL_')){
+        monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
+    }
     res=res.filter(v=>v[2]==obj.id)
     // console.log(obj)
     if(res.length==0){
         telegramSendMessage(importMsg+'\n'+'not found\n'+obj.img+'\n'+obj.id+'\n'+obj.scheme+'\n'+importMsg)
-        // return
+        return
     }
     // console.log(obj)
     
-    if(obj.id==6229){
-        monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
-    }else{
-        for(let i of res){
-            coupangHandlingFunc([i[0],i[1],obj.scheme,obj.add])
-        }
+    
+    for(let i of res){
+        coupangHandlingFunc([i[0],i[1],obj.scheme,obj.add])
     }
 }
 
@@ -100,7 +107,7 @@ export async function monthlyMenu({isAdd,urlParam}){
                     telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
                 }
                 // console.log([itemData[0][0],itemData[0][1],i.scheme,isAdd])
-                coupangHandlingFunc([itemData[0][0],itemData[0][1],i.scheme,isAdd])
+                coupangHandlingFunc([itemData[0][0],itemData[0][1],'coupang'+i.scheme,isAdd])
 
             }else{
                 telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
