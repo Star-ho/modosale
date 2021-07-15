@@ -29,6 +29,7 @@ export function coupangDataHandling(obj){
     // console.log(isMounthlyMenu.startsWith('JUL_'))
     if(isMounthlyMenu.startsWith('JUL_')){
         monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
+        return
     }
     res=res.filter(v=>v[2]==obj.id)
     // console.log(obj)
