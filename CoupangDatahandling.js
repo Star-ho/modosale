@@ -60,7 +60,7 @@ export async function monthlyMenu({isAdd,urlParam}){
             itemData.pop()
         }
         for(let item of itemData){
-            coupangHandlingFunc([item[0][0],item[0][1],i.scheme,isAdd])
+            coupangHandlingFunc([item[0][0],item[0][1],item.scheme,isAdd])
         }
     }
     
