@@ -80,7 +80,7 @@ VIPS&&VIPS.png&&커피
 동궁찜닭&&donggung.png&&한식
 동근이숯불두마리치킨&&donggeonTwochiken.png&&치킨
 동대문엽기떡볶이&&dongdaemunyupdduk.png&&분식
-돼지되지 배달삼겹돼지되지&&badalPig.png&&한식
+돼지되지//배달삼겹돼지되지&&badalPig.png&&한식
 두리아&&duria.png&&치킨
 두존치킨//두찜(두마리찜닭)&&dujohnchiken.png&&치킨
 두찜&&duggim.png&&한식
