@@ -124,7 +124,7 @@ app.get('/chageCoupang', function(req, res) {
    res.send("chageCoupang");
 });
 
-app.get('/chageWemef', function(req, res) {
+app.get('/changeWemef', function(req, res) {
    (async()=>{
       await changeWemef()
    })()
