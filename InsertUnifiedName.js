@@ -18,12 +18,17 @@ const pool = mysql.createPool({
     if(data[data.length-1][0]==''){
         data.pop()
     }
-    console.log(data);
+    // console.log(data);
 
     for(let i=0;i<data.length;i++){
-        for(let j=1;j<data[i].length;j++){
-            let temp = await connect.query(`insert into UnifiedName(fakeName,realName) values('${data[i][j]}','${data[i][0]}')`);    
-            // console.log(data[i][j],data[i][0])
+        let temp = (await connect.query(`select * from UnifiedName where fakeName='${data[i][0]}'`))[0][0];    
+        if(temp){
+            console.log(11)
+            console.log(data[i])
+            for(let j=1;j<data[i].length;j++){
+                // let temp = await connect.query(`insert into UnifiedName(fakeName,realName) values('${data[i][j]}','${data[i][0]}')`);    
+                // console.log(data[i][j],data[i][0])
+            }
         }
     }
     await connect.release();
