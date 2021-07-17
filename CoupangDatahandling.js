@@ -7,7 +7,7 @@ export function coupangDataHandling(obj){
     const urlencode = require('urlencode'); 
     let fs = require('fs');
     let res=[]
-    let data=fs.readFileSync('itemlistCoupang', 'utf8')
+    let data=fs.readFileSync('textfile/itemlistCoupang', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL).map(v=>v.split('||'))
     data.forEach(v=>{
@@ -52,7 +52,7 @@ export async function monthlyMenu({isAdd,urlParam}){
     const urlencode = require('urlencode'); 
 
     if(!isAdd){
-        let itemData=fs.readFileSync('itemlistCoupangMonthly', 'utf8')
+        let itemData=fs.readFileSync('textfile/itemlistCoupangMonthly', 'utf8')
         const {EOL} = require('os');
         itemData=itemData.split(EOL).map(v=>v.split('||'))
         
@@ -80,7 +80,7 @@ export async function monthlyMenu({isAdd,urlParam}){
 
     // console.log(response)
     const imgPath='https://img1a.coupangcdn.com/'
-    let data=fs.readFileSync('itemlistCoupangImage', 'utf8')
+    let data=fs.readFileSync('textfile/itemlistCoupangImage', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL)
     if(data[data.length-1][0]==''){
@@ -94,7 +94,7 @@ export async function monthlyMenu({isAdd,urlParam}){
     for(let i of response){
         if(i.scheme){
             if(data.includes(i.imageUrl)){
-                let itemData=fs.readFileSync('itemlistCoupangMonthly', 'utf8')
+                let itemData=fs.readFileSync('textfile/itemlistCoupangMonthly', 'utf8')
                 const {EOL} = require('os');
                 itemData=itemData.split(EOL).map(v=>v.split('||'))
                

@@ -1,7 +1,7 @@
 export async function wemefReadData(){
     let fs = require('fs');
     let res=[]
-    let data=fs.readFileSync('itemlistWemef', 'utf8')
+    let data=fs.readFileSync('textfile/itemlistWemef', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL).map(v=>v.split('||'))
     data.forEach(v=>{
@@ -21,7 +21,7 @@ export async function coupangReadData(){
     let fs = require('fs');
     require('dotenv').config();
     let res=[]
-    let data=fs.readFileSync('itemlistCoupang', 'utf8')
+    let data=fs.readFileSync('textfile/itemlistCoupang', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL).map(v=>v.split('||'))
         data.forEach(v=>{

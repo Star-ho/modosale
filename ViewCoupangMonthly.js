@@ -15,7 +15,7 @@ async function monthlyMenu(){
     .then(res=>res.text())
     // console.log(response)
     let fs = require('fs');
-    let data=fs.readFileSync('itemlistCoupangImage', 'utf8')
+    let data=fs.readFileSync('textfile/itemlistCoupangImage', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL)
     if(data[data.length-1][0]==''){
