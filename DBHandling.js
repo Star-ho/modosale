@@ -39,10 +39,10 @@ export async function insertFunc(appname,date){
    console.log(obj)
    try{
       for(let i of Object.entries(obj) ){
-      //    let isUnifiedName=(await connect.query(`select * from UnifiedName where fakeName='${i[0]}'`))[0][0];
-      //    if(isUnifiedName){
-      //       i[0]=isUnifiedName.realName
-      //    }
+         let isUnifiedName=(await connect.query(`select * from UnifiedName where fakeName='${i[0]}'`))[0][0];
+         if(isUnifiedName){
+            i[0]=isUnifiedName.realName
+         }
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
