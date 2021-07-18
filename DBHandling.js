@@ -25,7 +25,6 @@ export async function insertFunc(appname,date){
    });
 
    let connect = await pool.getConnection(conn =>conn)
-   await connect.query(`delete from data where app="${appname}"`);
    let obj
    if(appname=='yogiyo'){
       obj= await getDataArray(date)
@@ -37,6 +36,7 @@ export async function insertFunc(appname,date){
       obj=await coupangReadData()
    }
    console.log(obj)
+   await connect.query(`delete from data where app="${appname}"`);
    try{
       for(let i of Object.entries(obj) ){
          let isUnifiedName=(await connect.query(`select * from UnifiedName where fakeName='${i[0]}'`))[0][0];
