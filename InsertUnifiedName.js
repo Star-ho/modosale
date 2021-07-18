@@ -23,7 +23,7 @@ const pool = mysql.createPool({
     for(let i=0;i<data.length;i++){
         let temp = (await connect.query(`select * from UnifiedName where fakeName='${data[i][0]}'`))[0][0]; 
         console.log(temp)   
-        if(!temp){
+        if(temp){
             for(let j=1;j<data[i].length;j++){
                 let temp = await connect.query(`insert into UnifiedName(fakeName,realName) values('${data[i][j]}','${data[i][0]}')`);    
                 console.log(data[i][j],data[i][0])
@@ -31,6 +31,7 @@ const pool = mysql.createPool({
         }
     }
     await connect.release();
+    await connect.destroy()
 })()
 // connection.query('create table UnifiedName(fakeName varchar(100), realName varchar(100));', (error, rows, fields) => {
 //     if (error) throw error;

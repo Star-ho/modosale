@@ -62,18 +62,6 @@ async function watchData(data){
     baemin.push(JSON.stringify(i))
   }
 
-  for(let i of wemef){
-    if(!data.wemef.includes(i)){
-      await telegramSendMessage("wemef add"+i)
-    }
-  }
-
-  for(let i of data.wemef){
-    if(!wemef.includes(i)){
-      await telegramSendMessage("wemef delete"+i)
-    }
-  }
-
   for(let i of baemin){
     if(!data.baemin.includes(i)){
       await telegramSendMessage("baemin add"+i)
@@ -109,6 +97,18 @@ async function watchData(data){
     if(!coupang.includes(i)){
       coupangDataHandling(Object.assign({}, JSON.parse(i),{add:false}))
       await telegramSendMessage("coupang delete"+i)
+    }
+  }
+
+  for(let i of wemef){
+    if(!data.wemef.includes(i)){
+      await telegramSendMessage("wemef add"+i)
+    }
+  }
+
+  for(let i of data.wemef){
+    if(!wemef.includes(i)){
+      await telegramSendMessage("wemef delete"+i)
     }
   }
 
