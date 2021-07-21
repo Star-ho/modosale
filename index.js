@@ -1,6 +1,6 @@
 //npx babel-node --presets @babel/env index.js >log 2>&1 &
 //disown -a
-
+//ssh -i "starho_key.pem" ubuntu@ec2-15-165-75-172.ap-northeast-2.compute.amazonaws.com
 /**
  * yogiyo, baemin은 앱에서 받아서 12시에 처리
  * 
