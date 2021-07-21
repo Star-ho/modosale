@@ -89,15 +89,18 @@ async function watchData(data){
   
   for(let i of coupang){
     if(!data.coupang.includes(i)){
-      coupangDataHandling(Object.assign({}, JSON.parse(i),{add:true}))
       await telegramSendMessage("coupang add"+i)
+      coupangDataHandling(Object.assign({}, JSON.parse(i),{add:true}))
+
+
     }
   }
 
   for(let i of data.coupang){
     if(!coupang.includes(i)){
-      coupangDataHandling(Object.assign({}, JSON.parse(i),{add:false}))
       await telegramSendMessage("coupang delete"+i)
+      coupangDataHandling(Object.assign({}, JSON.parse(i),{add:false}))
+
     }
   }
 

@@ -63,6 +63,7 @@ export async function monthlyMenu({isAdd,urlParam}){
             for(let item of itemData){
                 coupangHandlingFunc([item[0][0],item[0][1],item.scheme,isAdd])
             }
+            return
         }
         
         urlParam=urlencode.decode(urlParam).split('=')[2]
