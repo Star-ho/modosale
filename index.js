@@ -150,7 +150,7 @@ app.get('/readdb', function(req, res) {
 
 app.get('/showimg', async function(req, res) {
    let retval=[]
-   retval.push(...await getWemefData())
+   retval.push(...await getWemefData(true,true))
    retval.push('line')
    retval.push(...await getCoupangData())
    let html=`
@@ -164,15 +164,10 @@ app.get('/showimg', async function(req, res) {
          return
       }
       html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left;background-color: blueviolet;" src="${v.img}" width="250" height="100" />`
-      if(v.title){
-         if(v.title.indexOf('_')){
-            v.title=v.title.split('_')[0]
-         }
-         html+=`<p>${v.title}||${v.link}</p>
-         `
-      }else{
-         html+=`<p>${v.scheme}||${v.id}</p>`
+      if(v.id){
+         html+=`<p>${v.id}</p>`
       }
+
       html+='</div>\n'
    })
    html+=`</body></html>`

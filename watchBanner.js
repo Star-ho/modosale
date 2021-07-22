@@ -9,7 +9,7 @@ import { coupangDataHandling} from './CoupangDatahandling.js'
 
 (async ()=>{
   let data={wemef:[],coupang:[],baemin:[],yogiyo:[]}
-  let wemefData=await getWemefData()
+  let wemefData=await getWemefData(true)
   let coupnagData=await getCoupangData()
   let yogiyoData = await getYogiyoData()
   let baeminData = await getBaeminData()
@@ -44,7 +44,7 @@ async function watchData(data){
   let coupang=[]
   let baemin=[]
   let yogiyo=[]
-  let wemefData=await getWemefData()
+  let wemefData=await getWemefData(true)
   let coupnagData=await getCoupangData()
   let yogiyoData=await getYogiyoData()
   let baeminData=await getBaeminData()

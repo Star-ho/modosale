@@ -1,6 +1,6 @@
 import {getDataArray} from './yogiyo' 
 import {getData} from './baemin.js'
-import {wemefReadData, coupangReadData} from './readfile.js'
+import {wemefReadData, coupangReadData} from './coupangWemefChangedata.js'
 import {telegramSendMessage} from './teleWebhook.js'
 
 require('dotenv').config();
@@ -53,7 +53,6 @@ export async function insertFunc(appname,date){
          }else{
             await connect.query(`insert into data(app,brand,price,img,category,uri) values('${appname}','${i[0]}','${+i[1][0]}','없음','기타','${i[1][1]}')`);    
          }
-         
          connect.release()
       }
    }catch(e){

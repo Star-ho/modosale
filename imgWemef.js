@@ -1,8 +1,7 @@
 //npx babel-node --presets @babel/env wemef.js
 
-export async function getWemefData(){
+async function getWemefData(isAll,onlyID){
   const fetch=require('node-fetch')
-  const fs = require('fs');
   let url='https://api.wmpo.co.kr/gate?lat=37.4799003321726&lon=126.943954234576'
   let headers={
     'token':"6128b8da-28d2-488f-8a76-57d0ff3cc033",
@@ -32,10 +31,15 @@ export async function getWemefData(){
   for(let i of res){
     // console.log(i)
     if(i.name==='a'){
-      let temp=i.attribs.href.split('/')
-      temp=temp[temp.length-1]
-      retval.push({img:i.children[0].attribs.src,id:temp,scheme:i.attribs.href})
-    }else if(i.name==='img'){
+      console.log(i.img)
+      let id=i.children[0].attribs.src.split('/')
+      id=id[id.length-1].split('.')[0]
+      if(onlyID){
+        retval.push({img:i.children[0].attribs.src,id:id})
+      }else{
+        retval.push({img:i.children[0].attribs.src,scheme:i.attribs.href,id:id})
+      }    
+    }else if(i.name==='img'&&isAll){
       // console.log(i)
       retval.push({img:i.attribs.src,id:undefined,scheme:undefined})
     }
@@ -45,18 +49,7 @@ export async function getWemefData(){
 }
 
 // 실행시
-// (async ()=>{
-//     const fetch=require('node-fetch')
-
-//     const url='https://api.wmpo.co.kr/gate'
-//     let res=await fetch(url,{
-//         headers:{'token':"6128b8da-28d2-488f-8a76-57d0ff3cc033",
-//         "User-Agent":"Cupping/7.7.1 (com.wemakeprice.cupping; build:77; Android 7.1.2) Retrofit2/2.4.0"}
-//     })
-//     res=(await res.json()).data.templates[0].items.map(v=>{
-//       return {title:v.title, link:v.link, img:v.image}
-//     })
-//     // console.log(res)
-//     return res
-// })()
+(async ()=>{
+    console.log(await getWemefData())
+})()
 
