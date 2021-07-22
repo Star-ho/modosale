@@ -164,10 +164,8 @@ app.get('/showimg', async function(req, res) {
          return
       }
       html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left;background-color: blueviolet;" src="${v.img}" width="250" height="100" />`
-      if(v.id){
-         html+=`<p>${v.id}</p>`
-      }
-
+      html+=`<p>${v.id}</p>`
+      
       html+='</div>\n'
    })
    html+=`</body></html>`

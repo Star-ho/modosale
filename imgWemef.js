@@ -1,6 +1,6 @@
 //npx babel-node --presets @babel/env wemef.js
 
-async function getWemefData(isAll,onlyID){
+export async function getWemefData(isAll,onlyID){
   const fetch=require('node-fetch')
   let url='https://api.wmpo.co.kr/gate?lat=37.4799003321726&lon=126.943954234576'
   let headers={
@@ -31,7 +31,7 @@ async function getWemefData(isAll,onlyID){
   for(let i of res){
     // console.log(i)
     if(i.name==='a'){
-      console.log(i.img)
+      // console.log(i.img)
       let id=i.children[0].attribs.src.split('/')
       id=id[id.length-1].split('.')[0]
       if(onlyID){
@@ -41,7 +41,9 @@ async function getWemefData(isAll,onlyID){
       }    
     }else if(i.name==='img'&&isAll){
       // console.log(i)
-      retval.push({img:i.attribs.src,id:undefined,scheme:undefined})
+      let id=i.attribs.src.split('/')
+      id=id[id.length-1].split('.')[0]
+      retval.push({img:i.attribs.src,id:id,scheme:undefined})
     }
   }
   // console.log(retval)
@@ -49,7 +51,7 @@ async function getWemefData(isAll,onlyID){
 }
 
 // 실행시
-(async ()=>{
-    console.log(await getWemefData())
-})()
+// (async ()=>{
+//     console.log(await getWemefData())
+// })()
 
