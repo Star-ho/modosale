@@ -2,6 +2,8 @@ const imgPath='https://img1a.coupangcdn.com/'
 
 async function monthlyMenu(){
     const fetch = require('node-fetch');
+    const fs = require('fs');
+
     let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0716_IN`
 
     let response = await fetch(url,{
@@ -14,7 +16,6 @@ async function monthlyMenu(){
     })
     .then(res=>res.text())
     // console.log(response)
-    let fs = require('fs');
     let data=fs.readFileSync('textfile/itemlistCoupangImage', 'utf8')
     const {EOL} = require('os');
     data=data.split(EOL)

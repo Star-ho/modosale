@@ -163,7 +163,7 @@ app.get('/showimg', async function(req, res) {
          html+=`</div>`
          return
       }
-      html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left" src="${v.img}" width="200" height="100" />`
+      html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left;background-color: blueviolet;" src="${v.img}" width="250" height="100" />`
       if(v.title){
          if(v.title.indexOf('_')){
             v.title=v.title.split('_')[0]
