@@ -68,11 +68,9 @@ async function deleteCoupang(){
 let intervalId
 
 readDB()
-changeWemef()
 //위메프오도 추가
 async function setyogiyoBaemin(){
    setYogiyo()
-   changeWemef()
    setBaemin()
    let data={baemin:[]}
    for(let i of Object.entries(await getData())){
