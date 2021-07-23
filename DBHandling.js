@@ -35,7 +35,7 @@ export async function insertFunc(appname,date){
    }else if(appname=='coupang'){
       obj=await coupangReadData()
    }
-   console.log(obj)
+   // console.log(obj)
    await connect.query(`delete from data where app="${appname}"`);
    try{
       for(let i of Object.entries(obj) ){

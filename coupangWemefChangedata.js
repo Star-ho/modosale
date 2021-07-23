@@ -15,20 +15,20 @@ export async function wemefReadData(){
         for(let i of wemefData){
             if(i.id==v[2]){
                 if(Object.keys(res).includes(v[0])){
-                    console.log(v)
+                    // console.log(v)
                     return
                 }
                 Object.assign(res,{ [v[0]] :[v[1],i.scheme] })    
             }
         }
     });
-    console.log(Object.keys(res).length)
+    // console.log(Object.keys(res).length)
     return res
 }
 
-(async()=>{
-    console.log(await wemefReadData())
-})()
+// (async()=>{
+//     console.log(await wemefReadData())
+// })()
 
 export async function coupangReadData(){
     let fs = require('fs');

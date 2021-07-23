@@ -62,7 +62,7 @@ async function watchData(data){
   for(let i of baeminData){
     baemin.push(JSON.stringify(i))
   }
-
+  
   for(let i of baemin){
     if(!data.baemin.includes(i)){
       await telegramSendMessage("baemin add"+i)
