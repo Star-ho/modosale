@@ -27,7 +27,12 @@ export function coupangDataHandling(obj){
 
     // console.log(isMounthlyMenu)
     // console.log(isMounthlyMenu.startsWith('JUL_'))
-    if(isMounthlyMenu.startsWith('JUL_')){
+    let  moment = require('moment');
+    require('moment-timezone'); 
+    moment.tz.setDefault("Asia/Seoul"); 
+    let MounthName= moment().format('MMM').toUpperCase()+'_'
+
+    if(isMounthlyMenu.startsWith(MounthName)){
         monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
         return
     }
