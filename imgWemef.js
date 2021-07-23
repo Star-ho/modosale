@@ -1,5 +1,7 @@
 //npx babel-node --presets @babel/env imgWemef.js
 
+const { telegramSendMessage } = require('./teleWebhook')
+
 export async function getWemefData(isAll){
   const fetch=require('node-fetch')
   let url='https://api.wmpo.co.kr/gate?lat=37.4799003321726&lon=126.943954234576'
@@ -22,12 +24,17 @@ export async function getWemefData(isAll){
   res=await fetch(url,{
     headers:headers
   }).then(res=>res.text())
-  const cheerio = require("cheerio");
-  let $=cheerio.load(res)
-  res= $('.view_coupon_desc')['0'].children[1].children
-  res=res[res.length-2].children
-  res=res.filter(v=>v.name=='a'||v.name=='img')
-  // console.log(res[0].attribs.href.split('/')[res[0].attribs.href.split('/').length-1])
+  try{
+    const cheerio = require("cheerio");
+    let $=cheerio.load(res)
+    res= $('.view_coupon_desc')['0'].children[1].children
+    res=res[res.length-2].children
+    res=res.filter(v=>v.name=='a'||v.name=='img')
+    // console.log(res[0].attribs.href.split('/')[res[0].attribs.href.split('/').length-1])
+  }catch{
+    telegramSendMessage('fuckkkking wemef error!!!!')
+    console.log('wemef error')
+  }
   let retval=[]
   for(let i of res){
     // console.log(i)
@@ -51,9 +58,9 @@ export async function getWemefData(isAll){
 }
 
 // 실행시
-// (async ()=>{
-//     console.log(await getWemefData(true))
-// })()
+(async ()=>{
+    console.log(await getWemefData(true))
+})()
 
 export async function getWemefBannerData(){
   const fetch=require('node-fetch')
