@@ -6,7 +6,6 @@ import {telegramSendMessage} from './teleWebhook.js'
 require('dotenv').config();
 
 export async function insertFunc(appname,date){
-   
    let  moment = require('moment');
    require('moment-timezone'); 
    moment.tz.setDefault("Asia/Seoul"); 
