@@ -1,6 +1,6 @@
-//npx babel-node --presets @babel/env wemef.js
+//npx babel-node --presets @babel/env imgWemef.js
 
-export async function getWemefData(isAll,onlyID){
+export async function getWemefData(isAll){
   const fetch=require('node-fetch')
   let url='https://api.wmpo.co.kr/gate?lat=37.4799003321726&lon=126.943954234576'
   let headers={
@@ -24,34 +24,34 @@ export async function getWemefData(isAll,onlyID){
   }).then(res=>res.text())
   const cheerio = require("cheerio");
   let $=cheerio.load(res)
-  res= $('.view_coupon_desc')['0'].children[1].children[1].children
+  res= $('.view_coupon_desc')['0'].children[1].children
+  res=res[res.length-2].children
   res=res.filter(v=>v.name=='a'||v.name=='img')
   // console.log(res[0].attribs.href.split('/')[res[0].attribs.href.split('/').length-1])
   let retval=[]
   for(let i of res){
     // console.log(i)
     if(i.name==='a'){
-      // console.log(i.img)
-      let id=i.children[0].attribs.src.split('/')
-      id=id[id.length-1].split('.')[0]
-      if(onlyID){
-        retval.push({img:i.children[0].attribs.src,id:id})
-      }else{
+      if(i.children[0].name=='img'){
+        // console.log(i.children[0].attribs['data-filename'])
+        let id=i.children[0].attribs['data-filename']
         retval.push({img:i.children[0].attribs.src,scheme:i.attribs.href,id:id})
-      }    
+
+      }
     }else if(i.name==='img'&&isAll){
-      // console.log(i)
-      let id=i.attribs.src.split('/')
-      id=id[id.length-1].split('.')[0]
-      retval.push({img:i.attribs.src,id:id,scheme:undefined})
+      // console.log(i.attribs['data-filename'])
+      let id=i.attribs['data-filename']
+      retval.push({img:i.attribs.src,scheme:undefined,id:id})
     }
   }
   // console.log(retval)
+
+  
   return retval
 }
 
 // 실행시
-// (async ()=>{
-//     console.log(await getWemefData())
-// })()
+(async ()=>{
+    console.log(await getWemefData(true))
+})()
 
