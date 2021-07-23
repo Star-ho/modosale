@@ -192,7 +192,7 @@ telebot.onText(/^insert/, async (msg) => {
         let connect = await pool.getConnection(conn =>conn)
         const command = msg.text.split('\n')
         let data=command[1].split(' ')
-        if(data[0]=='coupang'){
+        if(data[0]=='coupang'&&data[3]==undefined){
             var qs = require('querystring');
             data.push('coupangeats://SearchResult?keyword='+qs.escape(data[1])+'&sourceType=Promotion')
         }
