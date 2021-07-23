@@ -1,21 +1,26 @@
 //npx babel-node --presets @babel/env watchBanner.js  > watchlog 2>&1 &
 //disown -a
-import {getWemefData} from './imgWemef.js'
+import {getWemefData,getWemefBannerData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {telegramSendMessage} from './teleWebhook.js'
 import {getBaeminData} from './imgBaemin.js'
 import {getYogiyoData} from './imgYogiyo.js'
 import { coupangDataHandling} from './CoupangDatahandling.js'
+import { getDataArray } from './yogiyo.js'
 
 (async ()=>{
-  let data={wemef:[],coupang:[],baemin:[],yogiyo:[]}
+  let data={wemef:[],coupang:[],baemin:[],yogiyo:[],wemefBanner:[]}
   let wemefData=await getWemefData(true)
+  let wemefBannerData=await getWemefBannerData()
   let coupnagData=await getCoupangData()
   let yogiyoData = await getYogiyoData()
   let baeminData = await getBaeminData()
 
   for(let i of wemefData){
     data.wemef.push(JSON.stringify(i))
+  }
+  for(let i of wemefBannerData){
+    data.wemefBanner.push(JSON.stringify(i))
   }
   for(let i of coupnagData){
     data.coupang.push(JSON.stringify(i))
@@ -40,10 +45,12 @@ async function watchData(data){
   let date={now:moment()}
   console.log('watch start! \n time is '+date.now.format())
 
+  let wemefBanner=[]
   let wemef=[]
   let coupang=[]
   let baemin=[]
   let yogiyo=[]
+  let wemefBannerData=await getWemefBannerData()
   let wemefData=await getWemefData(true)
   let coupnagData=await getCoupangData()
   let yogiyoData=await getYogiyoData()
@@ -51,6 +58,9 @@ async function watchData(data){
   
   for(let i of wemefData){
     wemef.push(JSON.stringify(i))
+  }
+  for(let i of wemefBannerData){
+    wemefBanner.push(JSON.stringify(i))
   }
   for(let i of coupnagData){
     coupang.push(JSON.stringify(i))
@@ -106,16 +116,31 @@ async function watchData(data){
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      await telegramSendMessage("wemef add"+i)
+      const request = require('request');
+      request('http://127.0.0.1:3000/changeWemef')
     }
   }
 
   for(let i of data.wemef){
     if(!wemef.includes(i)){
-      await telegramSendMessage("wemef delete"+i)
+      const request = require('request');
+      request('http://127.0.0.1:3000/changeWemef')
     }
   }
 
+  for(let i of wemefBanner){
+    if(!data.wemefBanner.includes(i)){
+      await telegramSendMessage("wemefBanner add"+i)
+    }
+  }
+
+  for(let i of data.wemefBanner){
+    if(!wemefBanner.includes(i)){
+      await telegramSendMessage("wemefBanner delete"+i)
+    }
+  }
+
+  data.wemefBanner=wemefBanner.slice()
   data.coupang=coupang.slice()
   data.wemef=wemef.slice()
   data.baemin=baemin.slice()
