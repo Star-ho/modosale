@@ -1,6 +1,6 @@
 //npx babel-node --presets @babel/env watchBanner.js  > watchlog 2>&1 &
 //disown -a
-import {getWemefData,getWemefBannerData} from './imgWemef.js'
+import {getWemefBannerData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {telegramSendMessage} from './teleWebhook.js'
 import {getBaeminData} from './imgBaemin.js'
@@ -9,9 +9,8 @@ import { coupangDataHandling} from './CoupangDatahandling.js'
 import { getDataArray } from './yogiyo.js'
 
 (async ()=>{
-  let data={wemef:[],coupang:[],baemin:[],yogiyo:[],wemefBanner:[]}
-  let wemefData=await getWemefData(true)
-  let wemefBannerData=await getWemefBannerData()
+  let data={wemef:[],coupang:[],baemin:[],yogiyo:[]}
+  let wemefData=await getWemefBannerData(true)
   let coupnagData=await getCoupangData()
   let yogiyoData = await getYogiyoData()
   let baeminData = await getBaeminData()
@@ -19,9 +18,7 @@ import { getDataArray } from './yogiyo.js'
   for(let i of wemefData){
     data.wemef.push(JSON.stringify(i))
   }
-  for(let i of wemefBannerData){
-    data.wemefBanner.push(JSON.stringify(i))
-  }
+
   for(let i of coupnagData){
     data.coupang.push(JSON.stringify(i))
   }
@@ -31,6 +28,7 @@ import { getDataArray } from './yogiyo.js'
   for(let i of baeminData){
     data.baemin.push(JSON.stringify(i))
   }
+  // console.log(data.wemefBanner)
   // console.log(data.coupang)
   // coupangDataHandling(Object.assign({}, JSON.parse(data.coupang[0]),{add:false}))
   setInterval(async()=>await watchData(data),1000*60*10);
@@ -45,22 +43,17 @@ async function watchData(data){
   let date={now:moment()}
   console.log('watch start! \n time is '+date.now.format())
 
-  let wemefBanner=[]
   let wemef=[]
   let coupang=[]
   let baemin=[]
   let yogiyo=[]
-  let wemefBannerData=await getWemefBannerData()
-  let wemefData=await getWemefData(true)
+  let wemefData=await getWemefBannerData(true)
   let coupnagData=await getCoupangData()
   let yogiyoData=await getYogiyoData()
   let baeminData=await getBaeminData()
   
   for(let i of wemefData){
     wemef.push(JSON.stringify(i))
-  }
-  for(let i of wemefBannerData){
-    wemefBanner.push(JSON.stringify(i))
   }
   for(let i of coupnagData){
     coupang.push(JSON.stringify(i))
@@ -128,19 +121,7 @@ async function watchData(data){
     }
   }
 
-  for(let i of wemefBanner){
-    if(!data.wemefBanner.includes(i)){
-      await telegramSendMessage("wemefBanner add"+i)
-    }
-  }
 
-  for(let i of data.wemefBanner){
-    if(!wemefBanner.includes(i)){
-      await telegramSendMessage("wemefBanner delete"+i)
-    }
-  }
-
-  data.wemefBanner=wemefBanner.slice()
   data.coupang=coupang.slice()
   data.wemef=wemef.slice()
   data.baemin=baemin.slice()
