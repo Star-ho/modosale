@@ -145,7 +145,7 @@ export async function coupangHandlingFunc(data){
             await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${data[0]}','${+data[1]}','없음','기타','${data[2]}')`);    
          }
       }else{
-         await connect.query(`delete from data where brand="${data[0]}";`);
+         await connect.query(`delete from data where brand="${data[0]}" and app='coupang';`);
       }
       
       connect.release()
