@@ -1,4 +1,4 @@
-let  moment = require('moment');
-require('moment-timezone'); 
-moment.tz.setDefault("Asia/Seoul"); 
-let MountName= moment().format('MMM').toUpperCase()+'_'
+let a=false
+if(!a){
+    console.log(a)
+}

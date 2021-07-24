@@ -58,9 +58,9 @@ export async function getWemefData(isAll){
 }
 
 // 실행시
-(async ()=>{
-    console.log(await getWemefData(true))
-})()
+// (async ()=>{
+//     console.log(await getWemefData(true))
+// })()
 
 export async function getWemefBannerData(){
   const fetch=require('node-fetch')

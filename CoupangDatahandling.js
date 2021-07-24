@@ -49,6 +49,10 @@ export function coupangDataHandling(obj){
     }
 }
 
+// (async()=>{
+//     coupangDataHandling({scheme:'==JUL_',add:false})
+// })()
+
 export async function monthlyMenu({isAdd,urlParam}){
     try{    
         //삭제시에는 URL접속 시 에러가 리턴됨
@@ -56,6 +60,7 @@ export async function monthlyMenu({isAdd,urlParam}){
         let fs = require('fs');
         const fetch = require('node-fetch');
         const urlencode = require('urlencode'); 
+        // console.log(isAdd)
 
         if(!isAdd){
             let itemData=fs.readFileSync('textfile/itemlistCoupangMonthly', 'utf8')
