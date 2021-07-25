@@ -206,17 +206,17 @@ async function download(uri, filename){
   }catch{
     uri=uri
   }
-  console.log(uri)
-  let res=await fetch(uri,{
-    timeout: 30000
-  })
+  let res
   try{
-    let buffer = await res.buffer()
-    fs.writeFileSync(filename, buffer, ()=>null)
+    res=await fetch(uri,{
+      timeout: 30000
+    })
   }catch{
-    console.log(uri)
-    telegramSendMessage(uri)
+    console.log('error'+uri)
+    telegramSendMessage('yogiyo error!'+uri)
   }
+  let buffer = await res.buffer()
+  fs.writeFileSync(filename, buffer, ()=>null)
 };
 
 //npx babel-node --presets @babel/env yogiyo.js
