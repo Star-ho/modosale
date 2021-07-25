@@ -208,7 +208,7 @@ async function download(uri, filename){
   }
   let res
   try{
-    res=await fetch(uri,{
+    res=await fetch(encodeURI(uri),{
       timeout: 30000
     })
   }catch{
