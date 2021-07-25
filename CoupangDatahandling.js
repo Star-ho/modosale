@@ -120,7 +120,7 @@ export async function monthlyMenu({isAdd,urlParam}){
                     }
                     // console.log([itemData[0][0],itemData[0][1],i.scheme,isAdd])
                     if(itemData[0]){
-                        coupangHandlingFunc([itemData[0][0],itemData[0][0],i.scheme,true])
+                        coupangHandlingFunc([itemData[0][0],itemData[0][1],i.scheme,true])
                     }
         
                 }else{
