@@ -129,7 +129,7 @@ export async function monthlyMenu({isAdd,urlParam}){
 
     }catch(e){
         console.log(e)
-        telegramSendMessage(e)
+        telegramSendMessage(JSON.stringify(e))
     }
 }
 
