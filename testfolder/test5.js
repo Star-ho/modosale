@@ -1,7 +1,5 @@
-(async()=>{
-    const fetch = require('node-fetch');
+import {wemefReadData} from '../coupangWemefChangedata.js'
 
-    let url='http://dhkorea.wpengine.com/wp-content/uploads/2021/06/이삭-토스트-1.png'
-    let res=await fetch(encodeURI(url))
-    console.log(res)
+(async()=>{
+    console.log(await wemefReadData())
 })()
