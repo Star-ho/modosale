@@ -12,7 +12,7 @@ const fetch = require('node-fetch');
 const urlencode = require('urlencode'); 
 
 
-let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0716_IN`
+let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0722_IN`
 
 let response = await fetch(url,{
     headers:{
@@ -37,7 +37,7 @@ let $=cheerio.load(response)
 let a='data-landingpage'
 response=JSON.parse($(`#landing_page`)['0'].attribs[a]).images
 
-console.log(response)
+// console.log(response)
 
 // console.log(data)
 for(let i of response){
@@ -55,8 +55,9 @@ for(let i of response){
             if(itemData.length==0){
                 telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
             }
-            // console.log([itemData[0][0],itemData[0][1],i.scheme,isAdd])
-            coupangHandlingFunc([itemData[0][0],itemData[0][1],i.scheme,true])
+            if(itemData[0]){
+                coupangHandlingFunc([itemData[0][0],itemData[0][0],i.scheme,true])
+            }
 
         }else{
             telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
