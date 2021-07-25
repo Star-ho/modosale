@@ -206,15 +206,11 @@ async function download(uri, filename){
   }catch{
     uri=uri
   }
-  let res
-  try{
-    res=await fetch(encodeURI(uri),{
+  
+  let res=await fetch(encodeURI(uri),{
       timeout: 30000
     })
-  }catch{
-    console.log('error'+uri)
-    telegramSendMessage('yogiyo error!'+uri)
-  }
+  
   let buffer = await res.buffer()
   fs.writeFileSync(filename, buffer, ()=>null)
 };
