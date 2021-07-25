@@ -119,8 +119,10 @@ export async function monthlyMenu({isAdd,urlParam}){
                         telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
                     }
                     // console.log([itemData[0][0],itemData[0][1],i.scheme,isAdd])
-                    coupangHandlingFunc([itemData[0][0],itemData[0][1],'coupang'+i.scheme,isAdd])
-
+                    if(itemData[0]){
+                        coupangHandlingFunc([itemData[0][0],itemData[0][0],i.scheme,true])
+                    }
+        
                 }else{
                     telegramSendMessage(importMsg+'\n'+'not found\n'+imgPath+i.imageUrl+'\n'+i.id+'\n'+i.scheme+'\n'+importMsg)
                 }
