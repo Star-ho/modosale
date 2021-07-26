@@ -19,7 +19,7 @@ const pool = mysql.createPool({
     let dataArray=[]
 
     var fs = require('fs');
-    fs.readFile('menufile.txt', 'utf8', async function(err, data){
+    fs.readFile('textfile/menufile.txt', 'utf8', async function(err, data){
         const {EOL} = require('os');
         data=data.split(EOL).map(v=>v.split('&&'))
         for(let i=0;i<data.length;i++){
@@ -38,8 +38,13 @@ const pool = mysql.createPool({
         const connect= await pool.getConnection(conn =>conn)
 
         for(let i=0;i<dataArray.length;i++){
-            let temp = await connect.query(`insert into Menu(brandName,imageName,category) values('${dataArray[i][0]}','${dataArray[i][1]}','${dataArray[i][2]}')`);    
-            console.log(temp)
+            let temp = await connect.query(`select brandName from Menu where brandName='${dataArray[i][0]}'`);    
+            if(!temp[0][0]){
+                await connect.query(`insert into Menu(brandName,imageName,category) values('${dataArray[i][0]}','${dataArray[i][1]}','${dataArray[i][2]}')`);    
+                console.log(temp[0][0])
+                console.log(dataArray[i][0])
+            }
+            
             await connect.release();
 
         }
