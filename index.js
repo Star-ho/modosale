@@ -68,7 +68,6 @@ async function deleteCoupang(){
 let intervalId
 
 readDB()
-// setYogiyo()
 //위메프오도 추가
 async function setyogiyoBaemin(){
    setYogiyo()

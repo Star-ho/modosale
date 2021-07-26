@@ -24,7 +24,6 @@ export async function getDataArray(date){
     temp.subtract(1,'day')
   }
 
-  // 7월됬을때 추가할 코드
   while(temp.format('MM')!=date.end.format('MM')){
     temp.add(1,'day')
   }
@@ -73,6 +72,7 @@ export async function getDataArray(date){
     v[1]=v[1]
     return v
   })
+  // console.log(arr)
 
   let img=Array.from({length:arr.length},()=>'')
 
@@ -115,6 +115,7 @@ export async function getDataArray(date){
     if(!temp){
       temp=v[1].replace(/[^0-9]/g,'');
     }
+    // console.log(v,temp)
     if(+temp<1000||+temp>20000){
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
@@ -197,10 +198,10 @@ async function download(uri, filename){
   try{
     try{
       temp=uri.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g).join('')
-      temp1=encodeURIComponent(uri.match(/[가-힣]/g).join(''))
+      temp1=(uri.match(/[가-힣]/g).join(''))
     }catch{
         temp= Hangul.assemble(uri.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g))
-        temp1=encodeURIComponent(temp)
+        temp1=(temp)
     }
     uri=uri.replace(temp,temp1)
   }catch{
@@ -223,6 +224,8 @@ async function imgToCost(src,i,blurSize){
   var sharp = require('sharp');
   let inputPath=`path/down${i}.png`
   const outputPath=`path/result${i}.png`
+  // console.log(src)
+  src=decodeURI(src)
   try{
     await download(src, inputPath)
   }catch(error){
@@ -231,6 +234,7 @@ async function imgToCost(src,i,blurSize){
 
     await download(src, inputPath)
   }
+  
   let outputStream
   if(i<3){
     outputStream= await sharp(inputPath).extract({left:80,top:0,width:420,height:180}).toBuffer()
@@ -240,7 +244,7 @@ async function imgToCost(src,i,blurSize){
     fs.writeFileSync(outputPath,outputStream)
   }
   flag=0
-  
+ 
   const spawn = require('await-spawn')
 
   res = await spawn(process.env.PYPATH||'python3', ['imgToVal.py',outputPath,blurSize]); 
