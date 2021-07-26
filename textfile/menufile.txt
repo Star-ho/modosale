@@ -12,6 +12,7 @@ gsthefresh//GS더프레시&&gsthefresh.PNG&&기타
 떡뽂이도맛있는치킨플러스&&chickenPlus.png&&치킨
 리얼안심찹쌀탕수육&&realansimtansuyuk.png&&기타
 애슐리&&ashley.png&&양식
+애슐리딜리버리&&ashley.png&&양식
 제일제면소&&jeiljemunso.png&&한식
 치킨선생&&chickkensunsang.PNG&&치킨
 카페리피&&cafeleafy.png&&기타
@@ -273,7 +274,7 @@ VIPS&&VIPS.png&&커피
 치킨플러스&&chickenPlus.png&&치킨
 치킨히어로&&chickenHero.png&&치킨
 커피베이&&cuffebay.png&&커피
-커피빈코리아&&coffeeBean.png&&커피
+커피빈&&coffeeBean.png&&커피
 컬투치킨//컬투&&cultochicken.png&&치킨
 케리홈치킨&&keriahomeCHicken.png&&치킨
 코리엔탈깻잎두마리치킨&&korientalChicken.png&&치킨
