@@ -72,7 +72,7 @@ export async function getDataArray(date){
     v[1]=v[1]
     return v
   })
-  // console.log(arr)
+  console.log(arr)
 
   let img=Array.from({length:arr.length},()=>'')
 
@@ -116,7 +116,7 @@ export async function getDataArray(date){
       temp=v[1].replace(/[^0-9]/g,'');
     }
     // console.log(v,temp)
-    if(+temp<1000||+temp>20000){
+    if(+temp<1000||+temp>10000){
       // console.log(v[1],i,`path\\result${i}.png`)
       const spawn = require('await-spawn')
 
