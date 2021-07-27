@@ -109,15 +109,13 @@ async function watchData(data){
 
   for(let i of wemef){
     if(!data.wemef.includes(i)){
-      const request = require('request');
-      request('http://127.0.0.1:3000/changeWemef')
+      await telegramSendMessage("wemef add"+i)
     }
   }
 
   for(let i of data.wemef){
     if(!wemef.includes(i)){
-      const request = require('request');
-      request('http://127.0.0.1:3000/changeWemef')
+      await telegramSendMessage("wemef delete"+i)
     }
   }
 
