@@ -10,7 +10,7 @@ let telebot = new TelegramBot(token, {polling: true})
 telebot.onText(/^(help)|^(h)/, (msg) => {
     const chatId = 1052011050;
     if(msg.chatId==chatId){
-        telebot.sendMessage(chatId, `---------------------------
+        telebot.sendMessage(chatId, `---------------------------    
         데이터양식
         select
         select * from data where brand=[ data[i] ];
@@ -90,7 +90,7 @@ telebot.onText(/^allselect/, async (msg) => {
 telebot.onText(/^select/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chatId==chatId){
-        const mysql = require({'mysql2/promise');
+        const mysql = require('mysql2/promise');
         const pool = mysql.createPool({
         host     : 'localhost',
         port     :  3306,
