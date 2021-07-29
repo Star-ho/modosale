@@ -10,7 +10,7 @@ let telebot = new TelegramBot(token, {polling: true})
 telebot.onText(/^(help)|^(h)/, (msg) => {
     console.log(msg.chatId)
     console.log(typeof msg.chatId)
-    
+    const chatId = 1052011050;
     telebot.sendMessage(chatId, `---------------------------
     데이터양식
     select
