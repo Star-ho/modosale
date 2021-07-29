@@ -8,6 +8,7 @@ let telebot = new TelegramBot(token, {polling: true})
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
 telebot.onText(/^(help)|^(h)/, (msg) => {
+    console.log(11)
     const chatId = 1052011050;
     if(msg.chatId==chatId){
         telebot.sendMessage(chatId, `---------------------------    
@@ -53,7 +54,7 @@ telebot.onText(/^(help)|^(h)/, (msg) => {
 
         ---------------------------
         `);
-}
+    }
 });
 
 
@@ -83,7 +84,7 @@ telebot.onText(/^allselect/, async (msg) => {
         }
 
         telebot.sendMessage(chatId,res)
-}
+    }
 });
 
 
