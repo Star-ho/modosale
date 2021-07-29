@@ -8,7 +8,9 @@ let telebot = new TelegramBot(token, {polling: true})
 //https://api.telegram.org/bot1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI/getUpdates
 
 telebot.onText(/^(help)|^(h)/, (msg) => {
-    const chatId = 1052011050;
+    console.log(msg.chatId)
+    console.log(typeof msg.chatId)
+    
     telebot.sendMessage(chatId, `---------------------------
     데이터양식
     select
