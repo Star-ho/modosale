@@ -187,7 +187,10 @@ telebot.onText(/^update/, async (msg) => {
         }
         telebot.sendMessage(chatId,JSON.stringify(res))
         const request = require('request');
-        request('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
+        request('http://127.0.0.1:3000/readDB').catch((e)=>{
+            console.log(e)
+            telegramSendMessage('for telegram error!\n')
+        })
     }
 });
 
@@ -231,7 +234,10 @@ telebot.onText(/^insert/, async (msg) => {
         }
         telebot.sendMessage(chatId,JSON.stringify(res))
         const request = require('request');
-        request('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
+        request('http://127.0.0.1:3000/readDB').catch((e)=>{
+            console.log(e)
+            telegramSendMessage('for telegram error!\n')
+        })
     }
 });
 
@@ -260,7 +266,10 @@ telebot.onText(/^delete/, async (msg) => {
         }
         telebot.sendMessage(chatId,JSON.stringify(res))
         const request = require('request');
-        request('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
+        request('http://127.0.0.1:3000/readDB').catch((e)=>{
+            console.log(e)
+            telegramSendMessage('for telegram error!\n')
+        })
     }
 });
 
