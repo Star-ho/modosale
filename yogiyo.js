@@ -34,8 +34,8 @@ export async function getDataArray(date){
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
-  // let url=`http://wp.yogiyo.co.kr/${year}${startDay}-${endDay}_ohal_app/?${weeknumber}`
-  let url=`http://wp.yogiyo.co.kr/20210801_ohal_app/?7`
+  let url=`http://wp.yogiyo.co.kr/${year}${startDay}-${endDay}_ohal_app/?${weeknumber}`
+  // let url=`http://wp.yogiyo.co.kr/20210801_ohal_app/?7`
   console.log(url)
   let response = await fetch(url)
   .then(res=>res.text())
