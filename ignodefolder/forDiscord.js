@@ -77,7 +77,7 @@ client.on("message", async function(message) {
     }
     
     const fetch = require('node-fetch');
-    await fetch('http://127.0.0.1:3000/readDB')
+    await fetch('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
 
 
 });

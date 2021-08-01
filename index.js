@@ -20,6 +20,7 @@ import {insertFunc,deleteFunc,readDBFunc} from './DBHandling'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {getData} from './baemin.js'
+import { telegramSendMessage } from './teleWebhook';
 
 let data={};
 

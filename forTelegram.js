@@ -1,7 +1,8 @@
 //npx babel-node --presets @babel/env  forTelegram.js >teleLog 2>&1 &    
 //disown -a
 require('dotenv').config({ path: require('find-config')('.env') })
-const TelegramBot = require('node-telegram-bot-api')
+const TelegramBot = require('node-telegram-bot-api');
+const { telegramSendMessage } = require('./teleWebhook');
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
 let telebot = new TelegramBot(token, {polling: true})
 
@@ -186,7 +187,7 @@ telebot.onText(/^update/, async (msg) => {
         }
         telebot.sendMessage(chatId,JSON.stringify(res))
         const request = require('request');
-        request('http://127.0.0.1:3000/readDB')
+        request('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
     }
 });
 
@@ -230,7 +231,7 @@ telebot.onText(/^insert/, async (msg) => {
         }
         telebot.sendMessage(chatId,JSON.stringify(res))
         const request = require('request');
-        request('http://127.0.0.1:3000/readDB')
+        request('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
     }
 });
 
@@ -259,7 +260,7 @@ telebot.onText(/^delete/, async (msg) => {
         }
         telebot.sendMessage(chatId,JSON.stringify(res))
         const request = require('request');
-        request('http://127.0.0.1:3000/readDB')
+        request('http://127.0.0.1:3000/readDB').catch((e)=>telegramSendMessage('error!\n'+e))
     }
 });
 
