@@ -69,10 +69,6 @@ async function deleteCoupang(){
 let intervalId
 
 readDB()
-setYogiyo().catch((e)=>{
-   console.log(e)
-   telegramSendMessage('yogiyo error!')
-})
 
 //위메프오도 추가
 async function setyogiyoBaemin(){
