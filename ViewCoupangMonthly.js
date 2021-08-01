@@ -4,7 +4,7 @@ async function monthlyMenu(){
     const fetch = require('node-fetch');
     const fs = require('fs');
 
-    let url=`https://web.coupangeats.com/customer/landingPage?key=JUL_0726_IN`
+    let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0801_IN`
 
     let response = await fetch(url,{
         headers:{
@@ -50,7 +50,8 @@ function ViewImage(res){
     `
     retval.forEach(v=>{
        html+=`<div style="float: left;margin: 10;width: 45%;" ><img style="float: left" src="${v.img}" width="200" height="100" />`
-       html+=`<p>${v.id},coupang${v.scheme}</p>`
+       html+=`<p>coupang${v.scheme}</p>`
+    //    html+=`<p>${v.id},coupang${v.scheme}</p>`
        html+='</div>\n'
     })
     for(let i of res){
