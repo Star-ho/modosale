@@ -34,8 +34,21 @@ export async function getDataArray(date){
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
-  let url=`http://wp.yogiyo.co.kr/${year}${startDay}-${endDay}_ohal_app/?${weeknumber}`
+
+  let url=await fetch('https://www.yogiyo.co.kr/api/v1/service_info/',{
+        headers:{
+            "X-ApiKey": "iphoneap",
+            "X-ApiSecret": "fe5183cc3dea12bd0ce299cf110a75a2",
+            "User-Agent": "Android/SM-N976N/7.1.2/yogiyo-android-6.4.0/"
+        }
+    })
+    .then(res=>res.json())
+    .then(res=>{
+        res=res.event_list.filter(v=>v.url.includes('ohal_app'))[0].url
+        return res
+    })
   // let url=`http://wp.yogiyo.co.kr/20210801_ohal_app/?7`
+
   console.log(url)
   let response = await fetch(url)
   .then(res=>res.text())
@@ -73,7 +86,7 @@ export async function getDataArray(date){
     v[1]=v[1]
     return v
   })
-  console.log(arr)
+  // console.log(arr)
 
   let img=Array.from({length:arr.length},()=>'')
 
