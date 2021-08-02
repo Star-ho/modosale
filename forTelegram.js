@@ -283,7 +283,7 @@ telebot.onText(/^coupangAdd/, async (msg) => {
     var fs = require('fs')
     const command = msg.text.split('\n')
     let data=command[1].split(' ')
-    let itemList=fs.readFileSync('textfile/test1', 'utf8')
+    let itemList=fs.readFileSync('textfile/itemlistCoupang', 'utf8')
     const {EOL} = require('os');
     itemList=itemList.split(EOL).map(v=>v.split('||'))
     let isDuple=itemList.filter(v=>v[2]==123)
@@ -301,6 +301,6 @@ telebot.onText(/^coupangAdd/, async (msg) => {
       telegramSendMessage('Coupang itemlist add!')
     }
     itemList=itemList.map(v=>v.join('||')).join(EOL)
-    fs.writeFileSync('textfile/test1', itemList, ()=>null)
+    fs.writeFileSync('textfile/itemlistCoupang', itemList, ()=>null)
 });
 
