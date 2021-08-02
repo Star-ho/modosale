@@ -12,7 +12,7 @@ const fetch = require('node-fetch');
 const urlencode = require('urlencode'); 
 
 
-let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0801_IN`
+let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0802_IN`
 
 let response = await fetch(url,{
     headers:{
