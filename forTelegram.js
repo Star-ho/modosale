@@ -46,6 +46,12 @@ telebot.onText(/^(help)|^(h)/, (msg) => {
         delete
         아티제 yogiyo
 
+        couapngAdd
+        ex)
+        coupangAdd
+        버거킹 4000 8032
+        브랜드 가격 ID
+
         /refresh
         /chageCoupang
         /chageWemef
@@ -271,5 +277,31 @@ telebot.onText(/^delete/, async (msg) => {
             telegramSendMessage('for telegram error!\n')
         })
     }
+});
+
+telebot.onText(/^coupangAdd/, async (msg) => {
+    var fs = require('fs')
+    const command = msg.text.split('\n')
+    let data=command[1].split(' ')
+    let itemList=fs.readFileSync('textfile/test1', 'utf8')
+    const {EOL} = require('os');
+    itemList=itemList.split(EOL).map(v=>v.split('||'))
+    let isDuple=itemList.filter(v=>v[2]==123)
+    
+    if(isDuple.length){
+      itemList=itemList.map(v=>{
+        console.log(v)
+        if(v[2]=='123'){
+          v=[data[0],data[1],data[2]]
+        }
+        telegramSendMessage('Coupang itemlist update!')
+        return v
+      })
+    }else{
+      itemList.push([data[0],data[1],data[2]])
+      telegramSendMessage('Coupang itemlist add!')
+    }
+    itemList=itemList.map(v=>v.join('||')).join(EOL)
+    fs.writeFileSync('textfile/test1', itemList, ()=>null)
 });
 

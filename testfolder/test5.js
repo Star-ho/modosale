@@ -1,20 +1,25 @@
-
 (async()=>{
-    // console.log(await wemefReadData())
     var fs = require('fs')
-    const fetch=require('node-fetch')
-    const Hangul = require('hangul-js');
-
-    let url=decodeURI('http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_%E1%84%8B%E1%85%A9%E1%84%82%E1%85%B3%E1%86%AF%E1%84%8B%E1%85%B4%E1%84%92%E1%85%A1%E1%86%AF%E1%84%8B%E1%85%B5%E1%86%AB_lineup_syndrome_3000.png')
-    console.log(url)
-    // let temp= Hangul.assemble(url.match(/[^0-9a-zA-Z~!@#$%^&*()_+|<>?:{}\/.,-]/g))
-    // console.log(temp)
-    // temp1=(temp.match(/[가-힣]/g).join(''))
-    // url=url.replace(temp,temp1)
-    let res=await fetch(encodeURI(url),{
-        timeout: 30000
+    let itemList=fs.readFileSync('textfile/test1', 'utf8')
+    const {EOL} = require('os');
+    itemList=itemList.split(EOL).map(v=>v.split('||'))
+    let isDuple=itemList.filter(v=>v[2]==123)
+    
+    if(isDuple.length){
+      itemList=itemList.map(v=>{
+        console.log(v)
+        if(v[2]=='123'){
+          console.log('isDuple')
+          v=['4124',123,123]
+        }
+        return v
       })
-    console.log(res)
-    let buffer = await res.buffer()
-    fs.writeFileSync('11.png', buffer, ()=>null)
+    }else{
+      itemList.push(['test',123,123])
+      console.log('notDubple')
+    }
+
+
+    itemList=itemList.map(v=>v.join('||')).join(EOL)
+    fs.writeFileSync('textfile/test1', itemList, ()=>null)
 })()
