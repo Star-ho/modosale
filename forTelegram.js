@@ -290,13 +290,12 @@ telebot.onText(/^coupangAdd/, async (msg) => {
     
     if(isDuple.length){
       itemList=itemList.map(v=>{
-        console.log(v)
-        if(v[2]=='123'){
+        if(v[2]==data[2]){
           v=[data[0],data[1],data[2]]
         }
-        telegramSendMessage('Coupang itemlist update!')
         return v
       })
+      telegramSendMessage('Coupang itemlist update!')
     }else{
       itemList.push([data[0],data[1],data[2]])
       telegramSendMessage('Coupang itemlist add!')
