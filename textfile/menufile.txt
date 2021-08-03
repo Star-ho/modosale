@@ -341,6 +341,6 @@ VIPS&&VIPS.png&&커피
 건담떡볶이&&undefined.png&&한식
 전설의치킨&&undefined.png&&치킨
 치꼬뱅&&undefined.png&&치킨
-찜꽁찜닭&&jjimggongjjimdak.png&&취킨
+찜꽁찜닭&&jjimggongjjimdak.png&&치킨
 노브랜드버거&&nobrandBurger.png&&양식
 꾸브라꼬 숯불치킨&&ggubraggo.png&&치킨
