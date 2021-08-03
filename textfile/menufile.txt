@@ -338,3 +338,9 @@ VIPS&&VIPS.png&&커피
 황궁쟁반짜장&&hwanggungjjajang.png&&기타
 후라이드참잘하는집//후참&&huchamjal.png&&치킨
 훌랄라//훌랄라참숯바베큐치킨&&hulalaChicken.png&&치킨
+건담떡볶이&&undefined.png&&한식
+전설의치킨&&undefined.png&&치킨
+치꼬뱅&&undefined.png&&치킨
+찜꽁찜닭&&jjimggongjjimdak.png&&취킨
+노브랜드버거&&nobrandBurger.png&&양식
+꾸브라꼬 숯불치킨&&ggubraggo.png&&치킨
