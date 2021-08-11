@@ -12,8 +12,8 @@ import { getDataArray } from './yogiyo.js'
   let data={wemef:[],coupang:[],baemin:[],yogiyo:[]}
   let wemefData=await getWemefBannerData(true)
   let coupnagData=await getCoupangData()
-  let yogiyoData = await getYogiyoData()
-  let baeminData = await getBaeminData()
+  // let yogiyoData = await getYogiyoData()
+  // let baeminData = await getBaeminData()
 
   for(let i of wemefData){
     data.wemef.push(JSON.stringify(i))
@@ -22,12 +22,13 @@ import { getDataArray } from './yogiyo.js'
   for(let i of coupnagData){
     data.coupang.push(JSON.stringify(i))
   }
-  for(let i of yogiyoData){
-    data.yogiyo.push(JSON.stringify(i))
-  }
-  for(let i of baeminData){
-    data.baemin.push(JSON.stringify(i))
-  }
+  // for(let i of yogiyoData){
+  //   data.yogiyo.push(JSON.stringify(i))
+  // }
+  // for(let i of baeminData){
+  //   data.baemin.push(JSON.stringify(i))
+  // }
+
   // console.log(data.wemefBanner)
   // console.log(data.coupang)
   // coupangDataHandling(Object.assign({}, JSON.parse(data.coupang[0]),{add:false}))
@@ -45,12 +46,12 @@ async function watchData(data){
 
   let wemef=[]
   let coupang=[]
-  let baemin=[]
-  let yogiyo=[]
+  // let baemin=[]
+  // let yogiyo=[]
   let wemefData=await getWemefBannerData(true)
   let coupnagData=await getCoupangData()
-  let yogiyoData=await getYogiyoData()
-  let baeminData=await getBaeminData()
+  // let yogiyoData=await getYogiyoData()
+  // let baeminData=await getBaeminData()
   
   for(let i of wemefData){
     wemef.push(JSON.stringify(i))
@@ -59,36 +60,36 @@ async function watchData(data){
     coupang.push(JSON.stringify(i))
   }
 
-  for(let i of yogiyoData){
-    yogiyo.push(JSON.stringify(i))
-  }
-  for(let i of baeminData){
-    baemin.push(JSON.stringify(i))
-  }
+  // for(let i of yogiyoData){
+  //   yogiyo.push(JSON.stringify(i))
+  // }
+  // for(let i of baeminData){
+  //   baemin.push(JSON.stringify(i))
+  // }
   
-  for(let i of baemin){
-    if(!data.baemin.includes(i)){
-      await telegramSendMessage("baemin add"+i)
-    }
-  }
+  // for(let i of baemin){
+  //   if(!data.baemin.includes(i)){
+  //     await telegramSendMessage("baemin add"+i)
+  //   }
+  // }
 
-  for(let i of data.baemin){
-    if(!baemin.includes(i)){
-      await telegramSendMessage("baemin delete"+i)
-    }
-  }
+  // for(let i of data.baemin){
+  //   if(!baemin.includes(i)){
+  //     await telegramSendMessage("baemin delete"+i)
+  //   }
+  // }
 
-  for(let i of yogiyo){
-    if(!data.yogiyo.includes(i)){
-      await telegramSendMessage("yogiyo add"+i)
-    }
-  }
+  // for(let i of yogiyo){
+  //   if(!data.yogiyo.includes(i)){
+  //     await telegramSendMessage("yogiyo add"+i)
+  //   }
+  // }
 
-  for(let i of data.yogiyo){
-    if(!yogiyo.includes(i)){
-      await telegramSendMessage("yogiyo delete"+i)
-    }
-  }
+  // for(let i of data.yogiyo){
+  //   if(!yogiyo.includes(i)){
+  //     await telegramSendMessage("yogiyo delete"+i)
+  //   }
+  // }
   
   for(let i of coupang){
     if(!data.coupang.includes(i)){
@@ -122,8 +123,8 @@ async function watchData(data){
 
   data.coupang=coupang.slice()
   data.wemef=wemef.slice()
-  data.baemin=baemin.slice()
-  data.yogiyo=yogiyo.slice()
+  // data.baemin=baemin.slice()
+  // data.yogiyo=yogiyo.slice()
 }
 
 
