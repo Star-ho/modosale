@@ -1,275 +1,2814 @@
 Express server has started on port 3000
 Read Database! 
- time is 2021-08-01T03:08:43+09:00
+ time is 2021-08-03T12:32:15+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Tue, 03 Aug 2021 03:32:20 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:368:11
+Tue, 03 Aug 2021 03:32:20 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:368:41
+wemef refresh start! 
+ time is 2021-08-03T12:32:43+09:00
+wemef refresh end! 
+ time is 2021-08-03T12:32:44+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T12:32:44+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T19:56:24+09:00
+Read Database! 
+ time is 2021-08-03T19:56:24+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-03T19:56:36+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Read Database! 
+ time is 2021-08-03T19:56:55+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-03T19:57:01+09:00
+Warning: got packets out of order. Expected 136 but received 0
+wemef refresh start! 
+ time is 2021-08-03T20:14:59+09:00
+wemef refresh end! 
+ time is 2021-08-03T20:15:01+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:15:01+09:00
+Warning: got packets out of order. Expected 136 but received 0
+yogiyo refresh start! 
+ time is 2021-08-03T20:15:25+09:00
+baemin refresh start! 
+ time is 2021-08-03T20:15:25+09:00
+--------------------2
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?2
+baemin refresh end! 
+ time is 2021-08-03T20:15:28+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:15:28+09:00
+Warning: got packets out of order. Expected 136 but received 0
+yogiyo refresh end! 
+ time is 2021-08-03T20:16:37+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:16:37+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T20:16:41+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T20:16:54+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T20:22:40+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-03T20:22:42+09:00
+Warning: got packets out of order. Expected 136 but received 0
+yogiyo refresh start! 
+ time is 2021-08-03T20:23:52+09:00
+baemin refresh start! 
+ time is 2021-08-03T20:23:52+09:00
+--------------------2
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?2
+baemin refresh end! 
+ time is 2021-08-03T20:23:55+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:23:55+09:00
+Warning: got packets out of order. Expected 136 but received 0
+yogiyo refresh end! 
+ time is 2021-08-03T20:25:05+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:25:05+09:00
+Warning: got packets out of order. Expected 136 but received 0
+yogiyo refresh start! 
+ time is 2021-08-03T20:33:32+09:00
+baemin refresh start! 
+ time is 2021-08-03T20:33:32+09:00
+--------------------2
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?2
+baemin refresh end! 
+ time is 2021-08-03T20:33:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:33:35+09:00
+Warning: got packets out of order. Expected 136 but received 0
+yogiyo refresh end! 
+ time is 2021-08-03T20:34:45+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-03T20:34:45+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T20:34:48+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T20:34:50+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-03T21:04:43+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-03T21:05:03+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-03T23:04:42+09:00
+Warning: got packets out of order. Expected 133 but received 0
+yogiyo refresh start! 
+ time is 2021-08-04T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-04T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-04T00:01:01+09:00
+--------------------3
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?3
+wemef refresh end! 
+ time is 2021-08-04T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:01:02+09:00
+Warning: got packets out of order. Expected 132 but received 0
+baemin refresh end! 
+ time is 2021-08-04T00:01:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:01:03+09:00
+Warning: got packets out of order. Expected 133 but received 0
+yogiyo refresh end! 
+ time is 2021-08-04T00:02:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:02:09+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-04T00:02:13+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-04T00:02:15+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Read Database! 
+ time is 2021-08-04T00:05:17+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:05:30+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:05:33+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:05:33+09:00
+Warning: got packets out of order. Expected 121 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:11:06+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:11:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:11:09+09:00
+Warning: got packets out of order. Expected 118 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:15:30+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:15:33+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:15:33+09:00
+Warning: got packets out of order. Expected 120 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:21:06+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:21:08+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:21:08+09:00
+Warning: got packets out of order. Expected 122 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:25:30+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:25:33+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:25:33+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:31:06+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:31:08+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:31:08+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh start! 
+ time is 2021-08-04T00:35:30+09:00
+baemin refresh end! 
+ time is 2021-08-04T00:35:33+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T00:35:33+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-04T09:04:56+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Read Database! 
+ time is 2021-08-04T09:04:57+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+wemef refresh start! 
+ time is 2021-08-04T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-04T09:20:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-04T09:20:03+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-04T10:04:56+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-04T10:04:58+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-04T21:04:52+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-04T21:04:54+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-04T23:04:55+09:00
+Warning: got packets out of order. Expected 137 but received 0
+yogiyo refresh start! 
+ time is 2021-08-05T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-05T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-05T00:01:01+09:00
+--------------------4
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?4
+wemef refresh end! 
+ time is 2021-08-05T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:01:02+09:00
+Warning: got packets out of order. Expected 136 but received 0
+baemin refresh end! 
+ time is 2021-08-05T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:01:04+09:00
+Warning: got packets out of order. Expected 137 but received 0
+yogiyo refresh end! 
+ time is 2021-08-05T00:02:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:02:10+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Read Database! 
+ time is 2021-08-05T00:05:31+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:05:31+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:05:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:05:35+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-05T00:09:37+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-05T00:09:39+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-05T00:09:51+09:00
+Warning: got packets out of order. Expected 130 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:11:07+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:11:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:11:10+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:15:31+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:15:34+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:15:34+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:21:07+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:21:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:21:09+09:00
+Warning: got packets out of order. Expected 133 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:25:31+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:25:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:25:35+09:00
+Warning: got packets out of order. Expected 130 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:31:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:31:09+09:00
+Warning: got packets out of order. Expected 130 but received 0
+baemin refresh start! 
+ time is 2021-08-05T00:35:32+09:00
+baemin refresh end! 
+ time is 2021-08-05T00:35:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T00:35:35+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-05T09:05:07+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Warning: got packets out of order. Expected 141 but received 0
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Warning: got packets out of order. Expected 141 but received 0
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Read Database! 
+ time is 2021-08-05T09:05:08+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Warning: got packets out of order. Expected 141 but received 0
+Warning: got packets out of order. Expected 141 but received 0
+Warning: got packets out of order. Expected 141 but received 0
+Warning: got packets out of order. Expected 141 but received 0
+wemef refresh start! 
+ time is 2021-08-05T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-05T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-05T09:20:02+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Read Database! 
+ time is 2021-08-05T10:05:07+09:00
+Warning: got packets out of order. Expected 142 but received 0
+Read Database! 
+ time is 2021-08-05T10:05:09+09:00
+Warning: got packets out of order. Expected 143 but received 0
+Read Database! 
+ time is 2021-08-05T10:37:42+09:00
+Warning: got packets out of order. Expected 144 but received 0
+Read Database! 
+ time is 2021-08-05T10:38:10+09:00
+Warning: got packets out of order. Expected 145 but received 0
+Read Database! 
+ time is 2021-08-05T21:05:05+09:00
+Warning: got packets out of order. Expected 144 but received 0
+Read Database! 
+ time is 2021-08-05T21:05:06+09:00
+Warning: got packets out of order. Expected 143 but received 0
+Read Database! 
+ time is 2021-08-05T23:05:05+09:00
+Warning: got packets out of order. Expected 142 but received 0
+Read Database! 
+ time is 2021-08-05T23:05:07+09:00
+Warning: got packets out of order. Expected 141 but received 0
+wemef refresh start! 
+ time is 2021-08-06T00:01:01+09:00
+yogiyo refresh start! 
+ time is 2021-08-06T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-06T00:01:01+09:00
+--------------------5
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?5
+wemef refresh end! 
+ time is 2021-08-06T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:01:02+09:00
+Warning: got packets out of order. Expected 144 but received 0
+baemin refresh end! 
+ time is 2021-08-06T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:01:04+09:00
+Warning: got packets out of order. Expected 144 but received 0
+yogiyo refresh end! 
+ time is 2021-08-06T00:02:06+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:02:06+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-06T00:02:36+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-06T00:02:38+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-06T00:02:47+09:00
+Warning: got packets out of order. Expected 138 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:05:32+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:05:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:35+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:47+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-06T00:05:49+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:11:06+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:11:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:11:09+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:15:32+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:15:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:15:35+09:00
+Warning: got packets out of order. Expected 131 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:21:06+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:21:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:21:09+09:00
+Warning: got packets out of order. Expected 131 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:25:32+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:25:35+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:25:35+09:00
+Warning: got packets out of order. Expected 126 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:31:06+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:31:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:31:09+09:00
+Warning: got packets out of order. Expected 124 but received 0
+baemin refresh start! 
+ time is 2021-08-06T00:35:32+09:00
+baemin refresh end! 
+ time is 2021-08-06T00:35:36+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T00:35:36+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-06T09:05:18+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-06T09:05:20+09:00
+Warning: got packets out of order. Expected 135 but received 0
+wemef refresh start! 
+ time is 2021-08-06T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-06T09:20:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-06T09:20:03+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-06T10:05:14+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-06T10:05:16+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-06T10:05:18+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-06T10:05:19+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-06T21:05:15+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-06T21:05:17+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-06T23:05:15+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-06T23:05:17+09:00
+Warning: got packets out of order. Expected 135 but received 0
+yogiyo refresh start! 
+ time is 2021-08-07T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-07T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-07T00:01:01+09:00
+--------------------6
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?6
+wemef refresh end! 
+ time is 2021-08-07T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:01:02+09:00
+Warning: got packets out of order. Expected 133 but received 0
+baemin refresh end! 
+ time is 2021-08-07T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:01:04+09:00
+Warning: got packets out of order. Expected 133 but received 0
+yogiyo refresh end! 
+ time is 2021-08-07T00:02:08+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:02:08+09:00
+Warning: got packets out of order. Expected 137 but received 0
+baemin refresh start! 
+ time is 2021-08-07T00:05:33+09:00
+baemin refresh end! 
+ time is 2021-08-07T00:05:36+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:36+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:52+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-07T00:05:54+09:00
+Warning: got packets out of order. Expected 125 but received 0
+baemin refresh start! 
+ time is 2021-08-07T00:11:06+09:00
+baemin refresh end! 
+ time is 2021-08-07T00:11:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:11:09+09:00
+Warning: got packets out of order. Expected 124 but received 0
+baemin refresh start! 
+ time is 2021-08-07T00:15:33+09:00
+baemin refresh end! 
+ time is 2021-08-07T00:15:36+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:15:36+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-07T00:20:06+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-07T00:20:17+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-07T00:20:33+09:00
+Warning: got packets out of order. Expected 124 but received 0
+baemin refresh start! 
+ time is 2021-08-07T00:21:06+09:00
+baemin refresh end! 
+ time is 2021-08-07T00:21:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:21:09+09:00
+Warning: got packets out of order. Expected 119 but received 0
+baemin refresh start! 
+ time is 2021-08-07T00:25:33+09:00
+baemin refresh end! 
+ time is 2021-08-07T00:25:36+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:25:36+09:00
+Warning: got packets out of order. Expected 119 but received 0
+baemin refresh start! 
+ time is 2021-08-07T00:31:06+09:00
+baemin refresh end! 
+ time is 2021-08-07T00:31:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T00:31:09+09:00
+Warning: got packets out of order. Expected 116 but received 0
+Read Database! 
+ time is 2021-08-07T09:05:27+09:00
+Warning: got packets out of order. Expected 117 but received 0
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Read Database! 
+ time is 2021-08-07T09:05:29+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+wemef refresh start! 
+ time is 2021-08-07T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-07T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-07T09:20:02+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-07T10:05:24+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-07T10:05:26+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-07T10:05:28+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-07T21:05:23+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-07T23:05:24+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-07T23:05:25+09:00
+Warning: got packets out of order. Expected 127 but received 0
+yogiyo refresh start! 
+ time is 2021-08-08T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-08T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-08T00:01:01+09:00
+--------------------7
+http://wp.yogiyo.co.kr/20210802-0808_ohal_app/?7
+wemef refresh end! 
+ time is 2021-08-08T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T00:01:02+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh end! 
+ time is 2021-08-08T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T00:01:04+09:00
+Warning: got packets out of order. Expected 127 but received 0
+yogiyo refresh end! 
+ time is 2021-08-08T00:02:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T00:02:03+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-08T00:04:21+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-08T00:04:27+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-08T00:04:41+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:53+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 120 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 117 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 116 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 114 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 114 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Read Database! 
+ time is 2021-08-08T00:05:55+09:00
+Warning: got packets out of order. Expected 114 but received 0
+baemin refresh start! 
+ time is 2021-08-08T00:15:35+09:00
+baemin refresh end! 
+ time is 2021-08-08T00:15:37+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T00:15:37+09:00
+Warning: got packets out of order. Expected 113 but received 0
+baemin refresh start! 
+ time is 2021-08-08T00:25:35+09:00
+baemin refresh end! 
+ time is 2021-08-08T00:25:38+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T00:25:38+09:00
+Warning: got packets out of order. Expected 112 but received 0
+baemin refresh start! 
+ time is 2021-08-08T00:35:35+09:00
+baemin refresh end! 
+ time is 2021-08-08T00:35:37+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T00:35:37+09:00
+Warning: got packets out of order. Expected 112 but received 0
+Read Database! 
+ time is 2021-08-08T09:05:37+09:00
+Warning: got packets out of order. Expected 113 but received 0
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Read Database! 
+ time is 2021-08-08T09:05:39+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+Warning: got packets out of order. Expected 123 but received 0
+wemef refresh start! 
+ time is 2021-08-08T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-08T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-08T09:20:02+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Read Database! 
+ time is 2021-08-08T10:05:34+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-08T10:05:36+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-08T10:05:37+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-08T21:05:33+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-08T23:05:34+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-08T23:05:35+09:00
 Warning: got packets out of order. Expected 123 but received 0
 yogiyo refresh start! 
- time is 2021-08-01T03:09:09+09:00
+ time is 2021-08-09T00:01:01+09:00
 baemin refresh start! 
- time is 2021-08-01T03:09:09+09:00
---------------------7
-http://wp.yogiyo.co.kr/20210801_ohal_app/?7
-Sat, 31 Jul 2021 18:09:09 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:360:11
-Sat, 31 Jul 2021 18:09:09 GMT express deprecated req.param(name): Use req.params, req.body, or req.query instead at index.js:360:41
-[
-  [
-    '도미노',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_new_lineup_domino.png',
-    'yogiyoapp://franchise?fr_id=652'
-  ],
-  [
-    '세븐일레븐',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/세븐일레븐.png',
-    'yogiyoapp://franchise?fr_id=970'
-  ],
-  [
-    '오늘의 포장 할인',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/ohal_m06_02_포장_수정01.png',
-    'yogiyoapp://res/l?cat=111&s=5&f=0'
-  ],
-  [
-    '매드포갈릭',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_madforgarlic.png',
-    'yogiyoapp://franchise?fr_id=1051'
-  ],
-  [
-    '투존치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_twozone.png',
-    'yogiyoapp://franchise?fr_id=43'
-  ],
-  [
-    '파파존스',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_papa_4000.png',
-    'yogiyoapp://franchise?fr_id=41'
-  ],
-  [
-    '파스쿠찌',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_pas_4000.png',
-    'yogiyoapp://franchise?fr_id=482'
-  ],
-  [
-    '미니스톱',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_ministop-1.png',
-    'yogiyoapp://franchise?fr_id=756'
-  ],
-  [
-    '피자헤븐',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/03/YGY_오늘의할인_lineup_pizzaheaven_3000-1.png',
-    'yogiyoapp://franchise?fr_id=44'
-  ],
-  [
-    '돈치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_donchicken_3000.png',
-    'yogiyoapp://franchise?fr_id=301'
-  ],
-  [
-    '카페베네',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/카페베네.png',
-    'yogiyoapp://franchise?fr_id=597'
-  ],
-  [
-    'CU',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/03/YGY_오늘의할인_lineup_cu_3000.png',
-    'yogiyoapp://franchise?fr_id=682'
-  ],
-  [
-    'gsthefresh',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_gsfresh.png',
-    'yogiyoapp://franchise?fr_id=1077'
-  ],
-  [
-    '유로코피자',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_오늘의할인_lineup_eurokopizza_3000.png',
-    'yogiyoapp://franchise?fr_id=608'
-  ],
-  [
-    '놀부',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_nolboo.png',
-    'yogiyoinapp://inapp?act=open&url=https://bit.ly/2oq9lad&title=%EB%86%80%EB%B6%80%20%ED%95%A0%EC%9D%B8'
-  ],
-  [
-    '투썸',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/투썸.png',
-    'yogiyoapp://franchise?fr_id=648'
-  ],
-  [
-    '나뚜루',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_natur.png',
-    'yogiyoapp://franchise?fr_id=547'
-  ],
-  [
-    '아웃백',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_outback.png',
-    'yogiyoapp://franchise?fr_id=703'
-  ],
-  [
-    '빕스',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_vips.png',
-    'yogiyoapp://franchise?fr_id=561'
-  ],
-  [
-    '본스치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_vons.png',
-    'yogiyoapp://franchise?fr_id=396'
-  ],
-  [
-    '큰맘할매순대국',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_bk.png',
-    'yogiyoapp://franchise?fr_id=737'
-  ],
-  [
-    '파리크라상',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/03/YGY_오늘의할인_lineup_pariscroissant_2000.png',
-    'yogiyoapp://franchise?fr_id=658'
-  ],
-  [
-    '부어치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_boor_2000.png',
-    'yogiyoapp://franchise?fr_id=740'
-  ],
-  [
-    '떡참',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/떡볶이참잘하는집.png',
-    'yogiyoapp://franchise?fr_id=1200'
-  ],
-  [
-    '파리바게뜨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_오늘의할인_lineup_pb.png',
-    'yogiyoapp://franchise?fr_id=475'
-  ],
-  [
-    '뽕뜨락피자',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/뽕뜨락.png',
-    'yogiyoapp://franchise?fr_id=29'
-  ],
-  [
-    '피자에땅',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/피자에땅.png',
-    'yogiyoapp://franchise?fr_id=78'
-  ],
-  [
-    '빅스타피자',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_bigstar_8000.png',
-    'yogiyoapp://franchise?fr_id=210'
-  ],
-  [
-    '미스터피자',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_mrpizza_7000.png',
-    'yogiyoapp://franchise?fr_id=80'
-  ],
-  [
-    '디디치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/YGY_오늘의할인_lineup_dd_5000.png',
-    'yogiyoapp://franchise?fr_id=88'
-  ],
-  [
-    '치킨플러스',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/YGY_오늘의할인_lineup_chickenplus_5000.png',
-    'yogiyoapp://franchise?fr_id=256'
-  ],
-  [
-    '또래오래',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/03/YGY_오늘의할인_lineup_toreore_5000-1.png',
-    'yogiyoapp://franchise?fr_id=9'
-  ],
-  [
-    '네네치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/06/네네치킨_2.png',
-    'yogiyoapp://franchise?fr_id=7'
-  ],
-  [
-    '뉴욕버거',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_newyork.png',
-    'yogiyoapp://franchise?fr_id=386'
-  ],
-  [
-    '떡볶이도맛있는치킨플러스',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/떡볶이도맛있는치킨플러스.png',
-    'yogiyoapp://franchise?fr_id=1102'
-  ],
-  [
-    '원할머니',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_won.png',
-    'yogiyoapp://franchise?fr_id=28'
-  ],
-  [
-    '7번가',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_7th_3000.png',
-    'yogiyoapp://franchise?fr_id=4'
-  ],
-  [
-    '호치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_hochicken.png',
-    'yogiyoapp://franchise?fr_id=329'
-  ],
-  [
-    '컬투치킨',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_cultwo.png',
-    'yogiyoapp://franchise?fr_id=34'
-  ],
-  [
-    '또봉이통닭',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_ddobong.png',
-    'yogiyoapp://franchise?fr_id=742'
-  ],
-  [
-    '맘스터치',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_moms.png',
-    'yogiyoapp://franchise?fr_id=11'
-  ],
-  [
-    '네오피자',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_neopizza-1.png',
-    'yogiyoapp://franchise?fr_id=211'
-  ],
-  [
-    '돈피자',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/04/YGY_오늘의할인_lineup_donpizza_2000.png',
-    'yogiyoapp://franchise?fr_id=966'
-  ],
-  [
-    '박가부대',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_parkga.png',
-    'yogiyoapp://franchise?fr_id=65'
-  ],
-  [
-    '직구삼',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/02/YGY_오늘의할인_lineup_homepork-1.png',
-    'yogiyoapp://franchise?fr_id=375'
-  ],
-  [
-    'pb델리',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/PB델리.png',
-    'yogiyoapp://franchise?fr_id=1069'
-  ],
-  [
-    '호식이',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_오늘의할인_lineup_hosigi-2.png',
-    'yogiyoapp://franchise?fr_id=21'
-  ],
-  [
-    '깻잎',
-    'http://dhkorea.wpengine.com/wp-content/uploads/2021/05/YGY_오늘의할인_lineup_kketnypdak_2000.png',
-    'yogiyoapp://franchise?fr_id=32'
-  ]
-]
+ time is 2021-08-09T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-09T00:01:01+09:00
+--------------------1
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?1
+wemef refresh end! 
+ time is 2021-08-09T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:01:02+09:00
+Warning: got packets out of order. Expected 106 but received 0
 baemin refresh end! 
- time is 2021-08-01T03:09:12+09:00
+ time is 2021-08-09T00:01:04+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Read Database! 
- time is 2021-08-01T03:09:12+09:00
-Warning: got packets out of order. Expected 121 but received 0
+ time is 2021-08-09T00:01:04+09:00
+Warning: got packets out of order. Expected 107 but received 0
 yogiyo refresh end! 
- time is 2021-08-01T03:10:10+09:00
+ time is 2021-08-09T00:02:09+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Read Database! 
- time is 2021-08-01T03:10:10+09:00
+ time is 2021-08-09T00:02:09+09:00
+Warning: got packets out of order. Expected 108 but received 0
+Read Database! 
+ time is 2021-08-09T00:02:12+09:00
+Warning: got packets out of order. Expected 108 but received 0
+Read Database! 
+ time is 2021-08-09T00:02:14+09:00
+Warning: got packets out of order. Expected 108 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:05:36+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:05:39+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:05:39+09:00
+Warning: got packets out of order. Expected 105 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:26+09:00
+Warning: got packets out of order. Expected 104 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 103 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 102 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 99 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 98 but received 0
+Warning: got packets out of order. Expected 98 but received 0
+Warning: got packets out of order. Expected 98 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 95 but received 0
+Warning: got packets out of order. Expected 94 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 94 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 94 but received 0
+Read Database! 
+ time is 2021-08-09T00:06:28+09:00
+Warning: got packets out of order. Expected 94 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:11:06+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:11:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:11:09+09:00
+Warning: got packets out of order. Expected 96 but received 0
+wemef refresh start! 
+ time is 2021-08-09T00:14:44+09:00
+wemef refresh end! 
+ time is 2021-08-09T00:14:45+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:14:45+09:00
+Warning: got packets out of order. Expected 111 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:15:36+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:15:39+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:15:39+09:00
+Warning: got packets out of order. Expected 112 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:21:06+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:21:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:21:09+09:00
+Warning: got packets out of order. Expected 111 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:25:36+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:25:38+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:25:38+09:00
+Warning: got packets out of order. Expected 111 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:31:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:31:10+09:00
+Warning: got packets out of order. Expected 111 but received 0
+baemin refresh start! 
+ time is 2021-08-09T00:35:36+09:00
+baemin refresh end! 
+ time is 2021-08-09T00:35:38+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T00:35:38+09:00
+Warning: got packets out of order. Expected 111 but received 0
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Warning: got packets out of order. Expected 121 but received 0
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Warning: got packets out of order. Expected 121 but received 0
+Read Database! 
+ time is 2021-08-09T09:05:51+09:00
+Warning: got packets out of order. Expected 121 but received 0
+wemef refresh start! 
+ time is 2021-08-09T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-09T09:20:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T09:20:03+09:00
+Warning: got packets out of order. Expected 121 but received 0
+Read Database! 
+ time is 2021-08-09T10:05:49+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-09T10:05:51+09:00
+Warning: got packets out of order. Expected 123 but received 0
+Read Database! 
+ time is 2021-08-09T11:54:42+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-09T11:57:03+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-09T12:02:13+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-09T12:05:49+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-09T12:07:00+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-09T12:07:14+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:08:23+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:08:32+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:08:57+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:09:23+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-09T12:09:31+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-09T12:09:59+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-09T12:10:09+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:10:50+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:10:58+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T12:11:05+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-09T12:11:13+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-09T12:11:50+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-09T12:11:58+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-09T12:12:06+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-09T12:12:12+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-09T12:13:05+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-09T12:13:19+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-09T12:13:26+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-09T12:13:28+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T13:03:18+09:00
+Warning: got packets out of order. Expected 130 but received 0
+baemin refresh start! 
+ time is 2021-08-09T14:35:36+09:00
+baemin refresh end! 
+ time is 2021-08-09T14:35:39+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T14:35:39+09:00
+Warning: got packets out of order. Expected 131 but received 0
+baemin refresh start! 
+ time is 2021-08-09T15:05:37+09:00
+baemin refresh end! 
+ time is 2021-08-09T15:05:39+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T15:05:39+09:00
+Warning: got packets out of order. Expected 132 but received 0
+baemin refresh start! 
+ time is 2021-08-09T16:15:37+09:00
+baemin refresh end! 
+ time is 2021-08-09T16:15:40+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-09T16:15:40+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-09T21:05:44+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-09T21:05:46+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-09T23:05:46+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-09T23:05:48+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-09T23:05:50+09:00
+Warning: got packets out of order. Expected 128 but received 0
+wemef refresh start! 
+ time is 2021-08-10T00:01:01+09:00
+yogiyo refresh start! 
+ time is 2021-08-10T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-10T00:01:01+09:00
+--------------------2
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?2
+wemef refresh end! 
+ time is 2021-08-10T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:01:02+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh end! 
+ time is 2021-08-10T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:01:04+09:00
+Warning: got packets out of order. Expected 129 but received 0
+yogiyo refresh end! 
+ time is 2021-08-10T00:02:17+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:02:17+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:05:37+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:05:40+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:05:40+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:22+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 124 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Warning: got packets out of order. Expected 119 but received 0
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Read Database! 
+ time is 2021-08-10T00:06:24+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Warning: got packets out of order. Expected 119 but received 0
+Warning: got packets out of order. Expected 119 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:11:06+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:11:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:11:09+09:00
+Warning: got packets out of order. Expected 121 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:15:37+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:15:40+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:15:40+09:00
+Warning: got packets out of order. Expected 123 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:21:06+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:21:09+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:21:09+09:00
+Warning: got packets out of order. Expected 122 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:25:37+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:25:41+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:25:41+09:00
+Warning: got packets out of order. Expected 124 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:31:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:31:10+09:00
+Warning: got packets out of order. Expected 126 but received 0
+baemin refresh start! 
+ time is 2021-08-10T00:35:37+09:00
+baemin refresh end! 
+ time is 2021-08-10T00:35:40+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T00:35:40+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-10T00:47:37+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-10T00:47:40+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-10T00:47:42+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-10T09:05:56+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-10T09:05:57+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-10T09:05:59+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Read Database! 
+ time is 2021-08-10T09:06:01+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+wemef refresh start! 
+ time is 2021-08-10T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-10T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T09:20:02+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-10T10:05:56+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Read Database! 
+ time is 2021-08-10T10:05:58+09:00
+Warning: got packets out of order. Expected 142 but received 0
+Read Database! 
+ time is 2021-08-10T11:05:52+09:00
+Warning: got packets out of order. Expected 143 but received 0
+baemin refresh start! 
+ time is 2021-08-10T14:15:38+09:00
+baemin refresh end! 
+ time is 2021-08-10T14:15:41+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-10T14:15:41+09:00
+Warning: got packets out of order. Expected 144 but received 0
+wemef refresh start! 
+ time is 2021-08-11T00:01:01+09:00
+yogiyo refresh start! 
+ time is 2021-08-11T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-11T00:01:01+09:00
+--------------------3
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?3
+wemef refresh end! 
+ time is 2021-08-11T00:01:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:01:03+09:00
+Warning: got packets out of order. Expected 143 but received 0
+baemin refresh end! 
+ time is 2021-08-11T00:01:05+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:01:05+09:00
+Warning: got packets out of order. Expected 142 but received 0
+yogiyo refresh end! 
+ time is 2021-08-11T00:02:21+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:02:21+09:00
+Warning: got packets out of order. Expected 147 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:05:39+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:05:42+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:05:42+09:00
+Warning: got packets out of order. Expected 149 but received 0
+Read Database! 
+ time is 2021-08-11T00:06:11+09:00
+Warning: got packets out of order. Expected 149 but received 0
+Read Database! 
+ time is 2021-08-11T00:06:12+09:00
+Warning: got packets out of order. Expected 149 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:11:07+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:11:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:11:10+09:00
+Warning: got packets out of order. Expected 150 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:15:39+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:15:42+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:15:42+09:00
+Warning: got packets out of order. Expected 145 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:21:08+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:21:11+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:21:11+09:00
+Warning: got packets out of order. Expected 146 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:25:39+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:25:43+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:25:43+09:00
+Warning: got packets out of order. Expected 146 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:31:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:31:10+09:00
+Warning: got packets out of order. Expected 146 but received 0
+baemin refresh start! 
+ time is 2021-08-11T00:35:39+09:00
+baemin refresh end! 
+ time is 2021-08-11T00:35:42+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T00:35:42+09:00
+Warning: got packets out of order. Expected 146 but received 0
+wemef refresh start! 
+ time is 2021-08-11T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-11T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T09:20:02+09:00
+Warning: got packets out of order. Expected 146 but received 0
+baemin refresh start! 
+ time is 2021-08-11T14:05:39+09:00
+baemin refresh end! 
+ time is 2021-08-11T14:05:43+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-11T14:05:43+09:00
+Warning: got packets out of order. Expected 147 but received 0
+Read Database! 
+ time is 2021-08-11T21:08:00+09:00
+Warning: got packets out of order. Expected 146 but received 0
+Read Database! 
+ time is 2021-08-11T21:08:01+09:00
+Warning: got packets out of order. Expected 145 but received 0
+Read Database! 
+ time is 2021-08-11T23:08:00+09:00
+Warning: got packets out of order. Expected 144 but received 0
+Read Database! 
+ time is 2021-08-11T23:08:02+09:00
+Warning: got packets out of order. Expected 143 but received 0
+Read Database! 
+ time is 2021-08-11T23:08:04+09:00
+Warning: got packets out of order. Expected 142 but received 0
+yogiyo refresh start! 
+ time is 2021-08-12T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-12T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-12T00:01:01+09:00
+--------------------4
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?4
+wemef refresh end! 
+ time is 2021-08-12T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:01:02+09:00
+Warning: got packets out of order. Expected 141 but received 0
+baemin refresh end! 
+ time is 2021-08-12T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:01:04+09:00
+Warning: got packets out of order. Expected 141 but received 0
+yogiyo refresh end! 
+ time is 2021-08-12T00:02:16+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:02:16+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-12T00:02:19+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-12T00:02:20+09:00
+Warning: got packets out of order. Expected 139 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:05:40+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:05:43+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:05:43+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:05+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-12T00:08:06+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-12T00:10:41+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-12T00:10:48+09:00
+Warning: got packets out of order. Expected 125 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:11:07+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:11:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:11:10+09:00
+Warning: got packets out of order. Expected 122 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:15:40+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:15:43+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:15:43+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:21:07+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:21:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:21:10+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:25:40+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:25:43+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:25:43+09:00
+Warning: got packets out of order. Expected 134 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:31:11+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:31:11+09:00
+Warning: got packets out of order. Expected 132 but received 0
+baemin refresh start! 
+ time is 2021-08-12T00:35:40+09:00
+baemin refresh end! 
+ time is 2021-08-12T00:35:43+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T00:35:43+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-12T09:08:05+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-12T09:08:06+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-12T09:08:08+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Warning: got packets out of order. Expected 145 but received 0
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Read Database! 
+ time is 2021-08-12T09:08:10+09:00
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+Warning: got packets out of order. Expected 145 but received 0
+wemef refresh start! 
+ time is 2021-08-12T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-12T09:20:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T09:20:03+09:00
+Warning: got packets out of order. Expected 145 but received 0
+Read Database! 
+ time is 2021-08-12T10:08:05+09:00
+Warning: got packets out of order. Expected 146 but received 0
+Read Database! 
+ time is 2021-08-12T10:08:07+09:00
+Warning: got packets out of order. Expected 147 but received 0
+Read Database! 
+ time is 2021-08-12T10:08:08+09:00
+Warning: got packets out of order. Expected 148 but received 0
+Read Database! 
+ time is 2021-08-12T11:08:05+09:00
+Warning: got packets out of order. Expected 149 but received 0
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Warning: got packets out of order. Expected 159 but received 0
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Warning: got packets out of order. Expected 159 but received 0
+Warning: got packets out of order. Expected 159 but received 0
+Warning: got packets out of order. Expected 159 but received 0
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Warning: got packets out of order. Expected 159 but received 0
+Warning: got packets out of order. Expected 159 but received 0
+Warning: got packets out of order. Expected 159 but received 0
+Warning: got packets out of order. Expected 159 but received 0
+Read Database! 
+ time is 2021-08-12T12:58:06+09:00
+Warning: got packets out of order. Expected 159 but received 0
+Warning: got packets out of order. Expected 159 but received 0
+baemin refresh start! 
+ time is 2021-08-12T14:25:41+09:00
+baemin refresh end! 
+ time is 2021-08-12T14:25:44+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-12T14:25:44+09:00
+Warning: got packets out of order. Expected 160 but received 0
+Read Database! 
+ time is 2021-08-12T15:18:07+09:00
+Warning: got packets out of order. Expected 161 but received 0
+Read Database! 
+ time is 2021-08-12T15:18:09+09:00
+Warning: got packets out of order. Expected 159 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Warning: got packets out of order. Expected 153 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:10+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:12+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-12T21:08:14+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-12T23:08:10+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-12T23:08:12+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-12T23:08:14+09:00
+Warning: got packets out of order. Expected 134 but received 0
+yogiyo refresh start! 
+ time is 2021-08-13T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-13T00:01:01+09:00
+wemef refresh start! 
+ time is 2021-08-13T00:01:01+09:00
+--------------------5
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?5
+wemef refresh end! 
+ time is 2021-08-13T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:01:02+09:00
+Warning: got packets out of order. Expected 137 but received 0
+baemin refresh end! 
+ time is 2021-08-13T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:01:04+09:00
+Warning: got packets out of order. Expected 138 but received 0
+yogiyo refresh end! 
+ time is 2021-08-13T00:02:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:02:04+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-13T00:02:09+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-13T00:02:10+09:00
+Warning: got packets out of order. Expected 135 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:05:41+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:05:44+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:05:44+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-13T00:08:10+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-13T00:08:12+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Read Database! 
+ time is 2021-08-13T00:08:14+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+Warning: got packets out of order. Expected 131 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:11:07+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:11:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:11:10+09:00
+Warning: got packets out of order. Expected 134 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:15:41+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:15:44+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:15:44+09:00
+Warning: got packets out of order. Expected 130 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:21:07+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:21:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:21:10+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:25:41+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:25:44+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:25:44+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:31:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:31:10+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh start! 
+ time is 2021-08-13T00:35:41+09:00
+baemin refresh end! 
+ time is 2021-08-13T00:35:44+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T00:35:44+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-13T09:08:14+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-13T09:08:16+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-13T09:08:17+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-13T09:08:19+09:00
+Warning: got packets out of order. Expected 140 but received 0
+wemef refresh start! 
+ time is 2021-08-13T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-13T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T09:20:02+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Warning: got packets out of order. Expected 150 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Warning: got packets out of order. Expected 150 but received 0
+Warning: got packets out of order. Expected 150 but received 0
+Warning: got packets out of order. Expected 150 but received 0
+Warning: got packets out of order. Expected 150 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Warning: got packets out of order. Expected 150 but received 0
+Warning: got packets out of order. Expected 150 but received 0
+Warning: got packets out of order. Expected 150 but received 0
+Warning: got packets out of order. Expected 150 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:15+09:00
+Warning: got packets out of order. Expected 150 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:16+09:00
+Warning: got packets out of order. Expected 151 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:18+09:00
+Warning: got packets out of order. Expected 152 but received 0
+Read Database! 
+ time is 2021-08-13T10:08:20+09:00
+Warning: got packets out of order. Expected 153 but received 0
+Read Database! 
+ time is 2021-08-13T11:08:15+09:00
+Warning: got packets out of order. Expected 154 but received 0
+baemin refresh start! 
+ time is 2021-08-13T14:15:42+09:00
+baemin refresh end! 
+ time is 2021-08-13T14:15:45+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-13T14:15:45+09:00
+Warning: got packets out of order. Expected 155 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Warning: got packets out of order. Expected 151 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Warning: got packets out of order. Expected 146 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Warning: got packets out of order. Expected 144 but received 0
+Warning: got packets out of order. Expected 144 but received 0
+Warning: got packets out of order. Expected 144 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Warning: got packets out of order. Expected 134 but received 0
+Warning: got packets out of order. Expected 134 but received 0
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:19+09:00
+Warning: got packets out of order. Expected 134 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:20+09:00
+Warning: got packets out of order. Expected 133 but received 0
+Read Database! 
+ time is 2021-08-13T21:08:22+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-13T23:08:20+09:00
+Warning: got packets out of order. Expected 131 but received 0
+Read Database! 
+ time is 2021-08-13T23:08:21+09:00
+Warning: got packets out of order. Expected 130 but received 0
+Read Database! 
+ time is 2021-08-13T23:08:23+09:00
+Warning: got packets out of order. Expected 129 but received 0
+wemef refresh start! 
+ time is 2021-08-14T00:01:02+09:00
+yogiyo refresh start! 
+ time is 2021-08-14T00:01:02+09:00
+baemin refresh start! 
+ time is 2021-08-14T00:01:02+09:00
+--------------------6
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?6
+wemef refresh end! 
+ time is 2021-08-14T00:01:03+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:01:03+09:00
+Warning: got packets out of order. Expected 127 but received 0
+baemin refresh end! 
+ time is 2021-08-14T00:01:05+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:01:05+09:00
+Warning: got packets out of order. Expected 125 but received 0
+yogiyo refresh end! 
+ time is 2021-08-14T00:02:16+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:02:16+09:00
+Warning: got packets out of order. Expected 129 but received 0
+baemin refresh start! 
+ time is 2021-08-14T00:05:43+09:00
+baemin refresh end! 
+ time is 2021-08-14T00:05:46+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:05:46+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-14T00:08:22+09:00
+Warning: got packets out of order. Expected 127 but received 0
+Read Database! 
+ time is 2021-08-14T00:08:23+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-14T00:08:25+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+baemin refresh start! 
+ time is 2021-08-14T00:11:08+09:00
+baemin refresh end! 
+ time is 2021-08-14T00:11:11+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:11:11+09:00
+Warning: got packets out of order. Expected 122 but received 0
+baemin refresh start! 
+ time is 2021-08-14T00:15:43+09:00
+baemin refresh end! 
+ time is 2021-08-14T00:15:46+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:15:46+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-14T00:17:03+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-14T00:17:04+09:00
+Warning: got packets out of order. Expected 119 but received 0
+baemin refresh start! 
+ time is 2021-08-14T00:21:08+09:00
+baemin refresh end! 
+ time is 2021-08-14T00:21:11+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:21:11+09:00
+Warning: got packets out of order. Expected 117 but received 0
+baemin refresh start! 
+ time is 2021-08-14T00:25:43+09:00
+baemin refresh end! 
+ time is 2021-08-14T00:25:46+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:25:46+09:00
+Warning: got packets out of order. Expected 116 but received 0
+baemin refresh start! 
+ time is 2021-08-14T00:31:08+09:00
+baemin refresh end! 
+ time is 2021-08-14T00:31:11+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T00:31:11+09:00
+Warning: got packets out of order. Expected 116 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:24+09:00
+Warning: got packets out of order. Expected 117 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:25+09:00
+Warning: got packets out of order. Expected 118 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:27+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Warning: got packets out of order. Expected 128 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-14T09:08:29+09:00
+Warning: got packets out of order. Expected 129 but received 0
+wemef refresh start! 
+ time is 2021-08-14T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-14T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-14T09:20:02+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Warning: got packets out of order. Expected 139 but received 0
+Warning: got packets out of order. Expected 139 but received 0
+Warning: got packets out of order. Expected 139 but received 0
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:24+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Warning: got packets out of order. Expected 139 but received 0
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:26+09:00
+Warning: got packets out of order. Expected 140 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:27+09:00
+Warning: got packets out of order. Expected 141 but received 0
+Read Database! 
+ time is 2021-08-14T10:08:29+09:00
+Warning: got packets out of order. Expected 142 but received 0
+Read Database! 
+ time is 2021-08-14T11:08:24+09:00
+Warning: got packets out of order. Expected 143 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:28+09:00
+Warning: got packets out of order. Expected 122 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:30+09:00
+Warning: got packets out of order. Expected 121 but received 0
+Read Database! 
+ time is 2021-08-14T21:08:32+09:00
+Warning: got packets out of order. Expected 120 but received 0
+Read Database! 
+ time is 2021-08-14T23:08:29+09:00
+Warning: got packets out of order. Expected 119 but received 0
+Read Database! 
+ time is 2021-08-14T23:08:31+09:00
+Warning: got packets out of order. Expected 118 but received 0
+Read Database! 
+ time is 2021-08-14T23:08:32+09:00
+Warning: got packets out of order. Expected 117 but received 0
+wemef refresh start! 
+ time is 2021-08-15T00:01:01+09:00
+yogiyo refresh start! 
+ time is 2021-08-15T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-15T00:01:01+09:00
+--------------------7
+http://wp.yogiyo.co.kr/20210809-0815_ohal_app/?7
+wemef refresh end! 
+ time is 2021-08-15T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:01:02+09:00
+Warning: got packets out of order. Expected 117 but received 0
+baemin refresh end! 
+ time is 2021-08-15T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:01:04+09:00
+Warning: got packets out of order. Expected 117 but received 0
+yogiyo refresh end! 
+ time is 2021-08-15T00:02:19+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:02:19+09:00
+Warning: got packets out of order. Expected 116 but received 0
+Read Database! 
+ time is 2021-08-15T00:02:22+09:00
+Warning: got packets out of order. Expected 116 but received 0
+Read Database! 
+ time is 2021-08-15T00:02:31+09:00
+Warning: got packets out of order. Expected 116 but received 0
+baemin refresh start! 
+ time is 2021-08-15T00:05:44+09:00
+baemin refresh end! 
+ time is 2021-08-15T00:05:47+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:05:47+09:00
+Warning: got packets out of order. Expected 115 but received 0
+Read Database! 
+ time is 2021-08-15T00:08:29+09:00
+Warning: got packets out of order. Expected 115 but received 0
+Read Database! 
+ time is 2021-08-15T00:08:31+09:00
 Warning: got packets out of order. Expected 114 but received 0
 Read Database! 
- time is 2021-08-01T03:14:56+09:00
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Read Database! 
+ time is 2021-08-15T00:08:33+09:00
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
 Warning: got packets out of order. Expected 114 but received 0
 Read Database! 
- time is 2021-08-01T03:15:13+09:00
+ time is 2021-08-15T00:08:33+09:00
 Warning: got packets out of order. Expected 114 but received 0
 Read Database! 
- time is 2021-08-01T03:15:24+09:00
+ time is 2021-08-15T00:08:33+09:00
 Warning: got packets out of order. Expected 114 but received 0
+Warning: got packets out of order. Expected 114 but received 0
+baemin refresh start! 
+ time is 2021-08-15T00:11:07+09:00
+baemin refresh end! 
+ time is 2021-08-15T00:11:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:11:10+09:00
+Warning: got packets out of order. Expected 114 but received 0
+baemin refresh start! 
+ time is 2021-08-15T00:15:44+09:00
+baemin refresh end! 
+ time is 2021-08-15T00:15:47+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:15:47+09:00
+Warning: got packets out of order. Expected 114 but received 0
+baemin refresh start! 
+ time is 2021-08-15T00:21:07+09:00
+baemin refresh end! 
+ time is 2021-08-15T00:21:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:21:10+09:00
+Warning: got packets out of order. Expected 115 but received 0
+baemin refresh start! 
+ time is 2021-08-15T00:25:44+09:00
+baemin refresh end! 
+ time is 2021-08-15T00:25:47+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:25:47+09:00
+Warning: got packets out of order. Expected 116 but received 0
+baemin refresh start! 
+ time is 2021-08-15T00:31:07+09:00
+baemin refresh end! 
+ time is 2021-08-15T00:31:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T00:31:10+09:00
+Warning: got packets out of order. Expected 114 but received 0
+Read Database! 
+ time is 2021-08-15T09:08:33+09:00
+Warning: got packets out of order. Expected 115 but received 0
+Read Database! 
+ time is 2021-08-15T09:08:34+09:00
+Warning: got packets out of order. Expected 116 but received 0
+Read Database! 
+ time is 2021-08-15T09:08:36+09:00
+Warning: got packets out of order. Expected 117 but received 0
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Read Database! 
+ time is 2021-08-15T09:08:38+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+Warning: got packets out of order. Expected 126 but received 0
+wemef refresh start! 
+ time is 2021-08-15T09:20:01+09:00
+wemef refresh end! 
+ time is 2021-08-15T09:20:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-15T09:20:02+09:00
+Warning: got packets out of order. Expected 126 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Warning: got packets out of order. Expected 132 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:33+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:35+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:36+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-15T10:08:38+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-15T11:08:34+09:00
+Warning: got packets out of order. Expected 139 but received 0
+Read Database! 
+ time is 2021-08-15T21:08:37+09:00
+Warning: got packets out of order. Expected 138 but received 0
+Read Database! 
+ time is 2021-08-15T21:08:39+09:00
+Warning: got packets out of order. Expected 137 but received 0
+Read Database! 
+ time is 2021-08-15T23:08:38+09:00
+Warning: got packets out of order. Expected 136 but received 0
+Read Database! 
+ time is 2021-08-15T23:08:40+09:00
+Warning: got packets out of order. Expected 135 but received 0
+Read Database! 
+ time is 2021-08-15T23:08:41+09:00
+Warning: got packets out of order. Expected 134 but received 0
+wemef refresh start! 
+ time is 2021-08-16T00:01:01+09:00
+yogiyo refresh start! 
+ time is 2021-08-16T00:01:01+09:00
+baemin refresh start! 
+ time is 2021-08-16T00:01:01+09:00
+--------------------1
+http://wp.yogiyo.co.kr/20210816-0822_ohal_app/?1
+wemef refresh end! 
+ time is 2021-08-16T00:01:02+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:01:02+09:00
+Warning: got packets out of order. Expected 118 but received 0
+baemin refresh end! 
+ time is 2021-08-16T00:01:04+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:01:04+09:00
+Warning: got packets out of order. Expected 119 but received 0
+yogiyo refresh end! 
+ time is 2021-08-16T00:02:24+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:02:24+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-16T00:02:34+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-16T00:02:36+09:00
+Warning: got packets out of order. Expected 125 but received 0
+baemin refresh start! 
+ time is 2021-08-16T00:05:45+09:00
+baemin refresh end! 
+ time is 2021-08-16T00:05:48+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:05:48+09:00
+Warning: got packets out of order. Expected 129 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Warning: got packets out of order. Expected 125 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Warning: got packets out of order. Expected 120 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Warning: got packets out of order. Expected 118 but received 0
+Warning: got packets out of order. Expected 118 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Warning: got packets out of order. Expected 110 but received 0
+Warning: got packets out of order. Expected 110 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Warning: got packets out of order. Expected 110 but received 0
+Warning: got packets out of order. Expected 110 but received 0
+Warning: got packets out of order. Expected 110 but received 0
+Warning: got packets out of order. Expected 110 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Read Database! 
+ time is 2021-08-16T00:08:42+09:00
+Warning: got packets out of order. Expected 110 but received 0
+Warning: got packets out of order. Expected 110 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:43+09:00
+Warning: got packets out of order. Expected 110 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:45+09:00
+Warning: got packets out of order. Expected 109 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Read Database! 
+ time is 2021-08-16T00:08:47+09:00
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+Warning: got packets out of order. Expected 109 but received 0
+baemin refresh start! 
+ time is 2021-08-16T00:11:07+09:00
+baemin refresh end! 
+ time is 2021-08-16T00:11:10+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:11:10+09:00
+Warning: got packets out of order. Expected 108 but received 0
+baemin refresh start! 
+ time is 2021-08-16T00:15:46+09:00
+baemin refresh end! 
+ time is 2021-08-16T00:15:49+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:15:49+09:00
+Warning: got packets out of order. Expected 110 but received 0
+baemin refresh start! 
+ time is 2021-08-16T00:21:07+09:00
+baemin refresh end! 
+ time is 2021-08-16T00:21:11+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:21:11+09:00
+Warning: got packets out of order. Expected 106 but received 0
+baemin refresh start! 
+ time is 2021-08-16T00:25:45+09:00
+baemin refresh end! 
+ time is 2021-08-16T00:25:49+09:00
+Warning: got packets out of order. Expected 2 but received 0
+Read Database! 
+ time is 2021-08-16T00:25:49+09:00
+Warning: got packets out of order. Expected 104 but received 0

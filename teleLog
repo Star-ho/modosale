@@ -1,15 +1,510 @@
-Thu, 29 Jul 2021 06:31:56 GMT node-telegram-bot-api deprecated Automatic enabling of cancellation of promises is deprecated.
+Tue, 03 Aug 2021 10:56:23 GMT node-telegram-bot-api deprecated Automatic enabling of cancellation of promises is deprecated.
 In the future, you will have to enable it yourself.
 See https://github.com/yagop/node-telegram-bot-api/issues/319. at node:internal/modules/cjs/loader:1109:14
-Warning: got packets out of order. Expected 150 but received 0
-update data SET price=10000 where brand="도미노" and app="yogiyo" 
-update data SET price=10000 where brand="도미노피자" and app="yogiyo" 
+[
+  'coupang',
+  '노브랜드버거',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DNOBRAND_0802_IN'
+]
+[
+  'coupang',
+  '노브랜드버거',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DNOBRAND_0802_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '노브랜드버거',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DNOBRAND_0802_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '노브랜드버거',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DNOBRAND_0802_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+[
+  'coupang',
+  '노브랜드버거',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DNOBRAND_0802_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+Warning: got packets out of order. Expected 138 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
-update data SET price=10000 where brand="도미노피자" and app="yogiyo" 
-update data SET price=12700 where brand="피자에땅" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=5000 where brand="피자헛" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+[
+  'coupang',
+  '부어치킨',
+  '3000',
+  'coupangeats://SearchResult?keyword=%EB%B6%80%EC%96%B4%EC%B9%98%ED%82%A8&sourceType=Promotion'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '배스킨라빈스',
+  '1000',
+  'coupangeats://SearchResult?keyword=%EB%B0%B0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4&sourceType=Promotion'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=5000 where brand="피자헛" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=5000 where brand="피자헛" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=5000 where brand="피자헛" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
-update data SET price=13000 where brand="피자에탕" and app="yogiyo" 
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+[
+  'coupang',
+  '두찜',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDOOJJIM_0809_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '뚜레쥬르',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTOUS_0809_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '버거킹',
+  '3000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBURGERKING_0809_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '돈치킨',
+  '3000',
+  'coupangeats://SearchResult?keyword=%EB%8F%88%EC%B9%98%ED%82%A8&sourceType=Promotion'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  '멕시카나',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_A'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  '호식이두마리치킨',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_A'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '호식이두마리치킨',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_A'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '멕시카나',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_A'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '멕시카나',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_B'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '호식이두마리치킨',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_B'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '호식이두마리치킨',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_B'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '멕시카나',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_B'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '멕시카나',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_B'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '호식이두마리치킨',
+  '9000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DMALBOK_0809_B'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+[
+  'coupang',
+  '던킨',
+  '1000',
+  'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDUNKIN_0809_IN'
+]
+Unhandled rejection Error: ETELEGRAM: 400 Bad Request: message text is empty
+    at /home/ubuntu/modosale/node_modules/node-telegram-bot-api/src/telegram.js:291:15
+    at tryCatcher (/home/ubuntu/modosale/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:547:31)
+    at Promise._settlePromise (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:604:18)
+    at Promise._settlePromise0 (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:649:10)
+    at Promise._settlePromises (/home/ubuntu/modosale/node_modules/bluebird/js/release/promise.js:729:18)
+    at _drainQueueStep (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:93:12)
+    at _drainQueue (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:86:9)
+    at Async._drainQueues (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:102:5)
+    at Immediate.Async.drainQueues [as _onImmediate] (/home/ubuntu/modosale/node_modules/bluebird/js/release/async.js:15:14)
+    at processImmediate (node:internal/timers:464:21)
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=5000 where brand="피자헛" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+error: [polling_error] {"code":"EFATAL","message":"EFATAL: Error: read ETIMEDOUT"}
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+error: [polling_error] {"code":"EFATAL","message":"EFATAL: Error: read ETIMEDOUT"}
+update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
 update data SET price=13000 where brand="피자에땅" and app="yogiyo" 
