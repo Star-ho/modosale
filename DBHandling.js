@@ -43,6 +43,10 @@ export async function insertFunc(appname,date){
             i[0]=isUnifiedName.realName
          }
          let SqlRes = await connect.query(`select * from Menu where brandName="${i[0]}";`);
+         let isDuple = await connect.query(`select * from data where brand="${i[0]}" and app="${appname}";`);
+         if(isDuple[0][0]){
+            return
+         }
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                await connect.query(`insert into data(app,brand,price,img,category,uri) values('${appname}','${i[0]}','${+i[1][0]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${i[1][1]}')`);    
@@ -135,6 +139,10 @@ export async function coupangHandlingFunc(data){
    try{
       if(data[3]){
          let SqlRes = await connect.query(`select * from Menu where brandName="${data[0]}";`);
+         let isDuple = await connect.query(`select * from data where brand="${data[0]}" and app="coupang";`);
+         if(isDuple[0][0]){
+            return
+         }
          if(SqlRes[0][0]){
             if(SqlRes[0][0].category=="치킨"||SqlRes[0][0].category=="피자"||SqlRes[0][0].category=="한식"||SqlRes[0][0].category=="양식"){
                await connect.query(`insert into data(app,brand,price,img,category,uri) values('coupang','${data[0]}','${+data[1]}','${SqlRes[0][0].imageName}','${SqlRes[0][0].category}','${data[2]}')`);    
