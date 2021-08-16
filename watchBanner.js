@@ -3,8 +3,8 @@
 import {getWemefBannerData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {telegramSendMessage} from './teleWebhook.js'
-import {getBaeminData} from './imgBaemin.js'
-import {getYogiyoData} from './imgYogiyo.js'
+import { getBaeminData } from './imgBaemin.js'
+import { getYogiyoData } from './imgYogiyo.js'
 import { coupangDataHandling} from './CoupangDatahandling.js'
 import { getDataArray } from './yogiyo.js'
 
