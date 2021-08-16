@@ -4,7 +4,7 @@ async function monthlyMenu(){
     const fetch = require('node-fetch');
     const fs = require('fs');
 
-    let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0809_IN`
+    let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0816_IN`
 
     let response = await fetch(url,{
         headers:{
