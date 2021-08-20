@@ -4,33 +4,14 @@
 import {telegramSendMessage} from './teleWebhook.js'
 
 export async function getDataArray(date){
+
   let  moment = require('moment');
   require('moment-timezone'); 
   moment.tz.setDefault("Asia/Seoul"); 
 
-  date.now=moment()
+  date=moment()
 
-  while(date.now.isSameOrAfter(date.end)&&date.now.weekday()){
-    date.end.add(1,'day')
-  }
-  while(date.now.format('MM')!=date.end.format('MM')){
-    date.end.subtract(1,'day')
-  }
-
-  let endDay= date.end.format('MMDD')
-  let year= date.now.format('yyyy')
-  let temp=date.end.clone()
-  while(temp.weekday()!=1){
-    temp.subtract(1,'day')
-  }
-
-  while(temp.format('MM')!=date.end.format('MM')){
-    temp.add(1,'day')
-  }
-
-  let startDay= temp.format('MMDD')
-  let weeknumber=date.now.weekday()||7
-  console.log('--------------------'+weeknumber)
+  let weeknumber=date.weekday()||7
   const cheerio = require("cheerio");
   const fetch = require('node-fetch');
   let arr=Array.from({length:100},()=>[])
