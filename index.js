@@ -121,8 +121,6 @@ app.get('/changeWemef', function(req, res) {
    res.send("chageWemef");
 });
 
-
-
 app.get('/deleteCoupang', function(req, res) {
    res.send("deleteCoupang");
 });
