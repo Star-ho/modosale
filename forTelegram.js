@@ -1,6 +1,8 @@
 //npx babel-node --presets @babel/env  forTelegram.js > ./log/teleLog 2>&1 &    
 //disown -a
-import { telegramSendMessage } from './lib/modusailUtil';
+//끝
+
+import { telegramSendMessage,makeDBConnet } from './lib/modusailUtil';
 require('dotenv').config({ path: require('find-config')('.env') })
 const TelegramBot = require('node-telegram-bot-api');
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
@@ -67,16 +69,7 @@ telebot.onText(/^(help)|^(h)/, (msg) => {
 telebot.onText(/^allselect/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chat.id==chatId){
-        const mysql = require('mysql2/promise');
-        const pool = mysql.createPool({
-        host     : 'localhost',
-        port     :  3306,
-        user     : process.env.DB_USER||'starho',
-        password : process.env.DB_PW||'starho',
-        database : 'menu',
-        connectionLimit:10
-        });
-        let connect = await pool.getConnection(conn =>conn)
+        let connect = await makeDBConnet()
         const chatId = 1052011050;
         let res=''
         let SQLRes
@@ -97,17 +90,8 @@ telebot.onText(/^allselect/, async (msg) => {
 telebot.onText(/^select/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chat.id==chatId){
-        const mysql = require('mysql2/promise');
-        const pool = mysql.createPool({
-        host     : 'localhost',
-        port     :  3306,
-        user     : process.env.DB_USER||'starho',
-        password : process.env.DB_PW||'starho',
-        database : 'menu',
-        connectionLimit:10
-        });
         const chatId = 1052011050;
-        let connect = await pool.getConnection(conn =>conn)
+        let connect = await makeDBConnet()
         let res=''
         try{
             const command = msg.text.split('\n')
@@ -134,17 +118,9 @@ telebot.onText(/^select/, async (msg) => {
 telebot.onText(/^appselect/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chat.id==chatId){
-        const mysql = require('mysql2/promise');
-        const pool = mysql.createPool({
-        host     : 'localhost',
-        port     :  3306,
-        user     : process.env.DB_USER||'starho',
-        password : process.env.DB_PW||'starho',
-        database : 'menu',
-        connectionLimit:10
-        });
+
         const chatId = 1052011050;
-        let connect = await pool.getConnection(conn =>conn)
+        let connect = await makeDBConnet()
         let res=''
         try{
             const command = msg.text.split('\n')
@@ -171,17 +147,8 @@ telebot.onText(/^appselect/, async (msg) => {
 telebot.onText(/^update/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chat.id==chatId){
-        const mysql = require('mysql2/promise');
-        const pool = mysql.createPool({
-        host     : 'localhost',
-        port     :  3306,
-        user     : process.env.DB_USER||'starho',
-        password : process.env.DB_PW||'starho',
-        database : 'menu',
-        connectionLimit:10
-        });
         const chatId = 1052011050;
-        let connect = await pool.getConnection(conn =>conn)
+        let connect = await makeDBConnet()
         let res
         try{
             const command = msg.text.split('\n')
@@ -203,19 +170,10 @@ telebot.onText(/^update/, async (msg) => {
 telebot.onText(/^insert/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chat.id==chatId){
-        const mysql = require('mysql2/promise');
-        const pool = mysql.createPool({
-        host     : 'localhost',
-        port     :  3306,
-        user     : process.env.DB_USER||'starho',
-        password : process.env.DB_PW||'starho',
-        database : 'menu',
-        connectionLimit:10
-        });
         const chatId = 1052011050;
         let res
         try{
-            let connect = await pool.getConnection(conn =>conn)
+            let connect = await makeDBConnet()
             const command = msg.text.split('\n')
             let data=command[1].split(' ')
             if(data[0]=='coupang'&&data[3]==undefined){
@@ -250,17 +208,8 @@ telebot.onText(/^insert/, async (msg) => {
 telebot.onText(/^delete/, async (msg) => {
     const chatId = 1052011050;
     if(msg.chat.id==chatId){
-        const mysql = require('mysql2/promise');
-        const pool = mysql.createPool({
-        host     : 'localhost',
-        port     :  3306,
-        user     : process.env.DB_USER||'starho',
-        password : process.env.DB_PW||'starho',
-        database : 'menu',
-        connectionLimit:10
-        });
         const chatId = 1052011050;
-        let connect = await pool.getConnection(conn =>conn)
+        let connect = await makeDBConnet()
         let res
         try{
             const command = msg.text.split('\n')
