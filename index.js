@@ -1,4 +1,4 @@
-//npx babel-node --presets @babel/env index.js >log 2>&1 &
+//npx babel-node --presets @babel/env index.js >./log/mainLog 2>&1 &
 //disown -a
 //ssh -i "starho_key.pem" ubuntu@ec2-15-165-75-172.ap-northeast-2.compute.amazonaws.com
 /**
@@ -16,11 +16,11 @@
  * 
  */
 
-import {insertFunc,deleteFunc,readDBFunc} from './DBHandling'
+import {insertFunc,deleteFunc,readDBFunc} from './lib/DBHandling'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
-import {getData} from './baemin.js'
-import { telegramSendMessage } from './teleWebhook';
+import {getData} from './lib/baemin.js'
+import { telegramSendMessage } from './lib/teleWebhook';
 
 let data={};
 
