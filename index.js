@@ -15,7 +15,7 @@
  * 쿠팡은 거의 watch쪽에서 처리
  * 
  */
-
+//끝
 import {insertFunc,deleteFunc,readDBFunc} from './lib/DBHandling'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
