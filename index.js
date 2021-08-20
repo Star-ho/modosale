@@ -25,14 +25,7 @@ import { telegramSendMessage } from './teleWebhook';
 let data={};
 
 async function setYogiyo(){
-   let  moment = require('moment');
-   require('moment-timezone'); 
-   moment.tz.setDefault("Asia/Seoul"); 
-   let date={now:moment() ,end:moment()}
-   while(date.end.weekday()!=0){
-      date.end.add(1,'day')
-   }
-   await insertFunc('yogiyo',date)
+   await insertFunc('yogiyo')
    readDB()
 }
 
@@ -48,7 +41,6 @@ async function changeWemef(){
 }
 
 async function changeCoupang(){
-
    await insertFunc('coupang')
    readDB()
 }
@@ -57,12 +49,6 @@ async function changeCoupang(){
 async function readDB(){
    data = await readDBFunc()
    //console.log(data)
-}
-
-
-async function deleteCoupang(){
-   await deleteFunc('coupang')
-   readDB()
 }
 
 //시작 하는곳
@@ -126,33 +112,24 @@ app.get('/refresh', function(req, res) {
 });
 
 app.get('/chageCoupang', function(req, res) {
-   (async()=>{
-      await changeCoupang()
-   })()
+   changeCoupang()
    res.send("chageCoupang");
 });
 
 app.get('/changeWemef', function(req, res) {
-   (async()=>{
-      await changeWemef()
-   })()
+   changeWemef()
    res.send("chageWemef");
 });
 
 
 
 app.get('/deleteCoupang', function(req, res) {
-   (async()=>{
-      await deleteCoupang()
-   })()
    res.send("deleteCoupang");
 });
 
 
 app.get('/readdb', function(req, res) {
-   (async()=>{
-      await readDB()
-   })()
+   readDB()
    res.send("readDB!!");
 });
 
