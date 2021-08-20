@@ -22,6 +22,7 @@ import { getDataArray } from './yogiyo.js'
   for(let i of coupnagData){
     data.coupang.push(JSON.stringify(i))
   }
+  console.log(coupnagData)
   // for(let i of yogiyoData){
   //   data.yogiyo.push(JSON.stringify(i))
   // }

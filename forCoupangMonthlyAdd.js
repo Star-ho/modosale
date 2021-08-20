@@ -11,7 +11,7 @@ import {telegramSendMessage} from './teleWebhook.js'
     const urlencode = require('urlencode'); 
 
 
-    let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0816_IN`
+    let url=`https://web.coupangeats.com/customer/landingPage?key=AUG_0818_IN`
 
     let response = await fetch(url,{
         headers:{

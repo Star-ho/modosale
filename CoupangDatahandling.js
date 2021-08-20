@@ -1,5 +1,6 @@
 import {telegramSendMessage} from './teleWebhook.js'
 import {coupangHandlingFunc} from './DBHandling.js'
+import {ParseError} from './modusailError.js'
 
 const importMsg='****************************************'
 export function coupangDataHandling(obj){
@@ -32,10 +33,16 @@ export function coupangDataHandling(obj){
     moment.tz.setDefault("Asia/Seoul"); 
     let MounthName= moment().format('MMM').toUpperCase()+'_'
 
-    if(isMounthlyMenu.startsWith(MounthName)){
-        monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
+    try{
+        if(isMounthlyMenu.startsWith(MounthName)){
+            monthlyMenu({urlParam:obj.scheme,isAdd:obj.add})
+            return
+        }
+    }catch(e){
+        console.log(e)
         return
     }
+
     res=res.filter(v=>v[2]==obj.id)
     // console.log(obj)
     if(res.length==0){
