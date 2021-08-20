@@ -1,5 +1,7 @@
 //npx babel-node --presets @babel/env watchBanner.js  > watchlog 2>&1 &
 //disown -a
+//끝
+
 import {getWemefBannerData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {telegramSendMessage} from './modusailUtil.js'
