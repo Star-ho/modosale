@@ -1,8 +1,8 @@
 //npx babel-node --presets @babel/env  forTelegram.js > ./log/teleLog 2>&1 &    
 //disown -a
+import { telegramSendMessage } from './lib/modusailUtil';
 require('dotenv').config({ path: require('find-config')('.env') })
 const TelegramBot = require('node-telegram-bot-api');
-const { telegramSendMessage } = require('./teleWebhook');
 const token = '1811045229:AAHsI7UbFW3m04ly8cVxwnm-m2oHbMXfHdI'
 let telebot = new TelegramBot(token, {polling: true})
 

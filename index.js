@@ -20,7 +20,7 @@ import {insertFunc,deleteFunc,readDBFunc} from './lib/DBHandling'
 import {getWemefData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
 import {getData} from './lib/baemin.js'
-import { telegramSendMessage } from './lib/teleWebhook';
+import { telegramSendMessage } from './lib/modusailUtil';
 
 let data={};
 

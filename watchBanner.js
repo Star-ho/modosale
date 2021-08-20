@@ -2,11 +2,12 @@
 //disown -a
 import {getWemefBannerData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
-import {telegramSendMessage} from './teleWebhook.js'
+import {telegramSendMessage} from './modusailUtil.js'
 import { getBaeminData } from './lib/imgBaemin.js'
 import { getYogiyoData } from './imgYogiyo.js'
 import { coupangDataHandling} from './CoupangDatahandling.js'
 import { getDataArray } from './lib/yogiyo.js'
+import { koreaMoment, printLog } from './lib/modusailUtil.js'
 
 (async ()=>{
   let data={wemef:[],coupang:[],baemin:[],yogiyo:[]}
@@ -38,12 +39,8 @@ import { getDataArray } from './lib/yogiyo.js'
 
 
 async function watchData(data){
-  let  moment = require('moment');
-  require('moment-timezone'); 
-  moment.tz.setDefault("Asia/Seoul"); 
 
-  let date={now:moment()}
-  console.log('watch start! \n time is '+date.now.format())
+  printLog('watch start! \n time is ')
 
   let wemef=[]
   let coupang=[]
@@ -96,8 +93,6 @@ async function watchData(data){
     if(!data.coupang.includes(i)){
       await telegramSendMessage("coupang add"+i)
       coupangDataHandling(Object.assign({}, JSON.parse(i),{add:true}))
-
-
     }
   }
 

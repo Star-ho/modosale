@@ -1,7 +1,7 @@
 //npx babel-node --presets @babel/env forCoupangMonthlyAdd.js
 
 import {coupangHandlingFunc} from './DBHandling.js'
-import {telegramSendMessage} from './teleWebhook.js'
+import {telegramSendMessage} from './modusailUtil.js'
 
 
 (async () =>{
