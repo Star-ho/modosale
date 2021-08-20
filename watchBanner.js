@@ -1,8 +1,8 @@
-//npx babel-node --presets @babel/env watchBanner.js  > ./log/watchlog 2>&1 &
+//npx babel-node --presets @babel/env watchBanner.js  > watchlog 2>&1 &
 //disown -a
 import {getWemefBannerData} from './imgWemef.js'
 import {getCoupangData} from './imgCoupangeats.js'
-import {telegramSendMessage} from './lib/teleWebhook.js'
+import {telegramSendMessage} from './teleWebhook.js'
 import { getBaeminData } from './lib/imgBaemin.js'
 import { getYogiyoData } from './imgYogiyo.js'
 import { coupangDataHandling} from './CoupangDatahandling.js'
@@ -22,7 +22,7 @@ import { getDataArray } from './lib/yogiyo.js'
   for(let i of coupnagData){
     data.coupang.push(JSON.stringify(i))
   }
-  console.log(coupnagData)
+  
   // for(let i of yogiyoData){
   //   data.yogiyo.push(JSON.stringify(i))
   // }
