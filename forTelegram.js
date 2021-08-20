@@ -1,4 +1,4 @@
-//npx babel-node --presets @babel/env  forTelegram.js >teleLog 2>&1 &    
+//npx babel-node --presets @babel/env  forTelegram.js > ./log/teleLog 2>&1 &    
 //disown -a
 require('dotenv').config({ path: require('find-config')('.env') })
 const TelegramBot = require('node-telegram-bot-api');
@@ -83,7 +83,7 @@ telebot.onText(/^allselect/, async (msg) => {
         try{
             SQLRes = (await connect.query(`select * from data;`))[0];
         }catch(e){
-            telebot.sendMessage(chatId,'11')
+            telebot.sendMessage(chatId,e.stringify())
         }
         for(let i of SQLRes){
             res+=i.app+' '+i.brand+' '+i.price+'\n'
@@ -120,7 +120,7 @@ telebot.onText(/^select/, async (msg) => {
                 }
             }
         }catch(e){
-            telebot.sendMessage(chatId,e)
+            telebot.sendMessage(chatId,e.stringify())
         }
         if(res){
             telebot.sendMessage(chatId,res)
