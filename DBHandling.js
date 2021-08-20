@@ -5,7 +5,7 @@ import {telegramSendMessage} from './teleWebhook.js'
 
 require('dotenv').config();
 
-export async function insertFunc(appname,date){
+export async function insertFunc(appname){
    let  moment = require('moment');
    require('moment-timezone'); 
    moment.tz.setDefault("Asia/Seoul"); 
@@ -26,7 +26,7 @@ export async function insertFunc(appname,date){
    let connect = await pool.getConnection(conn =>conn)
    let obj
    if(appname=='yogiyo'){
-      obj= await getDataArray(date)
+      obj= await getDataArray()
    }else if(appname=='baemin'){
       obj=  await getData()
    }else if(appname=='wemef'){
