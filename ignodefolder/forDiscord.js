@@ -1,5 +1,5 @@
 //토큰  ODU0MDI0NDU0NjY5OTkxOTc2.YMd6QQ.RFOytdnCAke3tYbUWD72KGHp2sY
-
+import  { makeDBConnet } from './lib/modusailUtil'
 const Discord = require("discord.js");
 
 const client = new Discord.Client();
@@ -7,17 +7,9 @@ const client = new Discord.Client();
 client.on("message", async function(message) {
     // message 작성자가 봇이면 그냥 return
     if (message.author.bot) return;
-    const mysql = require('mysql2/promise');
-    const pool = mysql.createPool({
-       host     : 'localhost',
-       port     :  3306,
-       user     : process.env.DB_USER||'root',
-       password : process.env.DB_PW||'root',
-       database : 'menu',
-       connectionLimit:10
-    });
+
     
-    let connect = await pool.getConnection(conn =>conn)
+    let connect = await makeDBConnet()
     if(message.content.indexOf('  ')!=-1){
         message.reply(`스페이스 두번 드갔다 조심해라`);
     }

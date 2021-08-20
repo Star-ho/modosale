@@ -1,14 +1,5 @@
-const mysql = require('mysql2/promise');
-const pool = mysql.createPool({
-    host     : 'localhost',
-    port     :  3306,
-    user     : 'starho',
-    password : 'starho',
-    database : 'menu',
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0,
-});
+//npx babel-node --presets @babel/env dbtest.js
+import  { makeDBConnet } from './lib/modusailUtil'
 
 (async ()=>{
     // let data = await connect.query('select * from menu where brandName="멕시카나";');
@@ -35,7 +26,7 @@ const pool = mysql.createPool({
             }
         }
         dataArray.pop()
-        const connect= await pool.getConnection(conn =>conn)
+        let connect = await makeDBConnet()
 
         for(let i=0;i<dataArray.length;i++){
             let temp = await connect.query(`select brandName from Menu where brandName='${dataArray[i][0]}'`);    

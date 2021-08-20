@@ -1,18 +1,9 @@
 import {wemefReadData} from './readfile.js'
-
+import  { makeDBConnet } from './lib/modusailUtil'
 
 (async()=>{
-    const mysql = require('mysql2/promise');
-    const pool = mysql.createPool({
-       host     : 'localhost',
-       port     :  3306,
-       user     : process.env.DB_USER||'starho',
-       password : process.env.DB_PW||'starho',
-       database : 'menu',
-       connectionLimit:10
-    });
- 
-    let connect = await pool.getConnection(conn =>conn)
+   let connect = await makeDBConnet()
+
     await connect.query('delete from data where app="wemef"');
  
     for(let i of ( await wemefReadData() ) ){

@@ -1,16 +1,7 @@
-const mysql = require('mysql2/promise');
-const pool = mysql.createPool({
-    host     : 'localhost',
-    port     :  3306,
-    user     : 'starho',
-    password : 'starho',
-    database : 'menu',
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0,
-});
+import  { makeDBConnet } from './lib/modusailUtil'
+
 (async()=> {
-    const connect= await pool.getConnection(conn =>conn)
+    let connect = await makeDBConnet()
     let fs = require('fs');
     let data=fs.readFileSync('textfile/UnifiedName', 'utf8')
     const {EOL} = require('os');
