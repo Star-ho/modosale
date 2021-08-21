@@ -55,7 +55,6 @@ async function readDB(){
 let intervalId
 
 readDB()
-
 //위메프오도 추가
 async function setyogiyoBaemin(){
    setYogiyo().catch((e)=>{
@@ -121,9 +120,6 @@ app.get('/changeWemef', function(req, res) {
    res.send("chageWemef");
 });
 
-app.get('/deleteCoupang', function(req, res) {
-   res.send("deleteCoupang");
-});
 
 
 app.get('/readdb', function(req, res) {

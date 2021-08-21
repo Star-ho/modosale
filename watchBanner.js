@@ -2,12 +2,12 @@
 //disown -a
 //끝
 
-import {getWemefBannerData} from './imgWemef.js'
-import {getCoupangData} from './imgCoupangeats.js'
-import {telegramSendMessage} from './modusailUtil.js'
+import {getWemefBannerData} from './lib/imgWemef.js'
+import {getCoupangData} from './lib/imgCoupangeats.js'
+import {telegramSendMessage} from './lib/modusailUtil.js'
 import { getBaeminData } from './lib/imgBaemin.js'
-import { getYogiyoData } from './imgYogiyo.js'
-import { coupangDataHandling} from './CoupangDatahandling.js'
+import { getYogiyoData } from './lib/imgYogiyo.js'
+import { coupangDataHandling} from './lib/CoupangDatahandling.js'
 import { getDataArray } from './lib/yogiyo.js'
 import { koreaMoment, printLog } from './lib/modusailUtil.js'
 

@@ -1,7 +1,7 @@
-import {fs} from "fs"
-import {fetch} from 'node-fetch'
 
 async function download(uri, filename, callback){
+  const fetch = require('node-fetch');
+  const fs = require('fsfetch');
   let res=await fetch(uri)
   let buffer = await res.buffer()
   fs.writeFile(filename, buffer, () => 
