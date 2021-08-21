@@ -37,7 +37,6 @@ import {telegramSendMessage} from './modusailUtil.js'
     response=JSON.parse($(`#landing_page`)['0'].attribs[a]).images
 
     // console.log(response)
-
     // console.log(data)
     for(let i of response){
         if(i.scheme){

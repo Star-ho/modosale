@@ -37,7 +37,6 @@ import  { makeDBConnet } from './lib/modusailUtil'
             }
             
             await connect.release();
-
         }
         connect.destroy()
 
