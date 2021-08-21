@@ -17,8 +17,8 @@
  */
 //끝
 import {insertFunc,deleteFunc,readDBFunc} from './lib/DBHandling'
-import {getWemefData} from './imgWemef.js'
-import {getCoupangData} from './imgCoupangeats.js'
+import {getWemefData} from './lib/imgWemef.js'
+import {getCoupangData} from './lib/imgCoupangeats.js'
 import {getData} from './lib/baemin.js'
 import { telegramSendMessage } from './lib/modusailUtil';
 
