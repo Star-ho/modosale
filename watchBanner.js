@@ -1,4 +1,4 @@
-//npx babel-node --presets @babel/env watchBanner.js  > watchlog 2>&1 &
+//npx babel-node --presets @babel/env watchBanner.js  > ./log/watchlog 2>&1 &
 //disown -a
 //끝
 
@@ -34,7 +34,7 @@ import { koreaMoment, printLog } from './lib/modusailUtil.js'
   // }
 
   // console.log(data.wemefBanner)
-  // console.log(data.coupang)
+  console.log(data.coupang)
   // coupangDataHandling(Object.assign({}, JSON.parse(data.coupang[0]),{add:false}))
   setInterval(async()=>await watchData(data),1000*60*10);
 })()
