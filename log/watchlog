@@ -1,1311 +1,238 @@
+[
+  {
+    img: 'https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/6c17/5b30876cc8951f5ac41c1b841ee70aa957b3e74e8cb33c049d962579c43b.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDUNKIN_0809_IN',
+    id: 6679,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t3c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/3e61/485b464ef9f52cb4acc5a6c5b08c3d3203222e5543fee532fdb799dedc88.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBASKIN_0804_IN',
+    id: 6956,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/8273/e06f87da5f9bf98b9b8aa18625918583bbb9c93391dab0edcd24d75b5fcc.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTTEOKCHAM_0816_IN',
+    id: 6641,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/f5c7/dc631647d8a7dbd18af359257c5981257c2a985563163579dcf4c4e95b06.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DISAAC_0825_IN',
+    id: 6704,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b39/5e7b898d3e62b17ffc155e1ef88a14274c056e078865b8daeae3ed916ca8.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DHOSIGI_0823_IN',
+    id: 6703,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/41b7/8e5b8a958f1e2d003b586aad98b835af49a45aab646d7dc911eadb699c8a.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDOOJJIM_0823_IN',
+    id: 6700,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/fec9/62ce0ac4f4df6d04f149300072c8cc1fa5ed0d84b7bafe0b179fc4a32e98.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DEGGDROP_0823_IN',
+    id: 6831,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/70aa/2d4fd0ca29cc7fc1a0df8ec6897a4e17d86b16b728e30840a4bada3879b7.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DKRISPY_0823_IN',
+    id: 6702,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t3a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b612/aa08a7018ab85ae7e3bc187ae485eb35ec59a31449fddea44b24916db3dd.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DROLLING_0823_IN',
+    id: 6706,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t4c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/2db6/605602bebd168b910a972859ae6784532c7662601a4712162d53fdcc1bc2.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DGULJAK_0819_IN',
+    id: 6643,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/957e/51fe52b20eb27034d8974db56e5a8dd6413cc827f7fba976f99e5133700f.jpg',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DAUG_0823_IN',
+    id: 6835,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t2c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0782/085975aafea4cf9f9e6fd862708dd57dde0ccf40db6c6ca7daa0a00f91f2.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBLUERIBBON_0610_IN',
+    id: 6718,
+    expireDate: undefined
+  },
+  {
+    img: 'https://img4c.coupangcdn.com/image/eats_operation_center/5adf/ec410fbd1d3b6ef0a79d27b1c615e5b65388b5164c64cf1007b930838d26.gif',
+    scheme: 'coupangeats://SearchResult?keyword=%EC%95%BC%EC%8B%9D_%EB%B0%B0%EB%8B%AC%EA%B0%80%EB%8A%A5_2021&sourceType=Promotion',
+    id: 2191,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b582/e32367c3a445e60937686924a8f7a77a82358c6c716eaa371900172aa588.jpg',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTRADITIONAL_0805_IN',
+    id: 6610,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/099e/e9d2f07e819e4ceb1699059ca375d270640a0cc72d7c57f150a497299aeb.jpg',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DB2BCOUPON_JULY',
+    id: 6183,
+    expireDate: undefined
+  },
+  {
+    img: 'https://img1a.coupangcdn.com/image/eats_operation_center/4f43/df5adebaec0a0f8a9fdc64067d6773e53aa5d9096d55ec8c6c62fd618d57.gif',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DSERVICE_0716_IN',
+    id: 6407,
+    expireDate: undefined
+  },
+  {
+    img: 'https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/815a/dcc6a6969451ee912ef4216cb56aa428227a7e1c460c9105e4a05723f583.png',
+    scheme: 'coupangeats://Web?url=https%3A%2F%2Fwww.coupangeats.com%2Fmerchant%3Futm_source%3Dcustomer_banner',
+    id: 441,
+    expireDate: undefined
+  }
+]
+17
+[
+  '{"img":"https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/6c17/5b30876cc8951f5ac41c1b841ee70aa957b3e74e8cb33c049d962579c43b.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDUNKIN_0809_IN","id":6679}',
+  '{"img":"https://t3c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/3e61/485b464ef9f52cb4acc5a6c5b08c3d3203222e5543fee532fdb799dedc88.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBASKIN_0804_IN","id":6956}',
+  '{"img":"https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/8273/e06f87da5f9bf98b9b8aa18625918583bbb9c93391dab0edcd24d75b5fcc.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTTEOKCHAM_0816_IN","id":6641}',
+  '{"img":"https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/f5c7/dc631647d8a7dbd18af359257c5981257c2a985563163579dcf4c4e95b06.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DISAAC_0825_IN","id":6704}',
+  '{"img":"https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b39/5e7b898d3e62b17ffc155e1ef88a14274c056e078865b8daeae3ed916ca8.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DHOSIGI_0823_IN","id":6703}',
+  '{"img":"https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/41b7/8e5b8a958f1e2d003b586aad98b835af49a45aab646d7dc911eadb699c8a.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDOOJJIM_0823_IN","id":6700}',
+  '{"img":"https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/fec9/62ce0ac4f4df6d04f149300072c8cc1fa5ed0d84b7bafe0b179fc4a32e98.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DEGGDROP_0823_IN","id":6831}',
+  '{"img":"https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/70aa/2d4fd0ca29cc7fc1a0df8ec6897a4e17d86b16b728e30840a4bada3879b7.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DKRISPY_0823_IN","id":6702}',
+  '{"img":"https://t3a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b612/aa08a7018ab85ae7e3bc187ae485eb35ec59a31449fddea44b24916db3dd.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DROLLING_0823_IN","id":6706}',
+  '{"img":"https://t4c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/2db6/605602bebd168b910a972859ae6784532c7662601a4712162d53fdcc1bc2.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DGULJAK_0819_IN","id":6643}',
+  '{"img":"https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/957e/51fe52b20eb27034d8974db56e5a8dd6413cc827f7fba976f99e5133700f.jpg","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DAUG_0823_IN","id":6835}',
+  '{"img":"https://t2c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0782/085975aafea4cf9f9e6fd862708dd57dde0ccf40db6c6ca7daa0a00f91f2.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBLUERIBBON_0610_IN","id":6718}',
+  '{"img":"https://img4c.coupangcdn.com/image/eats_operation_center/5adf/ec410fbd1d3b6ef0a79d27b1c615e5b65388b5164c64cf1007b930838d26.gif","scheme":"coupangeats://SearchResult?keyword=%EC%95%BC%EC%8B%9D_%EB%B0%B0%EB%8B%AC%EA%B0%80%EB%8A%A5_2021&sourceType=Promotion","id":2191}',
+  '{"img":"https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b582/e32367c3a445e60937686924a8f7a77a82358c6c716eaa371900172aa588.jpg","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTRADITIONAL_0805_IN","id":6610}',
+  '{"img":"https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/099e/e9d2f07e819e4ceb1699059ca375d270640a0cc72d7c57f150a497299aeb.jpg","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DB2BCOUPON_JULY","id":6183}',
+  '{"img":"https://img1a.coupangcdn.com/image/eats_operation_center/4f43/df5adebaec0a0f8a9fdc64067d6773e53aa5d9096d55ec8c6c62fd618d57.gif","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DSERVICE_0716_IN","id":6407}',
+  '{"img":"https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/815a/dcc6a6969451ee912ef4216cb56aa428227a7e1c460c9105e4a05723f583.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fwww.coupangeats.com%2Fmerchant%3Futm_source%3Dcustomer_banner","id":441}'
+]
 watch start! 
- time is 2021-08-11T14:27:54+09:00
+ time is 2021-08-23T16:15:26+09:00
 watch start! 
- time is 2021-08-11T14:37:54+09:00
+ time is 2021-08-23T16:25:26+09:00
 watch start! 
- time is 2021-08-11T14:47:54+09:00
+ time is 2021-08-23T16:35:26+09:00
 watch start! 
- time is 2021-08-11T14:57:54+09:00
+ time is 2021-08-23T16:45:26+09:00
 watch start! 
- time is 2021-08-11T15:07:54+09:00
+ time is 2021-08-23T16:55:27+09:00
 watch start! 
- time is 2021-08-11T15:17:55+09:00
+ time is 2021-08-23T17:05:27+09:00
 watch start! 
- time is 2021-08-11T15:27:55+09:00
+ time is 2021-08-23T17:15:27+09:00
 watch start! 
- time is 2021-08-11T15:37:55+09:00
+ time is 2021-08-23T17:25:27+09:00
 watch start! 
- time is 2021-08-11T15:47:55+09:00
+ time is 2021-08-23T17:35:27+09:00
 watch start! 
- time is 2021-08-11T15:57:55+09:00
+ time is 2021-08-23T17:45:27+09:00
 watch start! 
- time is 2021-08-11T16:07:55+09:00
+ time is 2021-08-23T17:55:27+09:00
 watch start! 
- time is 2021-08-11T16:17:55+09:00
+ time is 2021-08-23T18:05:27+09:00
 watch start! 
- time is 2021-08-11T16:27:55+09:00
+ time is 2021-08-23T18:15:27+09:00
 watch start! 
- time is 2021-08-11T16:37:55+09:00
+ time is 2021-08-23T18:25:27+09:00
 watch start! 
- time is 2021-08-11T16:47:55+09:00
+ time is 2021-08-23T18:35:27+09:00
 watch start! 
- time is 2021-08-11T16:57:55+09:00
+ time is 2021-08-23T18:45:27+09:00
 watch start! 
- time is 2021-08-11T17:07:55+09:00
+ time is 2021-08-23T18:55:27+09:00
 watch start! 
- time is 2021-08-11T17:17:55+09:00
+ time is 2021-08-23T19:05:27+09:00
 watch start! 
- time is 2021-08-11T17:27:55+09:00
+ time is 2021-08-23T19:15:27+09:00
 watch start! 
- time is 2021-08-11T17:37:55+09:00
+ time is 2021-08-23T19:25:27+09:00
 watch start! 
- time is 2021-08-11T17:47:56+09:00
+ time is 2021-08-23T19:35:27+09:00
+TypeError: Cannot read property 'startsWith' of undefined
+    at coupangDataHandling (/home/ubuntu/modosale/lib/CoupangDatahandling.js:35:27)
+    at _callee3$ (/home/ubuntu/modosale/watchBanner.js:97:7)
+    at tryCatch (/home/ubuntu/modosale/node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (/home/ubuntu/modosale/node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (/home/ubuntu/modosale/node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (/home/ubuntu/modosale/watchBanner.js:23:103)
+    at _next (/home/ubuntu/modosale/watchBanner.js:25:194)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
 watch start! 
- time is 2021-08-11T17:57:56+09:00
+ time is 2021-08-23T19:45:28+09:00
 watch start! 
- time is 2021-08-11T18:07:56+09:00
+ time is 2021-08-23T19:55:28+09:00
 watch start! 
- time is 2021-08-11T18:17:56+09:00
+ time is 2021-08-23T20:05:28+09:00
 watch start! 
- time is 2021-08-11T18:27:56+09:00
+ time is 2021-08-23T20:15:28+09:00
 watch start! 
- time is 2021-08-11T18:37:56+09:00
+ time is 2021-08-23T20:25:28+09:00
 watch start! 
- time is 2021-08-11T18:47:56+09:00
+ time is 2021-08-23T20:35:28+09:00
 watch start! 
- time is 2021-08-11T18:57:56+09:00
+ time is 2021-08-23T20:45:28+09:00
 watch start! 
- time is 2021-08-11T19:07:56+09:00
+ time is 2021-08-23T20:55:28+09:00
 watch start! 
- time is 2021-08-11T19:17:56+09:00
-watch start! 
- time is 2021-08-11T19:27:56+09:00
-watch start! 
- time is 2021-08-11T19:37:56+09:00
-watch start! 
- time is 2021-08-11T19:47:56+09:00
-watch start! 
- time is 2021-08-11T19:57:56+09:00
-watch start! 
- time is 2021-08-11T20:07:56+09:00
-watch start! 
- time is 2021-08-11T20:17:57+09:00
-watch start! 
- time is 2021-08-11T20:27:57+09:00
-watch start! 
- time is 2021-08-11T20:37:57+09:00
-watch start! 
- time is 2021-08-11T20:47:57+09:00
-watch start! 
- time is 2021-08-11T20:57:57+09:00
-watch start! 
- time is 2021-08-11T21:07:57+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-11T21:17:57+09:00
-watch start! 
- time is 2021-08-11T21:27:57+09:00
-watch start! 
- time is 2021-08-11T21:37:57+09:00
-watch start! 
- time is 2021-08-11T21:47:57+09:00
-watch start! 
- time is 2021-08-11T21:57:57+09:00
-watch start! 
- time is 2021-08-11T22:07:57+09:00
-watch start! 
- time is 2021-08-11T22:17:57+09:00
-watch start! 
- time is 2021-08-11T22:27:57+09:00
-watch start! 
- time is 2021-08-11T22:37:58+09:00
-watch start! 
- time is 2021-08-11T22:47:58+09:00
-watch start! 
- time is 2021-08-11T22:57:58+09:00
-watch start! 
- time is 2021-08-11T23:07:58+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-11T23:17:58+09:00
-watch start! 
- time is 2021-08-11T23:27:58+09:00
-watch start! 
- time is 2021-08-11T23:37:58+09:00
-watch start! 
- time is 2021-08-11T23:47:58+09:00
-watch start! 
- time is 2021-08-11T23:57:58+09:00
-watch start! 
- time is 2021-08-12T00:07:58+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T00:17:58+09:00
-watch start! 
- time is 2021-08-12T00:27:58+09:00
-watch start! 
- time is 2021-08-12T00:37:58+09:00
-watch start! 
- time is 2021-08-12T00:47:58+09:00
-watch start! 
- time is 2021-08-12T00:57:58+09:00
-watch start! 
- time is 2021-08-12T01:07:59+09:00
-watch start! 
- time is 2021-08-12T01:17:59+09:00
-watch start! 
- time is 2021-08-12T01:27:59+09:00
-watch start! 
- time is 2021-08-12T01:37:59+09:00
-watch start! 
- time is 2021-08-12T01:47:59+09:00
-watch start! 
- time is 2021-08-12T01:57:59+09:00
-watch start! 
- time is 2021-08-12T02:07:59+09:00
-watch start! 
- time is 2021-08-12T02:17:59+09:00
-watch start! 
- time is 2021-08-12T02:27:59+09:00
-watch start! 
- time is 2021-08-12T02:37:59+09:00
-watch start! 
- time is 2021-08-12T02:47:59+09:00
-watch start! 
- time is 2021-08-12T02:57:59+09:00
-watch start! 
- time is 2021-08-12T03:07:59+09:00
-watch start! 
- time is 2021-08-12T03:17:59+09:00
-watch start! 
- time is 2021-08-12T03:27:59+09:00
-watch start! 
- time is 2021-08-12T03:38:00+09:00
-watch start! 
- time is 2021-08-12T03:48:00+09:00
-watch start! 
- time is 2021-08-12T03:58:00+09:00
-watch start! 
- time is 2021-08-12T04:08:00+09:00
-watch start! 
- time is 2021-08-12T04:18:00+09:00
-watch start! 
- time is 2021-08-12T04:28:00+09:00
-watch start! 
- time is 2021-08-12T04:38:00+09:00
-watch start! 
- time is 2021-08-12T04:48:00+09:00
-watch start! 
- time is 2021-08-12T04:58:00+09:00
-watch start! 
- time is 2021-08-12T05:08:00+09:00
-watch start! 
- time is 2021-08-12T05:18:00+09:00
-watch start! 
- time is 2021-08-12T05:28:00+09:00
-watch start! 
- time is 2021-08-12T05:38:00+09:00
-watch start! 
- time is 2021-08-12T05:48:00+09:00
-watch start! 
- time is 2021-08-12T05:58:01+09:00
-watch start! 
- time is 2021-08-12T06:08:01+09:00
-watch start! 
- time is 2021-08-12T06:18:01+09:00
-watch start! 
- time is 2021-08-12T06:28:01+09:00
-watch start! 
- time is 2021-08-12T06:38:01+09:00
-watch start! 
- time is 2021-08-12T06:48:01+09:00
-watch start! 
- time is 2021-08-12T06:58:01+09:00
-watch start! 
- time is 2021-08-12T07:08:01+09:00
-watch start! 
- time is 2021-08-12T07:18:01+09:00
-watch start! 
- time is 2021-08-12T07:28:01+09:00
-watch start! 
- time is 2021-08-12T07:38:01+09:00
-watch start! 
- time is 2021-08-12T07:48:01+09:00
-watch start! 
- time is 2021-08-12T07:58:01+09:00
-watch start! 
- time is 2021-08-12T08:08:01+09:00
-watch start! 
- time is 2021-08-12T08:18:02+09:00
-watch start! 
- time is 2021-08-12T08:28:02+09:00
-watch start! 
- time is 2021-08-12T08:38:02+09:00
-watch start! 
- time is 2021-08-12T08:48:02+09:00
-watch start! 
- time is 2021-08-12T08:58:02+09:00
-watch start! 
- time is 2021-08-12T09:08:02+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T09:18:02+09:00
-watch start! 
- time is 2021-08-12T09:28:02+09:00
-watch start! 
- time is 2021-08-12T09:38:02+09:00
-watch start! 
- time is 2021-08-12T09:48:02+09:00
-watch start! 
- time is 2021-08-12T09:58:02+09:00
-watch start! 
- time is 2021-08-12T10:08:02+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T10:18:02+09:00
-watch start! 
- time is 2021-08-12T10:28:03+09:00
-watch start! 
- time is 2021-08-12T10:38:03+09:00
-watch start! 
- time is 2021-08-12T10:48:03+09:00
-watch start! 
- time is 2021-08-12T10:58:03+09:00
-watch start! 
- time is 2021-08-12T11:08:03+09:00
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T11:18:03+09:00
-watch start! 
- time is 2021-08-12T11:28:03+09:00
-watch start! 
- time is 2021-08-12T11:38:03+09:00
-watch start! 
- time is 2021-08-12T11:48:03+09:00
-watch start! 
- time is 2021-08-12T11:58:03+09:00
-watch start! 
- time is 2021-08-12T12:08:03+09:00
-watch start! 
- time is 2021-08-12T12:18:03+09:00
-watch start! 
- time is 2021-08-12T12:28:03+09:00
-watch start! 
- time is 2021-08-12T12:38:03+09:00
-watch start! 
- time is 2021-08-12T12:48:03+09:00
-watch start! 
- time is 2021-08-12T12:58:04+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T13:08:04+09:00
-watch start! 
- time is 2021-08-12T13:18:04+09:00
-watch start! 
- time is 2021-08-12T13:28:04+09:00
-watch start! 
- time is 2021-08-12T13:38:04+09:00
-watch start! 
- time is 2021-08-12T13:48:04+09:00
-watch start! 
- time is 2021-08-12T13:58:04+09:00
-watch start! 
- time is 2021-08-12T14:08:04+09:00
-watch start! 
- time is 2021-08-12T14:18:04+09:00
-watch start! 
- time is 2021-08-12T14:28:04+09:00
-watch start! 
- time is 2021-08-12T14:38:04+09:00
-watch start! 
- time is 2021-08-12T14:48:04+09:00
-watch start! 
- time is 2021-08-12T14:58:04+09:00
-watch start! 
- time is 2021-08-12T15:08:04+09:00
-watch start! 
- time is 2021-08-12T15:18:04+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T15:28:05+09:00
-watch start! 
- time is 2021-08-12T15:38:05+09:00
-watch start! 
- time is 2021-08-12T15:48:05+09:00
-watch start! 
- time is 2021-08-12T15:58:05+09:00
-watch start! 
- time is 2021-08-12T16:08:05+09:00
-watch start! 
- time is 2021-08-12T16:18:05+09:00
-watch start! 
- time is 2021-08-12T16:28:05+09:00
-watch start! 
- time is 2021-08-12T16:38:05+09:00
-watch start! 
- time is 2021-08-12T16:48:05+09:00
-watch start! 
- time is 2021-08-12T16:58:05+09:00
-watch start! 
- time is 2021-08-12T17:08:05+09:00
-watch start! 
- time is 2021-08-12T17:18:05+09:00
-watch start! 
- time is 2021-08-12T17:28:05+09:00
-watch start! 
- time is 2021-08-12T17:38:05+09:00
-watch start! 
- time is 2021-08-12T17:48:05+09:00
-watch start! 
- time is 2021-08-12T17:58:06+09:00
-watch start! 
- time is 2021-08-12T18:08:06+09:00
-watch start! 
- time is 2021-08-12T18:18:06+09:00
-watch start! 
- time is 2021-08-12T18:28:06+09:00
-watch start! 
- time is 2021-08-12T18:38:06+09:00
-watch start! 
- time is 2021-08-12T18:48:06+09:00
-watch start! 
- time is 2021-08-12T18:58:06+09:00
-watch start! 
- time is 2021-08-12T19:08:06+09:00
-watch start! 
- time is 2021-08-12T19:18:06+09:00
-watch start! 
- time is 2021-08-12T19:28:06+09:00
-watch start! 
- time is 2021-08-12T19:38:06+09:00
-watch start! 
- time is 2021-08-12T19:48:06+09:00
-watch start! 
- time is 2021-08-12T19:58:06+09:00
-watch start! 
- time is 2021-08-12T20:08:06+09:00
-watch start! 
- time is 2021-08-12T20:18:06+09:00
-watch start! 
- time is 2021-08-12T20:28:06+09:00
-watch start! 
- time is 2021-08-12T20:38:06+09:00
-watch start! 
- time is 2021-08-12T20:48:07+09:00
-watch start! 
- time is 2021-08-12T20:58:07+09:00
-watch start! 
- time is 2021-08-12T21:08:07+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T21:18:07+09:00
-watch start! 
- time is 2021-08-12T21:28:07+09:00
-watch start! 
- time is 2021-08-12T21:38:07+09:00
-watch start! 
- time is 2021-08-12T21:48:07+09:00
-watch start! 
- time is 2021-08-12T21:58:07+09:00
-watch start! 
- time is 2021-08-12T22:08:07+09:00
-watch start! 
- time is 2021-08-12T22:18:07+09:00
-watch start! 
- time is 2021-08-12T22:28:07+09:00
-watch start! 
- time is 2021-08-12T22:38:07+09:00
-watch start! 
- time is 2021-08-12T22:48:07+09:00
-watch start! 
- time is 2021-08-12T22:58:07+09:00
-watch start! 
- time is 2021-08-12T23:08:07+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-12T23:18:08+09:00
-watch start! 
- time is 2021-08-12T23:28:08+09:00
-watch start! 
- time is 2021-08-12T23:38:08+09:00
-watch start! 
- time is 2021-08-12T23:48:08+09:00
-watch start! 
- time is 2021-08-12T23:58:08+09:00
-watch start! 
- time is 2021-08-13T00:08:08+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-13T00:18:08+09:00
-watch start! 
- time is 2021-08-13T00:28:08+09:00
-watch start! 
- time is 2021-08-13T00:38:08+09:00
-watch start! 
- time is 2021-08-13T00:48:08+09:00
-watch start! 
- time is 2021-08-13T00:58:08+09:00
-watch start! 
- time is 2021-08-13T01:08:08+09:00
-watch start! 
- time is 2021-08-13T01:18:08+09:00
-watch start! 
- time is 2021-08-13T01:28:08+09:00
-watch start! 
- time is 2021-08-13T01:38:08+09:00
-watch start! 
- time is 2021-08-13T01:48:09+09:00
-watch start! 
- time is 2021-08-13T01:58:09+09:00
-watch start! 
- time is 2021-08-13T02:08:09+09:00
-watch start! 
- time is 2021-08-13T02:18:09+09:00
-watch start! 
- time is 2021-08-13T02:28:09+09:00
-watch start! 
- time is 2021-08-13T02:38:09+09:00
-watch start! 
- time is 2021-08-13T02:48:09+09:00
-watch start! 
- time is 2021-08-13T02:58:09+09:00
-watch start! 
- time is 2021-08-13T03:08:09+09:00
-watch start! 
- time is 2021-08-13T03:18:09+09:00
-watch start! 
- time is 2021-08-13T03:28:09+09:00
-watch start! 
- time is 2021-08-13T03:38:09+09:00
-watch start! 
- time is 2021-08-13T03:48:09+09:00
-watch start! 
- time is 2021-08-13T03:58:09+09:00
-watch start! 
- time is 2021-08-13T04:08:09+09:00
-watch start! 
- time is 2021-08-13T04:18:09+09:00
-watch start! 
- time is 2021-08-13T04:28:09+09:00
-watch start! 
- time is 2021-08-13T04:38:10+09:00
-watch start! 
- time is 2021-08-13T04:48:10+09:00
-watch start! 
- time is 2021-08-13T04:58:10+09:00
-watch start! 
- time is 2021-08-13T05:08:10+09:00
-watch start! 
- time is 2021-08-13T05:18:10+09:00
-watch start! 
- time is 2021-08-13T05:28:10+09:00
-watch start! 
- time is 2021-08-13T05:38:10+09:00
-watch start! 
- time is 2021-08-13T05:48:10+09:00
-watch start! 
- time is 2021-08-13T05:58:10+09:00
-watch start! 
- time is 2021-08-13T06:08:10+09:00
-watch start! 
- time is 2021-08-13T06:18:10+09:00
-watch start! 
- time is 2021-08-13T06:28:10+09:00
-watch start! 
- time is 2021-08-13T06:38:10+09:00
-watch start! 
- time is 2021-08-13T06:48:10+09:00
-watch start! 
- time is 2021-08-13T06:58:10+09:00
-watch start! 
- time is 2021-08-13T07:08:11+09:00
-watch start! 
- time is 2021-08-13T07:18:11+09:00
-watch start! 
- time is 2021-08-13T07:28:11+09:00
-watch start! 
- time is 2021-08-13T07:38:11+09:00
-watch start! 
- time is 2021-08-13T07:48:11+09:00
-watch start! 
- time is 2021-08-13T07:58:11+09:00
-watch start! 
- time is 2021-08-13T08:08:11+09:00
-watch start! 
- time is 2021-08-13T08:18:11+09:00
-watch start! 
- time is 2021-08-13T08:28:11+09:00
-watch start! 
- time is 2021-08-13T08:38:11+09:00
-watch start! 
- time is 2021-08-13T08:48:11+09:00
-watch start! 
- time is 2021-08-13T08:58:11+09:00
-watch start! 
- time is 2021-08-13T09:08:11+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-13T09:18:11+09:00
-watch start! 
- time is 2021-08-13T09:28:11+09:00
-watch start! 
- time is 2021-08-13T09:38:12+09:00
-watch start! 
- time is 2021-08-13T09:48:12+09:00
-watch start! 
- time is 2021-08-13T09:58:12+09:00
-watch start! 
- time is 2021-08-13T10:08:12+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-13T10:18:12+09:00
-watch start! 
- time is 2021-08-13T10:28:12+09:00
-watch start! 
- time is 2021-08-13T10:38:12+09:00
-watch start! 
- time is 2021-08-13T10:48:12+09:00
-watch start! 
- time is 2021-08-13T10:58:12+09:00
-watch start! 
- time is 2021-08-13T11:08:12+09:00
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-13T11:18:12+09:00
-watch start! 
- time is 2021-08-13T11:28:12+09:00
-watch start! 
- time is 2021-08-13T11:38:12+09:00
-watch start! 
- time is 2021-08-13T11:48:12+09:00
-watch start! 
- time is 2021-08-13T11:58:12+09:00
-watch start! 
- time is 2021-08-13T12:08:12+09:00
-watch start! 
- time is 2021-08-13T12:18:13+09:00
-watch start! 
- time is 2021-08-13T12:28:13+09:00
-watch start! 
- time is 2021-08-13T12:38:13+09:00
-watch start! 
- time is 2021-08-13T12:48:13+09:00
-watch start! 
- time is 2021-08-13T12:58:13+09:00
-watch start! 
- time is 2021-08-13T13:08:13+09:00
-watch start! 
- time is 2021-08-13T13:18:13+09:00
-watch start! 
- time is 2021-08-13T13:28:13+09:00
-watch start! 
- time is 2021-08-13T13:38:13+09:00
-watch start! 
- time is 2021-08-13T13:48:13+09:00
-watch start! 
- time is 2021-08-13T13:58:13+09:00
-watch start! 
- time is 2021-08-13T14:08:13+09:00
-watch start! 
- time is 2021-08-13T14:18:13+09:00
-watch start! 
- time is 2021-08-13T14:28:13+09:00
-watch start! 
- time is 2021-08-13T14:38:13+09:00
-watch start! 
- time is 2021-08-13T14:48:14+09:00
-watch start! 
- time is 2021-08-13T14:58:14+09:00
-watch start! 
- time is 2021-08-13T15:08:14+09:00
-watch start! 
- time is 2021-08-13T15:18:14+09:00
-watch start! 
- time is 2021-08-13T15:28:14+09:00
-watch start! 
- time is 2021-08-13T15:38:14+09:00
-watch start! 
- time is 2021-08-13T15:48:14+09:00
-watch start! 
- time is 2021-08-13T15:58:14+09:00
-watch start! 
- time is 2021-08-13T16:08:14+09:00
-watch start! 
- time is 2021-08-13T16:18:14+09:00
-watch start! 
- time is 2021-08-13T16:28:14+09:00
-watch start! 
- time is 2021-08-13T16:38:14+09:00
-watch start! 
- time is 2021-08-13T16:48:14+09:00
-watch start! 
- time is 2021-08-13T16:58:14+09:00
-watch start! 
- time is 2021-08-13T17:08:14+09:00
-watch start! 
- time is 2021-08-13T17:18:14+09:00
-watch start! 
- time is 2021-08-13T17:28:15+09:00
-watch start! 
- time is 2021-08-13T17:38:15+09:00
-watch start! 
- time is 2021-08-13T17:48:15+09:00
-watch start! 
- time is 2021-08-13T17:58:15+09:00
-watch start! 
- time is 2021-08-13T18:08:15+09:00
-watch start! 
- time is 2021-08-13T18:18:15+09:00
-watch start! 
- time is 2021-08-13T18:28:15+09:00
-watch start! 
- time is 2021-08-13T18:38:15+09:00
-watch start! 
- time is 2021-08-13T18:48:15+09:00
-watch start! 
- time is 2021-08-13T18:58:15+09:00
-watch start! 
- time is 2021-08-13T19:08:15+09:00
-watch start! 
- time is 2021-08-13T19:18:15+09:00
-watch start! 
- time is 2021-08-13T19:28:15+09:00
-watch start! 
- time is 2021-08-13T19:38:16+09:00
-watch start! 
- time is 2021-08-13T19:48:16+09:00
-watch start! 
- time is 2021-08-13T19:58:16+09:00
-watch start! 
- time is 2021-08-13T20:08:16+09:00
-watch start! 
- time is 2021-08-13T20:18:16+09:00
-watch start! 
- time is 2021-08-13T20:28:16+09:00
-watch start! 
- time is 2021-08-13T20:38:16+09:00
-watch start! 
- time is 2021-08-13T20:48:16+09:00
-watch start! 
- time is 2021-08-13T20:58:16+09:00
-watch start! 
- time is 2021-08-13T21:08:16+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-13T21:18:16+09:00
-watch start! 
- time is 2021-08-13T21:28:16+09:00
-watch start! 
- time is 2021-08-13T21:38:16+09:00
-watch start! 
- time is 2021-08-13T21:48:16+09:00
-watch start! 
- time is 2021-08-13T21:58:16+09:00
-watch start! 
- time is 2021-08-13T22:08:17+09:00
-watch start! 
- time is 2021-08-13T22:18:17+09:00
-watch start! 
- time is 2021-08-13T22:28:17+09:00
-watch start! 
- time is 2021-08-13T22:38:17+09:00
-watch start! 
- time is 2021-08-13T22:48:17+09:00
-watch start! 
- time is 2021-08-13T22:58:17+09:00
-watch start! 
- time is 2021-08-13T23:08:17+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-13T23:18:17+09:00
-watch start! 
- time is 2021-08-13T23:28:17+09:00
-watch start! 
- time is 2021-08-13T23:38:17+09:00
-watch start! 
- time is 2021-08-13T23:48:17+09:00
-watch start! 
- time is 2021-08-13T23:58:17+09:00
-watch start! 
- time is 2021-08-14T00:08:17+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-14T00:18:17+09:00
-watch start! 
- time is 2021-08-14T00:28:17+09:00
-watch start! 
- time is 2021-08-14T00:38:17+09:00
-watch start! 
- time is 2021-08-14T00:48:18+09:00
-watch start! 
- time is 2021-08-14T00:58:18+09:00
-watch start! 
- time is 2021-08-14T01:08:18+09:00
-watch start! 
- time is 2021-08-14T01:18:18+09:00
-watch start! 
- time is 2021-08-14T01:28:18+09:00
-watch start! 
- time is 2021-08-14T01:38:18+09:00
-watch start! 
- time is 2021-08-14T01:48:18+09:00
-watch start! 
- time is 2021-08-14T01:58:18+09:00
-watch start! 
- time is 2021-08-14T02:08:18+09:00
-watch start! 
- time is 2021-08-14T02:18:18+09:00
-watch start! 
- time is 2021-08-14T02:28:18+09:00
-watch start! 
- time is 2021-08-14T02:38:18+09:00
-watch start! 
- time is 2021-08-14T02:48:19+09:00
-watch start! 
- time is 2021-08-14T02:58:19+09:00
-watch start! 
- time is 2021-08-14T03:08:19+09:00
-watch start! 
- time is 2021-08-14T03:18:19+09:00
-watch start! 
- time is 2021-08-14T03:28:19+09:00
-watch start! 
- time is 2021-08-14T03:38:19+09:00
-watch start! 
- time is 2021-08-14T03:48:19+09:00
-watch start! 
- time is 2021-08-14T03:58:19+09:00
-watch start! 
- time is 2021-08-14T04:08:19+09:00
-watch start! 
- time is 2021-08-14T04:18:19+09:00
-watch start! 
- time is 2021-08-14T04:28:19+09:00
-watch start! 
- time is 2021-08-14T04:38:19+09:00
-watch start! 
- time is 2021-08-14T04:48:19+09:00
-watch start! 
- time is 2021-08-14T04:58:19+09:00
-watch start! 
- time is 2021-08-14T05:08:19+09:00
-watch start! 
- time is 2021-08-14T05:18:19+09:00
-watch start! 
- time is 2021-08-14T05:28:19+09:00
-watch start! 
- time is 2021-08-14T05:38:20+09:00
-watch start! 
- time is 2021-08-14T05:48:20+09:00
-watch start! 
- time is 2021-08-14T05:58:20+09:00
-watch start! 
- time is 2021-08-14T06:08:20+09:00
-watch start! 
- time is 2021-08-14T06:18:20+09:00
-watch start! 
- time is 2021-08-14T06:28:20+09:00
-watch start! 
- time is 2021-08-14T06:38:20+09:00
-watch start! 
- time is 2021-08-14T06:48:20+09:00
-watch start! 
- time is 2021-08-14T06:58:20+09:00
-watch start! 
- time is 2021-08-14T07:08:20+09:00
-watch start! 
- time is 2021-08-14T07:18:20+09:00
-watch start! 
- time is 2021-08-14T07:28:20+09:00
-watch start! 
- time is 2021-08-14T07:38:20+09:00
-watch start! 
- time is 2021-08-14T07:48:20+09:00
-watch start! 
- time is 2021-08-14T07:58:20+09:00
-watch start! 
- time is 2021-08-14T08:08:20+09:00
-watch start! 
- time is 2021-08-14T08:18:20+09:00
-watch start! 
- time is 2021-08-14T08:28:21+09:00
-watch start! 
- time is 2021-08-14T08:38:21+09:00
-watch start! 
- time is 2021-08-14T08:48:21+09:00
-watch start! 
- time is 2021-08-14T08:58:21+09:00
-watch start! 
- time is 2021-08-14T09:08:21+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-14T09:18:21+09:00
-watch start! 
- time is 2021-08-14T09:28:21+09:00
-watch start! 
- time is 2021-08-14T09:38:21+09:00
-watch start! 
- time is 2021-08-14T09:48:21+09:00
-watch start! 
- time is 2021-08-14T09:58:21+09:00
-watch start! 
- time is 2021-08-14T10:08:21+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-14T10:18:21+09:00
-watch start! 
- time is 2021-08-14T10:28:21+09:00
-watch start! 
- time is 2021-08-14T10:38:21+09:00
-watch start! 
- time is 2021-08-14T10:48:21+09:00
-watch start! 
- time is 2021-08-14T10:58:21+09:00
-watch start! 
- time is 2021-08-14T11:08:21+09:00
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-14T11:18:22+09:00
-watch start! 
- time is 2021-08-14T11:28:22+09:00
-watch start! 
- time is 2021-08-14T11:38:22+09:00
-watch start! 
- time is 2021-08-14T11:48:22+09:00
-watch start! 
- time is 2021-08-14T11:58:22+09:00
-watch start! 
- time is 2021-08-14T12:08:22+09:00
-watch start! 
- time is 2021-08-14T12:18:22+09:00
-watch start! 
- time is 2021-08-14T12:28:22+09:00
-watch start! 
- time is 2021-08-14T12:38:22+09:00
-watch start! 
- time is 2021-08-14T12:48:22+09:00
-watch start! 
- time is 2021-08-14T12:58:22+09:00
-watch start! 
- time is 2021-08-14T13:08:22+09:00
-watch start! 
- time is 2021-08-14T13:18:22+09:00
-watch start! 
- time is 2021-08-14T13:28:23+09:00
-watch start! 
- time is 2021-08-14T13:38:23+09:00
-watch start! 
- time is 2021-08-14T13:48:23+09:00
-watch start! 
- time is 2021-08-14T13:58:23+09:00
-watch start! 
- time is 2021-08-14T14:08:23+09:00
-watch start! 
- time is 2021-08-14T14:18:23+09:00
-watch start! 
- time is 2021-08-14T14:28:23+09:00
-watch start! 
- time is 2021-08-14T14:38:23+09:00
-watch start! 
- time is 2021-08-14T14:48:23+09:00
-watch start! 
- time is 2021-08-14T14:58:23+09:00
-watch start! 
- time is 2021-08-14T15:08:23+09:00
-watch start! 
- time is 2021-08-14T15:18:23+09:00
-watch start! 
- time is 2021-08-14T15:28:23+09:00
-watch start! 
- time is 2021-08-14T15:38:23+09:00
-watch start! 
- time is 2021-08-14T15:48:23+09:00
-watch start! 
- time is 2021-08-14T15:58:23+09:00
-watch start! 
- time is 2021-08-14T16:08:23+09:00
-watch start! 
- time is 2021-08-14T16:18:24+09:00
-watch start! 
- time is 2021-08-14T16:28:24+09:00
-watch start! 
- time is 2021-08-14T16:38:24+09:00
-watch start! 
- time is 2021-08-14T16:48:24+09:00
-watch start! 
- time is 2021-08-14T16:58:24+09:00
-watch start! 
- time is 2021-08-14T17:08:24+09:00
-watch start! 
- time is 2021-08-14T17:18:24+09:00
-watch start! 
- time is 2021-08-14T17:28:24+09:00
-watch start! 
- time is 2021-08-14T17:38:24+09:00
-watch start! 
- time is 2021-08-14T17:48:24+09:00
-watch start! 
- time is 2021-08-14T17:58:24+09:00
-watch start! 
- time is 2021-08-14T18:08:24+09:00
-watch start! 
- time is 2021-08-14T18:18:24+09:00
-watch start! 
- time is 2021-08-14T18:28:24+09:00
-watch start! 
- time is 2021-08-14T18:38:25+09:00
-watch start! 
- time is 2021-08-14T18:48:25+09:00
-watch start! 
- time is 2021-08-14T18:58:25+09:00
-watch start! 
- time is 2021-08-14T19:08:25+09:00
-watch start! 
- time is 2021-08-14T19:18:25+09:00
-watch start! 
- time is 2021-08-14T19:28:25+09:00
-watch start! 
- time is 2021-08-14T19:38:25+09:00
-watch start! 
- time is 2021-08-14T19:48:25+09:00
-watch start! 
- time is 2021-08-14T19:58:25+09:00
-watch start! 
- time is 2021-08-14T20:08:25+09:00
-watch start! 
- time is 2021-08-14T20:18:25+09:00
-watch start! 
- time is 2021-08-14T20:28:25+09:00
-watch start! 
- time is 2021-08-14T20:38:25+09:00
-watch start! 
- time is 2021-08-14T20:48:25+09:00
-watch start! 
- time is 2021-08-14T20:58:25+09:00
-watch start! 
- time is 2021-08-14T21:08:26+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-14T21:18:26+09:00
-watch start! 
- time is 2021-08-14T21:28:26+09:00
-watch start! 
- time is 2021-08-14T21:38:26+09:00
-watch start! 
- time is 2021-08-14T21:48:26+09:00
-watch start! 
- time is 2021-08-14T21:58:26+09:00
-watch start! 
- time is 2021-08-14T22:08:26+09:00
-watch start! 
- time is 2021-08-14T22:18:26+09:00
-watch start! 
- time is 2021-08-14T22:28:26+09:00
-watch start! 
- time is 2021-08-14T22:38:26+09:00
-watch start! 
- time is 2021-08-14T22:48:26+09:00
-watch start! 
- time is 2021-08-14T22:58:26+09:00
-watch start! 
- time is 2021-08-14T23:08:26+09:00
+ time is 2021-08-23T21:05:28+09:00
 Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
 watch start! 
- time is 2021-08-14T23:18:26+09:00
+ time is 2021-08-23T21:15:28+09:00
 watch start! 
- time is 2021-08-14T23:28:26+09:00
+ time is 2021-08-23T21:25:28+09:00
 watch start! 
- time is 2021-08-14T23:38:26+09:00
+ time is 2021-08-23T21:35:28+09:00
 watch start! 
- time is 2021-08-14T23:48:27+09:00
+ time is 2021-08-23T21:45:28+09:00
 watch start! 
- time is 2021-08-14T23:58:27+09:00
+ time is 2021-08-23T21:55:28+09:00
 watch start! 
- time is 2021-08-15T00:08:27+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
+ time is 2021-08-23T22:05:28+09:00
 Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-15T00:18:27+09:00
-watch start! 
- time is 2021-08-15T00:28:27+09:00
-watch start! 
- time is 2021-08-15T00:38:27+09:00
-watch start! 
- time is 2021-08-15T00:48:27+09:00
-watch start! 
- time is 2021-08-15T00:58:27+09:00
 watch start! 
- time is 2021-08-15T01:08:27+09:00
+ time is 2021-08-23T22:15:29+09:00
 watch start! 
- time is 2021-08-15T01:18:27+09:00
+ time is 2021-08-23T22:25:29+09:00
 watch start! 
- time is 2021-08-15T01:28:27+09:00
+ time is 2021-08-23T22:35:29+09:00
 watch start! 
- time is 2021-08-15T01:38:27+09:00
+ time is 2021-08-23T22:45:29+09:00
 watch start! 
- time is 2021-08-15T01:48:27+09:00
+ time is 2021-08-23T22:55:29+09:00
 watch start! 
- time is 2021-08-15T01:58:27+09:00
-watch start! 
- time is 2021-08-15T02:08:27+09:00
-watch start! 
- time is 2021-08-15T02:18:27+09:00
-watch start! 
- time is 2021-08-15T02:28:28+09:00
-watch start! 
- time is 2021-08-15T02:38:28+09:00
-watch start! 
- time is 2021-08-15T02:48:28+09:00
-watch start! 
- time is 2021-08-15T02:58:28+09:00
-watch start! 
- time is 2021-08-15T03:08:28+09:00
-watch start! 
- time is 2021-08-15T03:18:28+09:00
-watch start! 
- time is 2021-08-15T03:28:28+09:00
-watch start! 
- time is 2021-08-15T03:38:28+09:00
-watch start! 
- time is 2021-08-15T03:48:28+09:00
-watch start! 
- time is 2021-08-15T03:58:28+09:00
-watch start! 
- time is 2021-08-15T04:08:28+09:00
-watch start! 
- time is 2021-08-15T04:18:28+09:00
-watch start! 
- time is 2021-08-15T04:28:28+09:00
-watch start! 
- time is 2021-08-15T04:38:28+09:00
-watch start! 
- time is 2021-08-15T04:48:29+09:00
-watch start! 
- time is 2021-08-15T04:58:29+09:00
-watch start! 
- time is 2021-08-15T05:08:29+09:00
-watch start! 
- time is 2021-08-15T05:18:29+09:00
-watch start! 
- time is 2021-08-15T05:28:29+09:00
-watch start! 
- time is 2021-08-15T05:38:29+09:00
-watch start! 
- time is 2021-08-15T05:48:29+09:00
-watch start! 
- time is 2021-08-15T05:58:29+09:00
-watch start! 
- time is 2021-08-15T06:08:29+09:00
-watch start! 
- time is 2021-08-15T06:18:29+09:00
-watch start! 
- time is 2021-08-15T06:28:29+09:00
-watch start! 
- time is 2021-08-15T06:38:29+09:00
-watch start! 
- time is 2021-08-15T06:48:29+09:00
-watch start! 
- time is 2021-08-15T06:58:29+09:00
-watch start! 
- time is 2021-08-15T07:08:29+09:00
-watch start! 
- time is 2021-08-15T07:18:29+09:00
-watch start! 
- time is 2021-08-15T07:28:30+09:00
-watch start! 
- time is 2021-08-15T07:38:30+09:00
-watch start! 
- time is 2021-08-15T07:48:30+09:00
-watch start! 
- time is 2021-08-15T07:58:30+09:00
-watch start! 
- time is 2021-08-15T08:08:30+09:00
-watch start! 
- time is 2021-08-15T08:18:30+09:00
-watch start! 
- time is 2021-08-15T08:28:30+09:00
-watch start! 
- time is 2021-08-15T08:38:30+09:00
-watch start! 
- time is 2021-08-15T08:48:30+09:00
-watch start! 
- time is 2021-08-15T08:58:30+09:00
-watch start! 
- time is 2021-08-15T09:08:30+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
+ time is 2021-08-23T23:05:29+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
 watch start! 
- time is 2021-08-15T09:18:30+09:00
+ time is 2021-08-23T23:15:29+09:00
 watch start! 
- time is 2021-08-15T09:28:30+09:00
+ time is 2021-08-23T23:25:29+09:00
 watch start! 
- time is 2021-08-15T09:38:30+09:00
+ time is 2021-08-23T23:35:29+09:00
 watch start! 
- time is 2021-08-15T09:48:30+09:00
+ time is 2021-08-23T23:45:29+09:00
 watch start! 
- time is 2021-08-15T09:58:30+09:00
+ time is 2021-08-23T23:55:29+09:00
+Warning: got packets out of order. Expected 6 but received 0
 watch start! 
- time is 2021-08-15T10:08:30+09:00
+ time is 2021-08-24T00:05:29+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
@@ -1318,207 +245,109 @@ Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-15T10:18:31+09:00
-watch start! 
- time is 2021-08-15T10:28:31+09:00
-watch start! 
- time is 2021-08-15T10:38:31+09:00
-watch start! 
- time is 2021-08-15T10:48:31+09:00
-watch start! 
- time is 2021-08-15T10:58:31+09:00
-watch start! 
- time is 2021-08-15T11:08:31+09:00
 Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-15T11:18:31+09:00
-watch start! 
- time is 2021-08-15T11:28:31+09:00
-watch start! 
- time is 2021-08-15T11:38:31+09:00
-watch start! 
- time is 2021-08-15T11:48:31+09:00
-watch start! 
- time is 2021-08-15T11:58:31+09:00
-watch start! 
- time is 2021-08-15T12:08:31+09:00
 watch start! 
- time is 2021-08-15T12:18:31+09:00
+ time is 2021-08-24T00:15:29+09:00
 watch start! 
- time is 2021-08-15T12:28:31+09:00
+ time is 2021-08-24T00:25:29+09:00
 watch start! 
- time is 2021-08-15T12:38:31+09:00
+ time is 2021-08-24T00:35:29+09:00
 watch start! 
- time is 2021-08-15T12:48:31+09:00
+ time is 2021-08-24T00:45:29+09:00
 watch start! 
- time is 2021-08-15T12:58:31+09:00
+ time is 2021-08-24T00:55:30+09:00
 watch start! 
- time is 2021-08-15T13:08:32+09:00
+ time is 2021-08-24T01:05:30+09:00
 watch start! 
- time is 2021-08-15T13:18:32+09:00
+ time is 2021-08-24T01:15:30+09:00
 watch start! 
- time is 2021-08-15T13:28:32+09:00
+ time is 2021-08-24T01:25:30+09:00
 watch start! 
- time is 2021-08-15T13:38:32+09:00
+ time is 2021-08-24T01:35:30+09:00
 watch start! 
- time is 2021-08-15T13:48:32+09:00
+ time is 2021-08-24T01:45:30+09:00
 watch start! 
- time is 2021-08-15T13:58:32+09:00
+ time is 2021-08-24T01:55:30+09:00
 watch start! 
- time is 2021-08-15T14:08:32+09:00
+ time is 2021-08-24T02:05:30+09:00
 watch start! 
- time is 2021-08-15T14:18:32+09:00
+ time is 2021-08-24T02:15:30+09:00
 watch start! 
- time is 2021-08-15T14:28:32+09:00
+ time is 2021-08-24T02:25:30+09:00
 watch start! 
- time is 2021-08-15T14:38:32+09:00
+ time is 2021-08-24T02:35:30+09:00
 watch start! 
- time is 2021-08-15T14:48:32+09:00
+ time is 2021-08-24T02:45:30+09:00
 watch start! 
- time is 2021-08-15T14:58:32+09:00
+ time is 2021-08-24T02:55:30+09:00
 watch start! 
- time is 2021-08-15T15:08:32+09:00
+ time is 2021-08-24T03:05:30+09:00
 watch start! 
- time is 2021-08-15T15:18:32+09:00
+ time is 2021-08-24T03:15:30+09:00
 watch start! 
- time is 2021-08-15T15:28:32+09:00
+ time is 2021-08-24T03:25:30+09:00
 watch start! 
- time is 2021-08-15T15:38:32+09:00
+ time is 2021-08-24T03:35:30+09:00
 watch start! 
- time is 2021-08-15T15:48:33+09:00
+ time is 2021-08-24T03:45:31+09:00
 watch start! 
- time is 2021-08-15T15:58:33+09:00
+ time is 2021-08-24T03:55:31+09:00
 watch start! 
- time is 2021-08-15T16:08:33+09:00
+ time is 2021-08-24T04:05:31+09:00
 watch start! 
- time is 2021-08-15T16:18:33+09:00
+ time is 2021-08-24T04:15:31+09:00
 watch start! 
- time is 2021-08-15T16:28:33+09:00
+ time is 2021-08-24T04:25:31+09:00
 watch start! 
- time is 2021-08-15T16:38:33+09:00
+ time is 2021-08-24T04:35:31+09:00
 watch start! 
- time is 2021-08-15T16:48:33+09:00
+ time is 2021-08-24T04:45:31+09:00
 watch start! 
- time is 2021-08-15T16:58:33+09:00
+ time is 2021-08-24T04:55:31+09:00
 watch start! 
- time is 2021-08-15T17:08:33+09:00
+ time is 2021-08-24T05:05:31+09:00
 watch start! 
- time is 2021-08-15T17:18:33+09:00
+ time is 2021-08-24T05:15:31+09:00
 watch start! 
- time is 2021-08-15T17:28:33+09:00
+ time is 2021-08-24T05:25:31+09:00
 watch start! 
- time is 2021-08-15T17:38:33+09:00
+ time is 2021-08-24T05:35:31+09:00
 watch start! 
- time is 2021-08-15T17:48:33+09:00
+ time is 2021-08-24T05:45:31+09:00
 watch start! 
- time is 2021-08-15T17:58:33+09:00
+ time is 2021-08-24T05:55:31+09:00
 watch start! 
- time is 2021-08-15T18:08:33+09:00
+ time is 2021-08-24T06:05:32+09:00
 watch start! 
- time is 2021-08-15T18:18:33+09:00
+ time is 2021-08-24T06:15:32+09:00
 watch start! 
- time is 2021-08-15T18:28:34+09:00
-watch start! 
- time is 2021-08-15T18:38:34+09:00
-watch start! 
- time is 2021-08-15T18:48:34+09:00
-watch start! 
- time is 2021-08-15T18:58:34+09:00
-watch start! 
- time is 2021-08-15T19:08:34+09:00
-watch start! 
- time is 2021-08-15T19:18:34+09:00
-watch start! 
- time is 2021-08-15T19:28:34+09:00
-watch start! 
- time is 2021-08-15T19:38:34+09:00
-watch start! 
- time is 2021-08-15T19:48:34+09:00
-watch start! 
- time is 2021-08-15T19:58:34+09:00
-watch start! 
- time is 2021-08-15T20:08:34+09:00
-watch start! 
- time is 2021-08-15T20:18:34+09:00
-watch start! 
- time is 2021-08-15T20:28:34+09:00
-watch start! 
- time is 2021-08-15T20:38:34+09:00
-watch start! 
- time is 2021-08-15T20:48:35+09:00
-watch start! 
- time is 2021-08-15T20:58:35+09:00
-watch start! 
- time is 2021-08-15T21:08:35+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-15T21:18:35+09:00
-watch start! 
- time is 2021-08-15T21:28:35+09:00
-watch start! 
- time is 2021-08-15T21:38:35+09:00
-watch start! 
- time is 2021-08-15T21:48:35+09:00
-watch start! 
- time is 2021-08-15T21:58:35+09:00
-watch start! 
- time is 2021-08-15T22:08:35+09:00
-watch start! 
- time is 2021-08-15T22:18:35+09:00
-watch start! 
- time is 2021-08-15T22:28:35+09:00
-watch start! 
- time is 2021-08-15T22:38:35+09:00
-watch start! 
- time is 2021-08-15T22:48:35+09:00
-watch start! 
- time is 2021-08-15T22:58:35+09:00
-watch start! 
- time is 2021-08-15T23:08:35+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-watch start! 
- time is 2021-08-15T23:18:35+09:00
-watch start! 
- time is 2021-08-15T23:28:35+09:00
-watch start! 
- time is 2021-08-15T23:38:35+09:00
-watch start! 
- time is 2021-08-15T23:48:36+09:00
-watch start! 
- time is 2021-08-15T23:58:36+09:00
-watch start! 
- time is 2021-08-16T00:08:36+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
+ time is 2021-08-24T06:25:32+09:00
 watch start! 
- time is 2021-08-16T00:18:36+09:00
+ time is 2021-08-24T06:35:32+09:00
 watch start! 
- time is 2021-08-16T00:28:36+09:00
+ time is 2021-08-24T06:45:32+09:00
+/usr/bin/node[602999]: ../src/node.cc:765:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
+ 1: 0xb17ec0 node::Abort() [/usr/bin/node]
+ 2: 0xb17f3e  [/usr/bin/node]
+ 3: 0xadc0b4 node::ResetStdio() [/usr/bin/node]
+ 4: 0xb18bc7 node::AppendExceptionLine(node::Environment*, v8::Local<v8::Value>, v8::Local<v8::Message>, node::ErrorHandlingMode) [/usr/bin/node]
+ 5: 0xb18cdd  [/usr/bin/node]
+ 6: 0xb19a61 node::errors::TriggerUncaughtException(v8::Isolate*, v8::Local<v8::Value>, v8::Local<v8::Message>, bool) [/usr/bin/node]
+ 7: 0xb1a28d  [/usr/bin/node]
+ 8: 0xd655cb  [/usr/bin/node]
+ 9: 0xd66a6c  [/usr/bin/node]
+10: 0xd670e6 v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [/usr/bin/node]
+11: 0x16148d9  [/usr/bin/node]
+Aborted (core dumped)
+Node.js[602976]: ../src/node.cc:765:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
+ 1: 0xb17ec0 node::Abort() [npm exec babel-node --presets @babel/env watchBanner.js]
+ 2: 0xb17f3e  [npm exec babel-node --presets @babel/env watchBanner.js]
+ 3: 0xadc0b4 node::ResetStdio() [npm exec babel-node --presets @babel/env watchBanner.js]
+ 4: 0x7f73601eda27  [/lib/x86_64-linux-gnu/libc.so.6]
+ 5: 0x7f73601edbe0 on_exit [/lib/x86_64-linux-gnu/libc.so.6]
+ 6: 0xa5d68c  [npm exec babel-node --presets @babel/env watchBanner.js]
+ 7: 0xaa2643 node::Environment::Exit(int) [npm exec babel-node --presets @babel/env watchBanner.js]
+ 8: 0xd655cb  [npm exec babel-node --presets @babel/env watchBanner.js]
+ 9: 0xd66a6c  [npm exec babel-node --presets @babel/env watchBanner.js]
+10: 0xd670e6 v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [npm exec babel-node --presets @babel/env watchBanner.js]
+11: 0x16148d9  [npm exec babel-node --presets @babel/env watchBanner.js]
