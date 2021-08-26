@@ -54,7 +54,8 @@ async function readDB(){
 //시작 하는곳
 let baeminIntervalId
 readDB()
-setInterval(async()=>setYogiyo(data),1000*60*10)
+setInterval(()=>setYogiyo(),1000*60*10)
+
 
 //위메프오도 추가
 async function setBaemin(){
