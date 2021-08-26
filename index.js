@@ -57,8 +57,7 @@ readDB()
 setInterval(()=>setYogiyo(),1000*60*10)
 
 
-//위메프오도 추가
-async function setBaemin(){
+async function refreshBaemin(){
    setBaemin().catch((e)=>{
       console.log(e)
       telegramSendMessage('baemin error!')
@@ -105,8 +104,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('/refresh', function(req, res) {
-   setBaemin()
-   res.send("refresh!");
+   refreshBaemin()
+   res.send("refreshBaemin!");
 });
 
 app.get('/chageCoupang', function(req, res) {
