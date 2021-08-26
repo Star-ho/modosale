@@ -8,7 +8,6 @@ import {telegramSendMessage} from './lib/modusailUtil.js'
 import { getBaeminData } from './lib/imgBaemin.js'
 import { getYogiyoData } from './lib/imgYogiyo.js'
 import { coupangDataHandling} from './lib/CoupangDatahandling.js'
-import { getDataArray } from './lib/yogiyo.js'
 import { koreaMoment, printLog } from './lib/modusailUtil.js'
 
 (async ()=>{
@@ -34,7 +33,7 @@ import { koreaMoment, printLog } from './lib/modusailUtil.js'
   // }
 
   // console.log(data.wemefBanner)
-  console.log(data.coupang)
+  // console.log(data.coupang)
   // coupangDataHandling(Object.assign({}, JSON.parse(data.coupang[0]),{add:false}))
   setInterval(async()=>await watchData(data),1000*60*10);
 })()
