@@ -7,5 +7,5 @@ data=data.split(EOL).map(v=>v.split('||'))
         res.push([v[0],v[1],v[2]])
 });
 
-console.log(res);
+// console.log(res);
 

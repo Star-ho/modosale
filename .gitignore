@@ -1,4 +1,4 @@
 /node_modules
 /path
 .env
-/log
+log/*
