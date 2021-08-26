@@ -21,7 +21,7 @@ import {getWemefData} from './lib/imgWemef.js'
 import {getCoupangData} from './lib/imgCoupangeats.js'
 import {getData} from './lib/baemin.js'
 import { telegramSendMessage } from './lib/modusailUtil';
-
+import {setYogiyoNew} from './lib/newYogiyo'
 let data={};
 
 async function setYogiyo(){
@@ -52,15 +52,12 @@ async function readDB(){
 }
 
 //시작 하는곳
-let intervalId
-
+let baeminIntervalId
 readDB()
+setInterval(async()=>setYogiyo(data),1000*60*10)
+
 //위메프오도 추가
-async function setyogiyoBaemin(){
-   setYogiyo().catch((e)=>{
-      console.log(e)
-      telegramSendMessage('yogiyo error!')
-   })
+async function setBaemin(){
    setBaemin().catch((e)=>{
       console.log(e)
       telegramSendMessage('baemin error!')
@@ -69,8 +66,9 @@ async function setyogiyoBaemin(){
    for(let i of Object.entries(await getData())){
       data.baemin.push(JSON.stringify(i))
    }
-   intervalId=setInterval(async()=>await watchBaeminData(data),1000*60*10);
+   let baeminIntervalId=setInterval(async()=>await watchBaeminData(data),1000*60*10);
 }
+
 
 async function watchBaeminData(data){
    let baemin=[]
@@ -87,7 +85,7 @@ async function watchBaeminData(data){
       }
    }
    if(flag){
-      clearInterval(intervalId)
+      clearInterval(baeminIntervalId)
    }
 }
 
@@ -106,7 +104,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/refresh', function(req, res) {
-   setyogiyoBaemin()
+   setBaemin()
    res.send("refresh!");
 });
 
