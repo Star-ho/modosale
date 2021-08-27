@@ -46,14 +46,14 @@ async function changeCoupang(){
 }
 
 
-async function readDB(){
-   data = await readDBFunc()
+function readDB(){
+   data = readDBFunc()
    //console.log(data)
 }
 
 //시작 하는곳
 let baeminIntervalId
-readDB()
+readDB();
 
 (async()=>{
    let data={yogiyo:[]}
@@ -76,6 +76,8 @@ async function watchYogiyoData(data){
       }
    }
 }
+
+
 
 async function refreshBaemin(){
    setBaemin().catch((e)=>{
