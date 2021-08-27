@@ -77,26 +77,6 @@ async function watchYogiyoData(data){
    }
 }
 
-
-async function watchBaeminData(data){
-   let baemin=[]
-   for(let i of Object.entries(await getData())){
-      baemin.push(JSON.stringify(i))
-   }
-   let flag=true
-   for(let i of baemin){
-      if(!data.baemin.includes(i)){
-         data.baemin=baemin.slice()
-         setBaemin()
-         flag=false
-         break
-      }
-   }
-   if(flag){
-      clearInterval(baeminIntervalId)
-   }
-}
-
 async function refreshBaemin(){
    setBaemin().catch((e)=>{
       console.log(e)

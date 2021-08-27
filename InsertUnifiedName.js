@@ -1,3 +1,5 @@
+//npx babel-node --presets @babel/env InsertUnifiedName.js
+
 import  { makeDBConnet } from './lib/modusailUtil'
 //끝
 (async()=> {
