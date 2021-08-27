@@ -46,8 +46,8 @@ async function changeCoupang(){
 }
 
 
-function readDB(){
-   data = readDBFunc()
+async function readDB(){
+   data = await readDBFunc()
    //console.log(data)
 }
 
@@ -71,7 +71,7 @@ async function watchYogiyoData(data){
    for(let i of yogiyo){
       if(!data.yogiyo.includes(i)){
          data.yogiyo=yogiyo.slice()
-         setBaemin()
+         setYogiyo()
          break
       }
    }
