@@ -54,8 +54,48 @@ async function readDB(){
 //시작 하는곳
 let baeminIntervalId
 readDB()
-setInterval(()=>setYogiyo(),1000*60*10)
 
+(async()=>{
+   let data={yogiyo:[]}
+   for(let i of Object.entries(await setYogiyoNew())){
+      data.yogiyo.push(JSON.stringify(i))
+   }
+   setInterval(async()=>await watchYogiyoData(data),1000*60*10);
+})()
+
+async function watchYogiyoData(data){
+   let yogiyo=[]
+   for(let i of Object.entries(await setYogiyoNew())){
+      yogiyo.push(JSON.stringify(i))
+   }
+   for(let i of yogiyo){
+      if(!data.yogiyo.includes(i)){
+         data.yogiyo=yogiyo.slice()
+         setBaemin()
+         break
+      }
+   }
+}
+
+
+async function watchBaeminData(data){
+   let baemin=[]
+   for(let i of Object.entries(await getData())){
+      baemin.push(JSON.stringify(i))
+   }
+   let flag=true
+   for(let i of baemin){
+      if(!data.baemin.includes(i)){
+         data.baemin=baemin.slice()
+         setBaemin()
+         flag=false
+         break
+      }
+   }
+   if(flag){
+      clearInterval(baeminIntervalId)
+   }
+}
 
 async function refreshBaemin(){
    setBaemin().catch((e)=>{
@@ -66,7 +106,7 @@ async function refreshBaemin(){
    for(let i of Object.entries(await getData())){
       data.baemin.push(JSON.stringify(i))
    }
-   let baeminIntervalId=setInterval(async()=>await watchBaeminData(data),1000*60*10);
+   baeminIntervalId=setInterval(async()=>await watchBaeminData(data),1000*60*10);
 }
 
 
