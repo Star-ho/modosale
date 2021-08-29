@@ -397,3 +397,17 @@ Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 error: [polling_error] {"code":"EFATAL","message":"EFATAL: Error: read ECONNRESET"}
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+update data SET price=5000 where brand="피자헛" and app="yogiyo" 
+update data SET price=3000 where brand="깻잎두마리치킨" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+Warning: got packets out of order. Expected 2 but received 0
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+error: [polling_error] {"code":"ETELEGRAM","message":"ETELEGRAM: 502 Bad Gateway"}
+update data SET price=13000 where brand="뽕뜨락피자" and app="yogiyo" 
+Warning: got packets out of order. Expected 2 but received 0
+error: [polling_error] {"code":"EFATAL","message":"EFATAL: Error: read ETIMEDOUT"}
+error: [polling_error] {"code":"EFATAL","message":"EFATAL: Error: read ETIMEDOUT"}

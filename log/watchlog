@@ -1,353 +1,209 @@
-[
-  {
-    img: 'https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/6c17/5b30876cc8951f5ac41c1b841ee70aa957b3e74e8cb33c049d962579c43b.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDUNKIN_0809_IN',
-    id: 6679,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t3c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/3e61/485b464ef9f52cb4acc5a6c5b08c3d3203222e5543fee532fdb799dedc88.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBASKIN_0804_IN',
-    id: 6956,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/8273/e06f87da5f9bf98b9b8aa18625918583bbb9c93391dab0edcd24d75b5fcc.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTTEOKCHAM_0816_IN',
-    id: 6641,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/f5c7/dc631647d8a7dbd18af359257c5981257c2a985563163579dcf4c4e95b06.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DISAAC_0825_IN',
-    id: 6704,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b39/5e7b898d3e62b17ffc155e1ef88a14274c056e078865b8daeae3ed916ca8.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DHOSIGI_0823_IN',
-    id: 6703,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/41b7/8e5b8a958f1e2d003b586aad98b835af49a45aab646d7dc911eadb699c8a.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDOOJJIM_0823_IN',
-    id: 6700,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/fec9/62ce0ac4f4df6d04f149300072c8cc1fa5ed0d84b7bafe0b179fc4a32e98.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DEGGDROP_0823_IN',
-    id: 6831,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/70aa/2d4fd0ca29cc7fc1a0df8ec6897a4e17d86b16b728e30840a4bada3879b7.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DKRISPY_0823_IN',
-    id: 6702,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t3a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b612/aa08a7018ab85ae7e3bc187ae485eb35ec59a31449fddea44b24916db3dd.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DROLLING_0823_IN',
-    id: 6706,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t4c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/2db6/605602bebd168b910a972859ae6784532c7662601a4712162d53fdcc1bc2.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DGULJAK_0819_IN',
-    id: 6643,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/957e/51fe52b20eb27034d8974db56e5a8dd6413cc827f7fba976f99e5133700f.jpg',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DAUG_0823_IN',
-    id: 6835,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t2c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0782/085975aafea4cf9f9e6fd862708dd57dde0ccf40db6c6ca7daa0a00f91f2.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBLUERIBBON_0610_IN',
-    id: 6718,
-    expireDate: undefined
-  },
-  {
-    img: 'https://img4c.coupangcdn.com/image/eats_operation_center/5adf/ec410fbd1d3b6ef0a79d27b1c615e5b65388b5164c64cf1007b930838d26.gif',
-    scheme: 'coupangeats://SearchResult?keyword=%EC%95%BC%EC%8B%9D_%EB%B0%B0%EB%8B%AC%EA%B0%80%EB%8A%A5_2021&sourceType=Promotion',
-    id: 2191,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b582/e32367c3a445e60937686924a8f7a77a82358c6c716eaa371900172aa588.jpg',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTRADITIONAL_0805_IN',
-    id: 6610,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/099e/e9d2f07e819e4ceb1699059ca375d270640a0cc72d7c57f150a497299aeb.jpg',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DB2BCOUPON_JULY',
-    id: 6183,
-    expireDate: undefined
-  },
-  {
-    img: 'https://img1a.coupangcdn.com/image/eats_operation_center/4f43/df5adebaec0a0f8a9fdc64067d6773e53aa5d9096d55ec8c6c62fd618d57.gif',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DSERVICE_0716_IN',
-    id: 6407,
-    expireDate: undefined
-  },
-  {
-    img: 'https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/815a/dcc6a6969451ee912ef4216cb56aa428227a7e1c460c9105e4a05723f583.png',
-    scheme: 'coupangeats://Web?url=https%3A%2F%2Fwww.coupangeats.com%2Fmerchant%3Futm_source%3Dcustomer_banner',
-    id: 441,
-    expireDate: undefined
-  }
-]
-17
-[
-  '{"img":"https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/6c17/5b30876cc8951f5ac41c1b841ee70aa957b3e74e8cb33c049d962579c43b.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDUNKIN_0809_IN","id":6679}',
-  '{"img":"https://t3c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/3e61/485b464ef9f52cb4acc5a6c5b08c3d3203222e5543fee532fdb799dedc88.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBASKIN_0804_IN","id":6956}',
-  '{"img":"https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/8273/e06f87da5f9bf98b9b8aa18625918583bbb9c93391dab0edcd24d75b5fcc.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTTEOKCHAM_0816_IN","id":6641}',
-  '{"img":"https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/f5c7/dc631647d8a7dbd18af359257c5981257c2a985563163579dcf4c4e95b06.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DISAAC_0825_IN","id":6704}',
-  '{"img":"https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0b39/5e7b898d3e62b17ffc155e1ef88a14274c056e078865b8daeae3ed916ca8.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DHOSIGI_0823_IN","id":6703}',
-  '{"img":"https://t2a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/41b7/8e5b8a958f1e2d003b586aad98b835af49a45aab646d7dc911eadb699c8a.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DDOOJJIM_0823_IN","id":6700}',
-  '{"img":"https://t4a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/fec9/62ce0ac4f4df6d04f149300072c8cc1fa5ed0d84b7bafe0b179fc4a32e98.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DEGGDROP_0823_IN","id":6831}',
-  '{"img":"https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/70aa/2d4fd0ca29cc7fc1a0df8ec6897a4e17d86b16b728e30840a4bada3879b7.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DKRISPY_0823_IN","id":6702}',
-  '{"img":"https://t3a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b612/aa08a7018ab85ae7e3bc187ae485eb35ec59a31449fddea44b24916db3dd.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DROLLING_0823_IN","id":6706}',
-  '{"img":"https://t4c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/2db6/605602bebd168b910a972859ae6784532c7662601a4712162d53fdcc1bc2.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DGULJAK_0819_IN","id":6643}',
-  '{"img":"https://t5c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/957e/51fe52b20eb27034d8974db56e5a8dd6413cc827f7fba976f99e5133700f.jpg","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DAUG_0823_IN","id":6835}',
-  '{"img":"https://t2c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/0782/085975aafea4cf9f9e6fd862708dd57dde0ccf40db6c6ca7daa0a00f91f2.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DBLUERIBBON_0610_IN","id":6718}',
-  '{"img":"https://img4c.coupangcdn.com/image/eats_operation_center/5adf/ec410fbd1d3b6ef0a79d27b1c615e5b65388b5164c64cf1007b930838d26.gif","scheme":"coupangeats://SearchResult?keyword=%EC%95%BC%EC%8B%9D_%EB%B0%B0%EB%8B%AC%EA%B0%80%EB%8A%A5_2021&sourceType=Promotion","id":2191}',
-  '{"img":"https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/b582/e32367c3a445e60937686924a8f7a77a82358c6c716eaa371900172aa588.jpg","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DTRADITIONAL_0805_IN","id":6610}',
-  '{"img":"https://t1c.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/099e/e9d2f07e819e4ceb1699059ca375d270640a0cc72d7c57f150a497299aeb.jpg","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DB2BCOUPON_JULY","id":6183}',
-  '{"img":"https://img1a.coupangcdn.com/image/eats_operation_center/4f43/df5adebaec0a0f8a9fdc64067d6773e53aa5d9096d55ec8c6c62fd618d57.gif","scheme":"coupangeats://Web?url=https%3A%2F%2Fweb.coupangeats.com%2Fcustomer%2FlandingPage%3Fkey%3DSERVICE_0716_IN","id":6407}',
-  '{"img":"https://t1a.coupangcdn.com/thumbnails/remote/1024x1024/image/eats_operation_center/815a/dcc6a6969451ee912ef4216cb56aa428227a7e1c460c9105e4a05723f583.png","scheme":"coupangeats://Web?url=https%3A%2F%2Fwww.coupangeats.com%2Fmerchant%3Futm_source%3Dcustomer_banner","id":441}'
-]
 watch start! 
- time is 2021-08-23T16:15:26+09:00
+ time is 2021-08-29T00:11:46+09:00
 watch start! 
- time is 2021-08-23T16:25:26+09:00
+ time is 2021-08-29T00:21:46+09:00
 watch start! 
- time is 2021-08-23T16:35:26+09:00
+ time is 2021-08-29T00:31:46+09:00
 watch start! 
- time is 2021-08-23T16:45:26+09:00
+ time is 2021-08-29T00:41:46+09:00
 watch start! 
- time is 2021-08-23T16:55:27+09:00
+ time is 2021-08-29T00:51:46+09:00
 watch start! 
- time is 2021-08-23T17:05:27+09:00
+ time is 2021-08-29T01:01:46+09:00
 watch start! 
- time is 2021-08-23T17:15:27+09:00
+ time is 2021-08-29T01:11:46+09:00
 watch start! 
- time is 2021-08-23T17:25:27+09:00
+ time is 2021-08-29T01:21:46+09:00
 watch start! 
- time is 2021-08-23T17:35:27+09:00
+ time is 2021-08-29T01:31:46+09:00
 watch start! 
- time is 2021-08-23T17:45:27+09:00
+ time is 2021-08-29T01:41:46+09:00
 watch start! 
- time is 2021-08-23T17:55:27+09:00
+ time is 2021-08-29T01:51:47+09:00
 watch start! 
- time is 2021-08-23T18:05:27+09:00
+ time is 2021-08-29T02:01:47+09:00
 watch start! 
- time is 2021-08-23T18:15:27+09:00
+ time is 2021-08-29T02:11:47+09:00
 watch start! 
- time is 2021-08-23T18:25:27+09:00
+ time is 2021-08-29T02:21:47+09:00
 watch start! 
- time is 2021-08-23T18:35:27+09:00
+ time is 2021-08-29T02:31:47+09:00
 watch start! 
- time is 2021-08-23T18:45:27+09:00
+ time is 2021-08-29T02:41:47+09:00
 watch start! 
- time is 2021-08-23T18:55:27+09:00
+ time is 2021-08-29T02:51:47+09:00
 watch start! 
- time is 2021-08-23T19:05:27+09:00
+ time is 2021-08-29T03:01:47+09:00
 watch start! 
- time is 2021-08-23T19:15:27+09:00
+ time is 2021-08-29T03:11:47+09:00
 watch start! 
- time is 2021-08-23T19:25:27+09:00
+ time is 2021-08-29T03:21:47+09:00
 watch start! 
- time is 2021-08-23T19:35:27+09:00
-TypeError: Cannot read property 'startsWith' of undefined
-    at coupangDataHandling (/home/ubuntu/modosale/lib/CoupangDatahandling.js:35:27)
-    at _callee3$ (/home/ubuntu/modosale/watchBanner.js:97:7)
-    at tryCatch (/home/ubuntu/modosale/node_modules/regenerator-runtime/runtime.js:63:40)
-    at Generator.invoke [as _invoke] (/home/ubuntu/modosale/node_modules/regenerator-runtime/runtime.js:293:22)
-    at Generator.next (/home/ubuntu/modosale/node_modules/regenerator-runtime/runtime.js:118:21)
-    at asyncGeneratorStep (/home/ubuntu/modosale/watchBanner.js:23:103)
-    at _next (/home/ubuntu/modosale/watchBanner.js:25:194)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+ time is 2021-08-29T03:31:47+09:00
 watch start! 
- time is 2021-08-23T19:45:28+09:00
+ time is 2021-08-29T03:41:47+09:00
 watch start! 
- time is 2021-08-23T19:55:28+09:00
+ time is 2021-08-29T03:51:47+09:00
 watch start! 
- time is 2021-08-23T20:05:28+09:00
+ time is 2021-08-29T04:01:47+09:00
 watch start! 
- time is 2021-08-23T20:15:28+09:00
+ time is 2021-08-29T04:11:47+09:00
 watch start! 
- time is 2021-08-23T20:25:28+09:00
+ time is 2021-08-29T04:21:47+09:00
 watch start! 
- time is 2021-08-23T20:35:28+09:00
+ time is 2021-08-29T04:31:47+09:00
 watch start! 
- time is 2021-08-23T20:45:28+09:00
+ time is 2021-08-29T04:41:47+09:00
 watch start! 
- time is 2021-08-23T20:55:28+09:00
+ time is 2021-08-29T04:51:48+09:00
 watch start! 
- time is 2021-08-23T21:05:28+09:00
-Warning: got packets out of order. Expected 2 but received 0
+ time is 2021-08-29T05:01:48+09:00
 watch start! 
- time is 2021-08-23T21:15:28+09:00
+ time is 2021-08-29T05:11:48+09:00
 watch start! 
- time is 2021-08-23T21:25:28+09:00
+ time is 2021-08-29T05:21:48+09:00
 watch start! 
- time is 2021-08-23T21:35:28+09:00
+ time is 2021-08-29T05:31:48+09:00
 watch start! 
- time is 2021-08-23T21:45:28+09:00
+ time is 2021-08-29T05:41:48+09:00
 watch start! 
- time is 2021-08-23T21:55:28+09:00
+ time is 2021-08-29T05:51:48+09:00
 watch start! 
- time is 2021-08-23T22:05:28+09:00
-Warning: got packets out of order. Expected 2 but received 0
+ time is 2021-08-29T06:01:48+09:00
 watch start! 
- time is 2021-08-23T22:15:29+09:00
+ time is 2021-08-29T06:11:48+09:00
 watch start! 
- time is 2021-08-23T22:25:29+09:00
+ time is 2021-08-29T06:21:48+09:00
 watch start! 
- time is 2021-08-23T22:35:29+09:00
+ time is 2021-08-29T06:31:48+09:00
 watch start! 
- time is 2021-08-23T22:45:29+09:00
+ time is 2021-08-29T06:41:48+09:00
 watch start! 
- time is 2021-08-23T22:55:29+09:00
+ time is 2021-08-29T06:51:48+09:00
 watch start! 
- time is 2021-08-23T23:05:29+09:00
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
+ time is 2021-08-29T07:01:48+09:00
 watch start! 
- time is 2021-08-23T23:15:29+09:00
+ time is 2021-08-29T07:11:48+09:00
 watch start! 
- time is 2021-08-23T23:25:29+09:00
+ time is 2021-08-29T07:21:48+09:00
 watch start! 
- time is 2021-08-23T23:35:29+09:00
+ time is 2021-08-29T07:31:48+09:00
 watch start! 
- time is 2021-08-23T23:45:29+09:00
+ time is 2021-08-29T07:41:49+09:00
 watch start! 
- time is 2021-08-23T23:55:29+09:00
+ time is 2021-08-29T07:51:49+09:00
 Warning: got packets out of order. Expected 6 but received 0
 watch start! 
- time is 2021-08-24T00:05:29+09:00
+ time is 2021-08-29T08:01:49+09:00
+watch start! 
+ time is 2021-08-29T08:11:49+09:00
+watch start! 
+ time is 2021-08-29T08:21:49+09:00
+watch start! 
+ time is 2021-08-29T08:31:49+09:00
+watch start! 
+ time is 2021-08-29T08:41:49+09:00
+watch start! 
+ time is 2021-08-29T08:51:49+09:00
+watch start! 
+ time is 2021-08-29T09:01:49+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
+watch start! 
+ time is 2021-08-29T09:11:49+09:00
+watch start! 
+ time is 2021-08-29T09:21:49+09:00
+watch start! 
+ time is 2021-08-29T09:31:49+09:00
+watch start! 
+ time is 2021-08-29T09:41:49+09:00
+watch start! 
+ time is 2021-08-29T09:51:49+09:00
+watch start! 
+ time is 2021-08-29T10:01:49+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
+watch start! 
+ time is 2021-08-29T10:11:49+09:00
+watch start! 
+ time is 2021-08-29T10:21:50+09:00
+watch start! 
+ time is 2021-08-29T10:31:50+09:00
+watch start! 
+ time is 2021-08-29T10:41:50+09:00
+watch start! 
+ time is 2021-08-29T10:51:50+09:00
+watch start! 
+ time is 2021-08-29T11:01:50+09:00
 Warning: got packets out of order. Expected 2 but received 0
 Warning: got packets out of order. Expected 2 but received 0
+watch start! 
+ time is 2021-08-29T11:11:50+09:00
+watch start! 
+ time is 2021-08-29T11:21:50+09:00
+watch start! 
+ time is 2021-08-29T11:31:50+09:00
+watch start! 
+ time is 2021-08-29T11:41:50+09:00
+watch start! 
+ time is 2021-08-29T11:51:50+09:00
+watch start! 
+ time is 2021-08-29T12:01:50+09:00
 Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
-Warning: got packets out of order. Expected 2 but received 0
 watch start! 
- time is 2021-08-24T00:15:29+09:00
+ time is 2021-08-29T12:11:50+09:00
 watch start! 
- time is 2021-08-24T00:25:29+09:00
+ time is 2021-08-29T12:21:50+09:00
 watch start! 
- time is 2021-08-24T00:35:29+09:00
+ time is 2021-08-29T12:31:50+09:00
 watch start! 
- time is 2021-08-24T00:45:29+09:00
+ time is 2021-08-29T12:41:50+09:00
 watch start! 
- time is 2021-08-24T00:55:30+09:00
+ time is 2021-08-29T12:51:50+09:00
 watch start! 
- time is 2021-08-24T01:05:30+09:00
+ time is 2021-08-29T13:01:51+09:00
 watch start! 
- time is 2021-08-24T01:15:30+09:00
+ time is 2021-08-29T13:11:51+09:00
 watch start! 
- time is 2021-08-24T01:25:30+09:00
+ time is 2021-08-29T13:21:51+09:00
 watch start! 
- time is 2021-08-24T01:35:30+09:00
+ time is 2021-08-29T13:31:51+09:00
 watch start! 
- time is 2021-08-24T01:45:30+09:00
+ time is 2021-08-29T13:41:51+09:00
 watch start! 
- time is 2021-08-24T01:55:30+09:00
+ time is 2021-08-29T13:51:51+09:00
 watch start! 
- time is 2021-08-24T02:05:30+09:00
+ time is 2021-08-29T14:01:51+09:00
 watch start! 
- time is 2021-08-24T02:15:30+09:00
+ time is 2021-08-29T14:11:51+09:00
 watch start! 
- time is 2021-08-24T02:25:30+09:00
+ time is 2021-08-29T14:21:51+09:00
 watch start! 
- time is 2021-08-24T02:35:30+09:00
+ time is 2021-08-29T14:31:51+09:00
 watch start! 
- time is 2021-08-24T02:45:30+09:00
+ time is 2021-08-29T14:41:51+09:00
 watch start! 
- time is 2021-08-24T02:55:30+09:00
+ time is 2021-08-29T14:51:51+09:00
 watch start! 
- time is 2021-08-24T03:05:30+09:00
+ time is 2021-08-29T15:01:51+09:00
 watch start! 
- time is 2021-08-24T03:15:30+09:00
+ time is 2021-08-29T15:11:51+09:00
 watch start! 
- time is 2021-08-24T03:25:30+09:00
+ time is 2021-08-29T15:21:51+09:00
 watch start! 
- time is 2021-08-24T03:35:30+09:00
+ time is 2021-08-29T15:31:51+09:00
 watch start! 
- time is 2021-08-24T03:45:31+09:00
+ time is 2021-08-29T15:41:52+09:00
 watch start! 
- time is 2021-08-24T03:55:31+09:00
+ time is 2021-08-29T15:51:52+09:00
 watch start! 
- time is 2021-08-24T04:05:31+09:00
+ time is 2021-08-29T16:01:52+09:00
 watch start! 
- time is 2021-08-24T04:15:31+09:00
+ time is 2021-08-29T16:11:52+09:00
 watch start! 
- time is 2021-08-24T04:25:31+09:00
+ time is 2021-08-29T16:21:52+09:00
 watch start! 
- time is 2021-08-24T04:35:31+09:00
+ time is 2021-08-29T16:31:52+09:00
 watch start! 
- time is 2021-08-24T04:45:31+09:00
-watch start! 
- time is 2021-08-24T04:55:31+09:00
-watch start! 
- time is 2021-08-24T05:05:31+09:00
-watch start! 
- time is 2021-08-24T05:15:31+09:00
-watch start! 
- time is 2021-08-24T05:25:31+09:00
-watch start! 
- time is 2021-08-24T05:35:31+09:00
-watch start! 
- time is 2021-08-24T05:45:31+09:00
-watch start! 
- time is 2021-08-24T05:55:31+09:00
-watch start! 
- time is 2021-08-24T06:05:32+09:00
-watch start! 
- time is 2021-08-24T06:15:32+09:00
-watch start! 
- time is 2021-08-24T06:25:32+09:00
-watch start! 
- time is 2021-08-24T06:35:32+09:00
-watch start! 
- time is 2021-08-24T06:45:32+09:00
-/usr/bin/node[602999]: ../src/node.cc:765:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
- 1: 0xb17ec0 node::Abort() [/usr/bin/node]
- 2: 0xb17f3e  [/usr/bin/node]
- 3: 0xadc0b4 node::ResetStdio() [/usr/bin/node]
- 4: 0xb18bc7 node::AppendExceptionLine(node::Environment*, v8::Local<v8::Value>, v8::Local<v8::Message>, node::ErrorHandlingMode) [/usr/bin/node]
- 5: 0xb18cdd  [/usr/bin/node]
- 6: 0xb19a61 node::errors::TriggerUncaughtException(v8::Isolate*, v8::Local<v8::Value>, v8::Local<v8::Message>, bool) [/usr/bin/node]
- 7: 0xb1a28d  [/usr/bin/node]
- 8: 0xd655cb  [/usr/bin/node]
- 9: 0xd66a6c  [/usr/bin/node]
-10: 0xd670e6 v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [/usr/bin/node]
-11: 0x16148d9  [/usr/bin/node]
-Aborted (core dumped)
-Node.js[602976]: ../src/node.cc:765:void node::ResetStdio(): Assertion `!(err != 0) || (err == -1 && (*__errno_location ()) == 1)' failed.
- 1: 0xb17ec0 node::Abort() [npm exec babel-node --presets @babel/env watchBanner.js]
- 2: 0xb17f3e  [npm exec babel-node --presets @babel/env watchBanner.js]
- 3: 0xadc0b4 node::ResetStdio() [npm exec babel-node --presets @babel/env watchBanner.js]
- 4: 0x7f73601eda27  [/lib/x86_64-linux-gnu/libc.so.6]
- 5: 0x7f73601edbe0 on_exit [/lib/x86_64-linux-gnu/libc.so.6]
- 6: 0xa5d68c  [npm exec babel-node --presets @babel/env watchBanner.js]
- 7: 0xaa2643 node::Environment::Exit(int) [npm exec babel-node --presets @babel/env watchBanner.js]
- 8: 0xd655cb  [npm exec babel-node --presets @babel/env watchBanner.js]
- 9: 0xd66a6c  [npm exec babel-node --presets @babel/env watchBanner.js]
-10: 0xd670e6 v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [npm exec babel-node --presets @babel/env watchBanner.js]
-11: 0x16148d9  [npm exec babel-node --presets @babel/env watchBanner.js]
+ time is 2021-08-29T16:41:52+09:00
